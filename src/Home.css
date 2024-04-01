@@ -1,0 +1,90 @@
+.home-container {
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 107, 107);
+}
+
+.navbar {
+    flex: 0; /* Ensures the navbar doesn't grow and takes up its content's space */
+}
+
+.scroll-container {
+    flex: 1; /* Allows the scrolling content to occupy remaining space */
+    overflow: hidden; /* Enables vertical scrolling */
+    white-space: nowrap;
+    padding-top: 50vh; /* Adjust the top padding to accommodate the navbar */
+    margin: 0; /* Remove any default margin */
+    background-color: rgba(44, 62, 88, 0);
+    border-radius: 10px;
+    width: 100vw; /* Span the entire width of the viewport */
+    justify-content: flex-end; /* Align content to the right */
+}
+
+/* Additional styling for navbar */
+.navbar {
+    position: fixed; /* Ensures the navbar stays fixed at the top */
+    top: 2vh;
+    left: 55vh;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+ 
+    background-color: rgb(44, 62, 80);
+    justify-content: space-between;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    border: 3px solid rgb(44, 62, 88);
+    font-family: cabin;
+}
+
+.about {
+    position: absolute;
+}
+
+.about-content {
+    flex: 0;
+    padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    color: red;
+    background-color: black;
+    font-family: cabin;
+    font-size: 20px;
+    margin-top: 100px; /* Adjusted to position below the navbar */
+    margin-bottom: 20px; /* Adjusted to create space between navbar and about content */
+    width: 80%;
+}
+
+.about h1 {
+    font-family: cabin;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -23vh;
+    left: -31vw;
+    margin-top: 0; /* Remove default margin */
+    color: rgb(44, 62, 88);
+}
+
+.about p {
+    padding-right: 200px;
+    /* background-color: rgba(44, 62, 88, 0.808); */
+    text-wrap:pretty;
+    border-radius: 15px;
+    font-family: cabin;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    top: -21vh;
+    left: -30vw;
+    margin-bottom: 0; /* Remove default margin */
+}

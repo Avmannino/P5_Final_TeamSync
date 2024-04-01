@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
+import Sports from './Sports';
+import Schedules from './Schedules';
+import Pricing from './Pricing';
+import Settings from './Settings';
+import LandingPage from './LandingPage'; // Import LandingPage component
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='app'>
+        <Navbar />
+        <Routes>
+        
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/sports" element={<Sports />} />
+          <Route path="/schedules" element={<Schedules />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

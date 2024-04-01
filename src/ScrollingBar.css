@@ -1,0 +1,54 @@
+/* ScrollingBar.css  */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(107, 107, 107);
+}
+
+.scroller-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  animation: scroll 15s linear infinite;
+  min-height: 90px;
+  position: relative;
+  top: 40vh;
+  background-color: rgba(44, 62, 88, 0);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.image-container {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  /* Adjust the width dynamically based on the size of images */
+  /* width: auto; */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.scroller-container img {
+  margin-right: 13px;
+  width: auto;
+
+  max-height: 120px;
+  /* Limit the maximum height to prevent excessively large images */
+}
+
+.scroller-container img:last-child {
+  margin-right: 0;
+}

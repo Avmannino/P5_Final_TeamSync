@@ -1,0 +1,284 @@
+.sports-tiles-parent {
+    display: inline-flex;
+    position: absolute;
+    top: 55vh;
+    left: 10vh;
+    gap: 3.5vh;
+    height: 40vh;
+    width: 100%;
+  }
+  
+  /* BASEBALL */
+  
+  .baseball-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 74, 74);
+    padding: 15px;
+    /* Set the background image here */
+    background-image: url('./assets/baseball_tile.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000;
+    box-shadow: 3px 5px 15px 0px #000000;
+    /* Optional: If you want the original background color to blend with your image */
+    background-blend-mode: multiply;
+  }
+  
+  .baseball-tile-container:hover {
+    transform: scale(1.06) translateZ(10px);
+    transition: transform 0.2s ease;
+  }
+  
+  .baseball-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    /* Adjust based on your preference */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+  
+  .baseball-name {
+    margin-top: 21.5vh;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: nowayback;
+    color: white;
+  }
+  
+  /* FOOTBALL */
+  
+  .football-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 74, 74);
+    padding: 15px;
+    /* Set the background image here */
+    background-image: url('./assets/football_tile.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000;
+    box-shadow: 3px 5px 15px 0px #000000;
+    /* Optional: If you want the original background color to blend with your image */
+    background-blend-mode: multiply;
+  }
+  
+  .football-tile-container:hover {
+    transform: scale(1.06) translateZ(10px);
+    transition: transform 0.2s ease;
+  }
+  
+  .football-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    /* Adjust based on your preference */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+  
+  .football-name {
+    margin-top: 21.5vh;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: nowayback;
+    color: white;
+  }
+  
+  /* SOCCER */
+  
+  .soccer-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 74, 74);
+    padding: 15px;
+    /* Set the background image here */
+    background-image: url('./assets/soccer_tile.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000;
+    box-shadow: 3px 5px 15px 0px #000000;
+    /* Optional: If you want the original background color to blend with your image */
+    background-blend-mode: multiply;
+  }
+  
+  .soccer-tile-container:hover {
+    transform: scale(1.06) translateZ(10px);
+    transition: transform 0.2s ease;
+  }
+  
+  .soccer-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    /* Adjust based on your preference */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+  
+  .soccer-name {
+    margin-top: 21.5vh;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: nowayback;
+    color: white;
+  }
+  
+  
+  /* ICE HOCKEY */
+  
+  .ice-hockey-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 74, 74);
+    padding: 15px;
+    /* Set the background image here */
+    background-image: url('./assets/icehockey_tile.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000;
+    box-shadow: 3px 5px 15px 0px #000000;
+    /* Optional: If you want the original background color to blend with your image */
+    background-blend-mode: multiply;
+  }
+  
+  .ice-hockey-tile-container:hover {
+    transform: scale(1.06) translateZ(10px);
+    transition: transform 0.2s ease;
+  }
+  
+  .ice-hockey-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    /* Adjust based on your preference */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+  
+  
+  .ice-hockey-name {
+    margin-top: 21.5vh;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: nowayback;
+    color: white;
+  }
+  
+  /* BASKETBALL */
+  
+  .basketball-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 74, 74);
+    padding: 15px;
+    /* Set the background image here */
+    background-image: url('./assets/basketball_tile.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000;
+    box-shadow: 3px 5px 15px 0px #000000;
+    /* Optional: If you want the original background color to blend with your image */
+    background-blend-mode: multiply;
+  }
+  
+  .basketball-tile-container:hover {
+    transform: scale(1.06) translateZ(10px);
+    transition: transform 0.2s ease;
+  }
+  
+  
+  .basketball-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    /* Adjust based on your preference */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+  
+  
+  .basketball-name {
+    margin-top: 21.5vh;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: nowayback;
+    color: white;
+  }
+  
+  /* TENNIS */
+  
+  .tennis-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 74, 74);
+    padding: 15px;
+    /* Set the background image here */
+    background-image: url('./assets/tennis_tile.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 3px 5px 15px 0px #000000;
+    box-shadow: 3px 5px 15px 0px #000000;
+    /* Optional: If you want the original background color to blend with your image */
+    background-blend-mode: multiply;
+  }
+  
+  .tennis-tile-container:hover {
+    transform: scale(1.06) translateZ(10px);
+    transition: transform 0.2s ease;
+  }
+  
+  .tennis-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    /* Adjust based on your preference */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 20px;
+  }
+  
+  
+  .tennis-name {
+    margin-top: 21.5vh;
+    font-size: 27px;
+    font-weight: normal;
+    font-family: nowayback;
+    color: white;
+  }

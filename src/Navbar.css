@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    position: relative;
+    top: -45.5vh;
+    left: 2vw;
+    background-color: rgb(44, 62, 80);
+    justify-content: space-between;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    width: 95vh;
+    border: 3px solid rgb(44, 62, 88);
+    -webkit-box-shadow: 0px 8px 11px 0.5px #000000;
+    box-shadow: 0px 8px 11px 0.5px #000000;
+    z-index: 999;
+  }
+  
+  .navlogo-container {
+    width: 30%;
+    margin-left: -120px;
+    margin-top: 18px;
+  }
+  
+  .nav-logo {
+    width: 100% /* Adjust the size of your logo */
+  }
+  
+  
+  .nav-items {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  
+  
+  .nav-link {
+    display: inline-block;
+    text-align: left;
+    font-family: cabin;
+    font-weight: 500;
+    font-size: 25px;
+    color: #bdc3c7;
+    /* Light grey for a subtle look */
+    text-decoration: none;
+    padding: 3px 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-right: 5px double rgba(0, 0, 0, 1.0);
+  
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: #ffa600;
+    /* Slightly darker on hover for contrast */
+    color: #006577;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-items {
+      display: none;
+      
+    }
+  
+  
+    
+  }
