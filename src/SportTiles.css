@@ -1,284 +1,481 @@
+/* Define keyframes for slide animation */
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .sports-tiles-parent {
-    display: inline-flex;
-    position: absolute;
-    top: 35vh;
-    left: -35vw;
-    gap: 3.5vh;
-    height: 40vh;
-    width: 100%;
+  display: inline-flex;
+  position: absolute;
+  top: 11vh;
+  left: 7vw;
+  gap: 3.5vh;
+  height: 40vh;
+  width: 100%;
+  animation: slideFromRight 0.5s ease forwards; /* Apply the animation */
+}
+
+/* BASEBALL */
+
+.baseball-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: center;
+  gap: 2vw;
+  border-radius: 25px;
+  border: 2px solid rgb(75, 74, 74);
+  padding: 15px;
+  background-image: url('./assets/baseball_tile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.baseball-tile-container:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+}
+
+.baseball-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22vh;
+  left: -2vw;
+  padding: 12px;
+  height: 30.8vh;
+  border-radius: 25px;
+  width: 215px;
+  border: 4px solid #0000;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
+  animation: 10s rotate linear infinite;
+}
+
+.baseball-box:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+  height: 32.9vh;
+  width: 238px;
+  border-radius: 25px;
+  border: 4px solid #0000;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  
-  /* BASEBALL */
-  
-  .baseball-tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    border: 2px solid rgb(75, 74, 74);
-    padding: 15px;
-    /* Set the background image here */
-    background-image: url('./assets/baseball_tile.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 3px 5px 15px 0px #000000;
-    box-shadow: 3px 5px 15px 0px #000000;
-    /* Optional: If you want the original background color to blend with your image */
-    background-blend-mode: multiply;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.baseball-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.baseball-name {
+  margin-top: 26.5vh;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: nowayback;
+  color: white;
+}
+
+/* FOOTBALL */
+
+.football-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(75, 74, 74);
+  padding: 15px;
+  background-image: url('./assets/football_tile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.football-tile-container:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.2s ease;
+}
+
+.football-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22vh;
+  left: 13.5vw;
+  padding: 12px;
+  height: 30.8vh;
+  border-radius: 25px;
+  width: 215px;
+  border: 4px solid #0000;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
+  animation: 10s rotate linear infinite;
+}
+
+.football-box:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+  height: 32.9vh;
+  width: 238px;
+  border-radius: 25px;
+  border: 4px solid #0000;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  
-  .baseball-tile-container:hover {
-    transform: scale(1.06) translateZ(10px);
-    transition: transform 0.2s ease;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.football-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.football-name {
+  margin-top: 26.5vh;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: nowayback;
+  color: white;
+}
+
+/* SOCCER */
+
+.soccer-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(75, 74, 74);
+  padding: 15px;
+  background-image: url('./assets/soccer_tile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.soccer-tile-container:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.2s ease;
+}
+
+.soccer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22vh;
+  left: 28.8vw;
+  padding: 12px;
+  height: 30.8vh;
+  border-radius: 25px;
+  width: 215px;
+  border: 4px solid #0000;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
+  animation: 10s rotate linear infinite;
+}
+
+.soccer-box:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+  height: 32.9vh;
+  width: 238px;
+  border-radius: 25px;
+  border: 4px solid #0000;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  
-  .baseball-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    /* Adjust based on your preference */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    gap: 20px;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.soccer-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.soccer-name {
+  margin-top: 26.5vh;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: nowayback;
+  color: white;
+}
+/* ICE HOCKEY */
+
+.ice-hockey-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(75, 74, 74);
+  padding: 15px;
+  background-image: url('./assets/icehockey_tile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.ice-hockey-tile-container:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.2s ease;
+}
+
+.ice-hockey-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22vh;
+  left: 43.9vw;
+  padding: 12px;
+  height: 30.8vh;
+  border-radius: 25px;
+  width: 215px;
+  border: 4px solid #0000;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
+  animation: 10s rotate linear infinite;
+}
+
+.ice-hockey-box:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+  height: 32.9vh;
+  width: 238px;
+  border-radius: 25px;
+  border: 4px solid #0000;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  
-  .baseball-name {
-    margin-top: 21.5vh;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: nowayback;
-    color: white;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.ice-hockey-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.ice-hockey-name {
+  margin-top: 26.5vh;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: nowayback;
+  color: white;
+}
+
+/* BASKETBALL */
+
+.basketball-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(75, 74, 74);
+  padding: 15px;
+  background-image: url('./assets/basketball_tile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.basketball-tile-container:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.2s ease;
+}
+
+.basketball-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22vh;
+  left: 59vw;
+  padding: 12px;
+  height: 30.8vh;
+  border-radius: 25px;
+  width: 215px;
+  border: 4px solid #0000;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
+  animation: 10s rotate linear infinite;
+}
+
+.basketball-box:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+  height: 32.9vh;
+  width: 238px;
+  border-radius: 25px;
+  border: 4px solid #0000;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  
-  /* FOOTBALL */
-  
-  .football-tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    border: 2px solid rgb(75, 74, 74);
-    padding: 15px;
-    /* Set the background image here */
-    background-image: url('./assets/football_tile.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 3px 5px 15px 0px #000000;
-    box-shadow: 3px 5px 15px 0px #000000;
-    /* Optional: If you want the original background color to blend with your image */
-    background-blend-mode: multiply;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.basketball-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.basketball-name {
+  margin-top: 26.5vh;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: nowayback;
+  color: white;
+}
+
+/* TENNIS */
+
+.tennis-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(75, 74, 74);
+  padding: 15px;
+  background-image: url('./assets/tennis_tile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 15px 0px #000000;
+}
+
+.tennis-tile-container:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.2s ease;
+}
+
+.tennis-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 22vh;
+  left: 74.5vw;
+  padding: 12px;
+  height: 30.8vh;
+  border-radius: 25px;
+  width: 215px;
+  border: 4px solid #0000;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
+  animation: 10s rotate linear infinite;
+}
+
+.tennis-box:hover {
+  transform: scale(1.06) translateZ(10px);
+  transition: transform 0.15s ease;
+  height: 32.9vh;
+  width: 238px;
+  border-radius: 25px;
+  border: 4px solid #0000;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
-  
-  .football-tile-container:hover {
-    transform: scale(1.06) translateZ(10px);
-    transition: transform 0.2s ease;
-  }
-  
-  .football-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    /* Adjust based on your preference */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    gap: 20px;
-  }
-  
-  .football-name {
-    margin-top: 21.5vh;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: nowayback;
-    color: white;
-  }
-  
-  /* SOCCER */
-  
-  .soccer-tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    border: 2px solid rgb(75, 74, 74);
-    padding: 15px;
-    /* Set the background image here */
-    background-image: url('./assets/soccer_tile.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 3px 5px 15px 0px #000000;
-    box-shadow: 3px 5px 15px 0px #000000;
-    /* Optional: If you want the original background color to blend with your image */
-    background-blend-mode: multiply;
-  }
-  
-  .soccer-tile-container:hover {
-    transform: scale(1.06) translateZ(10px);
-    transition: transform 0.2s ease;
-  }
-  
-  .soccer-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    /* Adjust based on your preference */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    gap: 20px;
-  }
-  
-  .soccer-name {
-    margin-top: 21.5vh;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: nowayback;
-    color: white;
-  }
-  
-  
-  /* ICE HOCKEY */
-  
-  .ice-hockey-tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    border: 2px solid rgb(75, 74, 74);
-    padding: 15px;
-    /* Set the background image here */
-    background-image: url('./assets/icehockey_tile.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 3px 5px 15px 0px #000000;
-    box-shadow: 3px 5px 15px 0px #000000;
-    /* Optional: If you want the original background color to blend with your image */
-    background-blend-mode: multiply;
-  }
-  
-  .ice-hockey-tile-container:hover {
-    transform: scale(1.06) translateZ(10px);
-    transition: transform 0.2s ease;
-  }
-  
-  .ice-hockey-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    /* Adjust based on your preference */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    gap: 20px;
-  }
-  
-  
-  .ice-hockey-name {
-    margin-top: 21.5vh;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: nowayback;
-    color: white;
-  }
-  
-  /* BASKETBALL */
-  
-  .basketball-tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    border: 2px solid rgb(75, 74, 74);
-    padding: 15px;
-    /* Set the background image here */
-    background-image: url('./assets/basketball_tile.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 3px 5px 15px 0px #000000;
-    box-shadow: 3px 5px 15px 0px #000000;
-    /* Optional: If you want the original background color to blend with your image */
-    background-blend-mode: multiply;
-  }
-  
-  .basketball-tile-container:hover {
-    transform: scale(1.06) translateZ(10px);
-    transition: transform 0.2s ease;
-  }
-  
-  
-  .basketball-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    /* Adjust based on your preference */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    gap: 20px;
-  }
-  
-  
-  .basketball-name {
-    margin-top: 21.5vh;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: nowayback;
-    color: white;
-  }
-  
-  /* TENNIS */
-  
-  .tennis-tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 30vh;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 25px;
-    border: 2px solid rgb(75, 74, 74);
-    padding: 15px;
-    /* Set the background image here */
-    background-image: url('./assets/tennis_tile.png');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 3px 5px 15px 0px #000000;
-    box-shadow: 3px 5px 15px 0px #000000;
-    /* Optional: If you want the original background color to blend with your image */
-    background-blend-mode: multiply;
-  }
-  
-  .tennis-tile-container:hover {
-    transform: scale(1.06) translateZ(10px);
-    transition: transform 0.2s ease;
-  }
-  
-  .tennis-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    /* Adjust based on your preference */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    gap: 20px;
-  }
-  
-  
-  .tennis-name {
-    margin-top: 21.5vh;
-    font-size: 27px;
-    font-weight: normal;
-    font-family: nowayback;
-    color: white;
-  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.tennis-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 215px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  gap: 20px;
+}
+
+.tennis-name {
+  margin-top: 26.5vh;
+  font-size: 27px;
+  font-weight: normal;
+  font-family: nowayback;
+  color: white;
+}

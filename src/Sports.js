@@ -5,13 +5,15 @@ import './Sports.css';
 
 const Sports = () => {
     return (
-<>
-    
-    <div className='sports-page'>
-      <SportTiles />
-    </div>
+        <>
 
-</>
+            <div className='sports-page'>
+                <div className='sports-container'>
+                    <SportTiles />
+                </div>
+            </div>
+
+        </>
     )
 }
 

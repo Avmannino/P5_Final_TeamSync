@@ -14,10 +14,11 @@ body {
   overflow: hidden;
   white-space: nowrap;
   display: flex;
-  animation: scroll 15s linear infinite;
+  animation: scroll 45s linear infinite;
   min-height: 90px;
   position: relative;
-  top: 45vh;
+
+  top: -43vh;
   background-color: rgba(44, 62, 88, 0);
   border-radius: 10px;
   z-index: 1000;
