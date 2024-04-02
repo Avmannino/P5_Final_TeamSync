@@ -1,63 +1,53 @@
 .navbar {
-    display: flex;
-    position: fixed;
-    top: 3vh;
-    justify-content: space-between;
-    border-radius: 30px;
-    align-items: center;
-    padding: 0 20px;
-    height: 80px;
-    width: 35vw;
-    z-index: 999;
-  }
-  
-  .navlogo-container {
-    margin-left: -120px;
-    margin-top: 18px;
-  }
-  
-  .nav-logo {
-    position: relative;
-    top: -0.5vh;
-    left: 104.5vw;
-    width: 100% /* Adjust the size of your logo */
-  }
-  
-  
+  display: flex;
+  position: fixed;
+  top: 3vh; /* Adjust using vh */
+  justify-content: space-between;
+  border-radius: 3vh; /* Adjust border radius using vh */
+  align-items: center;
+  padding: 0 2vw; /* Adjust padding using vw */
+  height: 8vh; /* Adjust height using vh */
+  width: 30vw; /* Adjust width using vw */
+  z-index: 999;
+}
+
+.navlogo-container {
+  margin-left: -12vw; /* Adjust margin using vw */
+  margin-top: 2vh; /* Adjust margin using vh */
+}
+
+.nav-logo {
+  position: relative;
+  top: -1vh; /* Adjust using vh */
+  left: 111vw; /* Adjust using vw */
+  width: 100%; /* Adjust the size of your logo */
+}
+
+.nav-items {
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-link {
+  display: inline-block;
+  text-align: left;
+  font-family: cabin;
+  font-weight: normal;
+  font-size: 2vh; /* Adjust font size using vh */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.3vh 1.8vw; /* Adjust padding using vw and vh */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #0084ff;
+  color: #00333b;
+}
+
+@media (max-width: 768px) {
   .nav-items {
-    display: inline-block;
-    align-items: center;
-  }
-  
-  
-  
-  .nav-link {
-    display: inline-block;
-    text-align: left;
-    font-family: cabin;
-    font-weight: normal;
-    font-size: 27px;
-    color: #bdc3c7;
-    /* Light grey for a subtle look */
-    text-decoration: none;
-    padding: 3px 35px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  
-  }
-  
-  .nav-link:hover,
-  .nav-link:focus {
-    background-color: #0084ff;
-    /* Slightly darker on hover for contrast */
-    color: #00333b;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-items {
       display: none;
-      
-    }
-  
-  
-    
   }
+}

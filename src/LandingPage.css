@@ -1,32 +1,21 @@
 body {
     background-color: rgb(0, 0, 0);
     margin: 0;
-    /* Remove default margin */
     padding: 0;
-    /* Remove default padding */
-    height: 93.5vh;
+    height: 100vh;
     /* Make sure the body fills the entire viewport height */
     display: flex;
-    /* Use flexbox to center content vertically */
     justify-content: center;
-    /* Center content horizontally */
     align-items: center;
-    /* Center content vertically */
 }
 
 .landing-page {
     background-image: url('./assets/landing_bg.jpg');
-    /* Set the background image */
     background-size: cover;
-    /* Cover the entire background */
     background-position: center;
-    /* Center the background */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     height: 100vh;
-    /* Set the height of the landing page to fill the viewport */
     width: 100vw;
-    /* Set the width of the landing page to fill the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,8 +24,9 @@ body {
 
 .under-logo {
     position: relative;
-    top: -12vh;
-    left: 0vw;
+    top: 10%;
+    /* Adjust as needed */
+    left: 4%;
 }
 
 .landing-container {
@@ -45,13 +35,12 @@ body {
     width: 100%;
 }
 
-/* LandingPage.css */
-
 .landing-reviews {
-    height: 13%;
+    height: 10%;
     width: 20%;
-    margin-top: 50px; /* Adjust the margin as needed */
-    padding: 20px;
+    margin-top: 5%;
+    /* Adjust as needed */
+    padding: 2%;
     background-color: #444e8341;
     color: white;
     border-radius: 30px;
@@ -59,93 +48,29 @@ body {
     border: solid 0.5px rgb(255, 255, 255);
     overflow: hidden;
     position: relative;
-    top: 30vh;
+    top: 15vh;
     left: 58vw;
     animation: revealText 1.5s forwards;
-  }
-  
-  @keyframes revealText {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .landing-reviews h2,
-  .landing-reviews p {
-    opacity: 0;
-  }
-  
-  .landing-reviews h2 {
-    animation: fadeInText 1s forwards;
-  }
-  
-  @keyframes fadeInText {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .landing-reviews p {
-    animation: slideInText 0.5s 0.5s forwards;
-  }
-  
-  @keyframes slideInText {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Additional styles for text */
-  .landing-reviews h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .landing-reviews p {
-    position: absolute;
-    top: -1vh;
-    left: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-    line-height: 1;
-    color: white;
-    background-color: rgba(255, 0, 0, 0);
+}
 
-  }
-  
 .logo {
-
-    /* Adjust the width of the logo */
-    position: relative;
-    top: 13vh;
-    left: 16vw;
-    /* Maintain aspect ratio */
+    position: absolute;
+    top: 14vh; /* Adjust using vh */
+    left: 20vw; /* Adjust using vw */
+    width: 7%; /* Adjust width as a percentage of the viewport width */
 }
 
 .ts-logo {
-    position: relative;
-    top: 19vh;
-    left: 7vw;
+    position: absolute;
+    top: 28.5vh; /* Adjust using vh */
+    left: 16vw; /* Adjust using vw */
+    width: 15%; /* Adjust width as a percentage of the viewport width */
 }
+
+
 
 .content {
     margin-top: -3.5vh;
-    /* Adjust the top margin to create space between the logo and the text */
     margin-left: 32vh;
     position: relative;
     top: -35px;
@@ -160,9 +85,7 @@ body {
     top: -3.7vh;
     left: -4.5vh;
     text-shadow: 0px 2.5px 6px rgba(0, 0, 0, 0.99);
-    /* Adjust values as needed */
 }
-
 
 .landing-button {
     font-family: cabin;
@@ -230,9 +153,7 @@ body {
 
 h1 {
     font-family: cabin;
-    font-size: 4.5rem;
-    display: flex;
-    align-items: left;
+    font-size: 3.5vh;
     color: #ff0000;
     font-weight: normal;
     position: absolute;
@@ -241,36 +162,34 @@ h1 {
 
 .motto {
     font-family: cabin;
-    font-size: 3.5rem;
+    font-size: 3.5vh;
     font-weight: normal;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 37vh;
     left: 5vw;
-    display: inline-flex;
     margin-left: 6.5vw;
 }
 
 .motto-two {
     font-family: cabin;
-    font-size: 3.5rem;
+    font-size: 3.5vh;
     font-weight: normal;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 43vh;
     left: 5vw;
-    display: inline-flex;
     margin-left: 6.5vw;
 }
 
 .slid {
     color: rgb(255, 0, 0);
     position: absolute;
-    font-size: 3.5rem;
+    font-size: auto;
     font-weight: normal;
     margin-top: 15px;
-    top: 43.5vh;
-    left:-18vw;
+    top: 42vh;
+    left: -19vw;
     display: inline-flex;
     margin-left: 6.5vw;
 
@@ -287,13 +206,13 @@ h1 {
 
 .slider__word {
     font-family: cabin;
-    font-size: 3.5rem;
+    font-size: auto;
     font-weight: normal;
     position: absolute;
-    margin-left: 735px;
+    margin-left: 53%;
     margin-bottom: 1vh;
     width: 100%;
-    height: 110px;
+    height: 10vh;
     line-height: -400px;
     transform: translateY(100%);
     animation: slide 9.5s linear infinite;

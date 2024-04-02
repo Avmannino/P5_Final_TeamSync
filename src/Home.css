@@ -1,14 +1,17 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
 
 .home-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100vh;
-    position: relative;
-    top: -50vh;
     min-height: 100vh;
     background-color: red;
 }
@@ -17,115 +20,55 @@
     width: 80%;
     max-width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5vh; /* Adjust margin using vh */
     flex: 1;
 }
 
 .navbar {
     width: 100%;
     position: fixed;
-    top: 3vh;
-    left: -7vw;
-    /* Add any necessary styles for your Navbar */
+    top: 3vh; /* Adjust using vh */
+    left: -10vw;
 }
-
 
 .about {
-    margin-bottom: 50px; /* Adjust as needed */
-}
-
-.about h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 5vh; /* Adjust margin using vh */
 }
 
 .landing-reviews {
-    height: 13%;
-    width: 20%;
-    margin-top: 50px; /* Adjust the margin as needed */
-    padding: 20px;
+    height: 13vh; /* Adjust height using vh */
+    width: 20vw; /* Adjust width using vw */
+    margin-top: 5vh; /* Adjust margin using vh */
+    padding: 2vh; /* Adjust padding using vh */
     background-color: #444e8341;
     color: white;
-    border-radius: 30px;
-    box-shadow: 4px 4px 25px rgb(0, 56, 119);
+    border-radius: 3vh; /* Adjust border radius using vh */
+    box-shadow: 2vw 2vw 10vh rgb(0, 56, 119); /* Adjust box shadow using vw and vh */
     border: solid 0.5px rgb(255, 255, 255);
     overflow: hidden;
     position: relative;
-    top: 30vh;
-    left: 58vw;
+    top: 30vh; /* Adjust using vh */
+    left: 58vw; /* Adjust using vw */
     animation: revealText 1.5s forwards;
-  }
-  
-  @keyframes revealText {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .landing-reviews h2,
-  .landing-reviews p {
-    opacity: 0;
-  }
-  
-  .landing-reviews h2 {
-    animation: fadeInText 1s forwards;
-  }
-  
-  @keyframes fadeInText {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .landing-reviews p {
-    animation: slideInText 0.5s 0.5s forwards;
-  }
-  
-  @keyframes slideInText {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Additional styles for text */
-  .landing-reviews h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .landing-reviews p {
-    position: absolute;
-    top: -1vh;
-    left: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-    line-height: 1;
-    color: white;
-    background-color: rgba(255, 0, 0, 0);
+}
 
-  }
+.logo {
+    position: absolute;
+    top: 13vh; /* Adjust using vh */
+    left: 16vw; /* Adjust using vw */
+}
+
+.ts-logo {
+    position: absolute;
+    top: 19vh; /* Adjust using vh */
+    left: 7vw; /* Adjust using vw */
+}
 
 .review-image {
-    margin: 0 10px; /* Adjust spacing between images */
-    width: 100px; /* Adjust image size as needed */
+    margin: 0 1vw; /* Adjust spacing between images using vw */
+    width: 10vw; /* Adjust image size as needed using vw */
 }
 
 .scroll-container {
     width: 100%;
-    /* Add any necessary styles for your ScrollingBar */
 }
