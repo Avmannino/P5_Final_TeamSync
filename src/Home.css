@@ -28,14 +28,14 @@ body {
     width: 100%;
     position: fixed;
     top: 3vh; /* Adjust using vh */
-    left: -10vw;
+    left: -18vw;
 }
 
 .about {
     margin-bottom: 5vh; /* Adjust margin using vh */
 }
 
-.landing-reviews {
+.home-reviews {
     height: 13vh; /* Adjust height using vh */
     width: 20vw; /* Adjust width using vw */
     margin-top: 5vh; /* Adjust margin using vh */

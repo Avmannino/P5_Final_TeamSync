@@ -14,7 +14,7 @@ const Home = () => {
                         We make life easier for coaches, parents and club/league administrators by bringing everything into an all-in-one team management solution. Get your team up and running faster with our stress-reducing and time-saving features.
                     </p>
                 </div>
-                <div className="landing-reviews">
+                <div className="home-reviews">
                     <img src={googleScore} alt="Google Review" className="review-image" />
                     <img src={yelpScore} alt="Yelp Review" className="review-image" />
                 </div>

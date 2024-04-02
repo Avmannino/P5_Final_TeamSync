@@ -36,22 +36,112 @@ body {
 }
 
 .landing-reviews {
-    height: 10%;
-    width: 20%;
-    margin-top: 5%;
-    /* Adjust as needed */
+    height: 75%;
+    width: 30%; /* Adjust the width as a percentage of the viewport width */
+    margin-top: 5vh; /* Adjust the top margin as a percentage of the viewport height */
     padding: 2%;
-    background-color: #444e8341;
+    background-color: #444f8300;
     color: white;
-    border-radius: 30px;
-    box-shadow: 4px 4px 25px rgb(0, 56, 119);
-    border: solid 0.5px rgb(255, 255, 255);
+    border-radius: 5vw; /* Adjust the border radius as a percentage of the viewport width */
     overflow: hidden;
     position: relative;
-    top: 15vh;
-    left: 58vw;
-    animation: revealText 1.5s forwards;
+    top: -5vh; /* Adjust the top position as a percentage of the viewport height */
+    left: 50%; /* Adjust the left position as a percentage of the viewport width */
+    transform: translateX(-50%); /* Center horizontally */
+    animation: slideInRightToLeft 1.5s forwards;
 }
+
+@keyframes slideInRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* Define the slide animation */
+@keyframes slideInRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.landing-reviews h2 {
+    color: rgb(228, 228, 228);
+    font-family: cabinitalic;
+    font-size: 0.9vw; /* Adjust font size as a percentage of the viewport width */
+    position: relative;
+    top: 61vh;
+    left: 4.5vw;
+}
+
+.landing-reviews h3 {
+    color: rgb(126, 126, 126);
+    font-family: cabin;
+    font-size: 1vw; /* Adjust font size as a percentage of the viewport width */
+    position: relative;
+    top: 53vh;
+    left: 4.2vw;
+
+    /* Add slide animation */
+    animation: slideInRightToLeft 2.5s forwards;
+}
+
+@keyframes slideInRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+.landing-reviews p {
+    height: 50%; /* Adjust height to fill the parent container */
+    width: 80%; /* Adjust width to fill the parent container */
+    padding: 11%; /* Adjust padding as needed */
+    background-color: #47474756;
+    color: rgb(168, 168, 168);
+    font-family: cabinitalic;
+    font-weight: lighter;
+    font-size: 1.9vw; /* Adjust font size as a percentage of the viewport width */
+    border-radius: 5vw; /* Adjust border radius as a percentage of the viewport width */
+    position: relative;
+    top: 5.5vh; /* Adjust top position as a percentage of the viewport height */
+    left: 1vw; /* Adjust left position as a percentage of the viewport width */
+    animation: revealText 1.5s forwards;
+
+    /* Create the comment bubble shape */
+    border-top-right-radius: 12vw; /* Adjust border radius as a percentage of the viewport width */
+    border-top-left-radius: 12vw; /* Adjust border radius as a percentage of the viewport width */
+    border-bottom-right-radius: 17vw; /* Adjust border radius as a percentage of the viewport width */
+    border-bottom-left-radius: 0; /* Set to 0 to maintain the comment bubble shape */
+}
+
+@keyframes revealText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+.review-image {
+    position: relative;
+    top: 3vh;
+    background-color: rgba(139, 139, 139, 0);
+}
+
+
 
 .logo {
     position: absolute;
@@ -177,8 +267,8 @@ h1 {
     font-weight: normal;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 43vh;
-    left: 5vw;
+    top: 41.5vh;
+    left: 7vw;
     margin-left: 6.5vw;
 }
 
@@ -188,8 +278,8 @@ h1 {
     font-size: auto;
     font-weight: normal;
     margin-top: 15px;
-    top: 42vh;
-    left: -19vw;
+    top: 42.8vh;
+    left: -19.3vw;
     display: inline-flex;
     margin-left: 6.5vw;
 
@@ -296,4 +386,9 @@ h1 {
         transform: translateY(-150%);
         opacity: 0;
     }
+}
+
+@font-face {
+    font-family: cabinitalic;
+    src: url(./fonts/cabinitalic.ttf);
 }

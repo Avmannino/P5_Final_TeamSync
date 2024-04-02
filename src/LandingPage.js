@@ -39,11 +39,18 @@ function LandingPage({ onButtonClick }) {
 
         {/* New Section for Reviews */}
         <section className="landing-reviews">
-          <h2></h2>
+          <h2>
+          Julio Hill,
+            04/18/2024
+          </h2>
+          <h3>
+          ⭐️⭐️⭐️⭐️⭐️     5/5
+          </h3>
           <p>
-            <img src={googleScore} alt="Review" className="google-score" />
-            <img src={yelpScore} alt="Review" className="yelp-score" />
+            "Great sports app that keeps you and your team connected. Simple enough for the laziest of team members to keep up with. Always adding new features. Excited to see what the future holds with this app!"
           </p>
+          <img src={googleScore} alt="Google Review" className="review-image" />
+          <img src={yelpScore} alt="Yelp Review" className="review-image" />
         </section>
       </div>
     </div>
