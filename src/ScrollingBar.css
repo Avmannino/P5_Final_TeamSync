@@ -14,12 +14,12 @@ body {
   overflow: hidden;
   white-space: nowrap;
   display: flex;
-  animation: scroll 45s linear infinite;
+  animation: scroll 40s linear infinite;
   min-height: 90px;
   position: relative;
 
   top: -43vh;
-  background-color: rgba(44, 62, 88, 0);
+  background-color: rgba(226, 226, 226, 0.164);
   border-radius: 10px;
   z-index: 1000;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .scroller-container img {
-  margin-right: 35px;
+  margin-right: 55px;
   width: auto;
 
   max-height: 120px;

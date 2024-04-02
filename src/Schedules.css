@@ -1,17 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(0, 0, 0);
+    /* Add background image */
+    /* Set background image size to cover the entire viewport */
+    background-size:contain;
+    /* Center the background image */
+    background-position: center;
+    /* Ensure the background image stays fixed as the viewport scrolls */
+    background-attachment: fixed;
 }
 
 .schedules-page {
-    text-align: center;
-    height: 100%; /* Adjusted height to fill the viewport */
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 200vh; /* Adjusted to 100vh */
     width: 100%;
-    bottom: 15vh;
-    position: relative;
+}
+
+.schedules-container {
+    padding: 5%;
+    background-color: #0000009a;
+    color: white;
 }

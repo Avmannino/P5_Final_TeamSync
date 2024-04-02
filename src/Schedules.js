@@ -6,7 +6,11 @@ const Schedules = () => {
 <>
     
     <div className='schedules-page'>
-        
+      <div className='schedules-container'>
+
+
+
+      </div>
     </div>
 
 </>

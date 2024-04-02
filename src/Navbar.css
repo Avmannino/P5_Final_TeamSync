@@ -40,10 +40,16 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-link:hover,
 .nav-link:focus {
   background-color: #0084ff;
-  color: #00333b;
+  border-radius: 15px;
+  color: #007bce;
+}
+
+.nav-link:hover {
+  background-color: #0084ff;
+  border-radius: 15px;
+  color: rgb(0, 78, 131);
 }
 
 @media (max-width: 768px) {
