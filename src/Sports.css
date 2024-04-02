@@ -3,17 +3,18 @@ body {
     padding: 0;
     background-color: rgba(0, 0, 0, 0.5);
     /* Add background image */
-    position: static;
+}
+
+.sports-page-parent {
+    background-image: url('./assets/sports_bg.png');
+
     /* Set background image size to cover the entire viewport */
     background-size: cover;
     /* Center the background image */
     background-position: center;
     /* Ensure the background image stays fixed as the viewport scrolls */
     background-attachment: fixed;
-}
-
-.sports-page-parent {
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(228, 0, 0, 0.603);
     height: 200vh;
     width: 100%;
 }
@@ -22,7 +23,7 @@ body {
     height: 100%;
     width: 100%; /* Adjust the width as a percentage of the viewport width */
     padding: 5%;
-    background-color: #0000001c;
+    background-color: #000000c9;
     color: white;
     position: relative;
     z-index: 900;

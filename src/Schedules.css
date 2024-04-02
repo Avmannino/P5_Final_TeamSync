@@ -52,10 +52,9 @@
 /* Style schedules container */
 .schedules-container {
     width: 50%;
-    margin-top: 15%;
     padding: 5%;
     position: relative;
-    top: 1vh;
+    top: 10vh;
     left: 15vw;
     background-color: #002fff00;
     color: rgb(0, 102, 161);

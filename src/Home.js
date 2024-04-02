@@ -3,14 +3,15 @@ import './Home.css';
 import ScrollingBar from './ScrollingBar';
 import Navbar from './Navbar';
 import basketballStatic from './assets/basketball_static.png';
-import coreStatic from'./assets/core_static.png';
+import coreStatic from './assets/core_static.png';
+import logo from './assets/ts_logo.png';
 
 const Home = () => {
     return (
         <div className='home-page'>
+            <img src={logo} alt="logo" className="ts-logo" />
             <div className='home-container'>
                 <div className='about'>
-                    <hr className="horizontal-line" />
                     <h1>OUR CORE</h1>
                     <img src={coreStatic} alt="core" className="core-static" />
                     <p className='our-core'>
