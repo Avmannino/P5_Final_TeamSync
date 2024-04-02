@@ -14,162 +14,143 @@ body {
 
 .home-page {
     background-color: rgba(0, 0, 0, 0.144);
-    height: 450vh;
+    height: 200vh; /* Adjusted to 100vh */
     width: 100%;
 }
 
 .home-container {
-    height: 100%;
-    width: 100%; /* Adjust the width as a percentage of the viewport width */
     padding: 5%;
     background-color: #0000009a;
     color: white;
-    position: relative;
 }
 
 .content {
     width: 80%;
     max-width: 100%;
     text-align: center;
-    margin-top: 5vh; /* Adjust margin using vh */
-    flex: 1;
+    margin: 5vh auto; /* Center vertically */
 }
 
 .navbar {
-    width: 100%;
     position: fixed;
-    top: 3vh; /* Adjust using vh */
-    left: -18vw;
+    top: 3vh;
+    left: -13vw;
+    width: 100%;
+    z-index: 999; /* Ensure it's above other content */
 }
 
 .about {
     width: 75%;
-    height: 100%;
-    padding: 0.5px;
-    align-items: center;
+    padding: 10px;
     background-color: #8b000000;
     color: white;
     font-family: Oswald;
     font-weight: normal;
-    border-radius: 0.3vw; /* Adjust the border radius as a percentage of the viewport width */
+    border-radius: 10px; /* Adjusted for better appearance */
     position: relative;
-    top: 20vh; /* Adjust the top position as a percentage of the viewport height */
-    left: 21%; /* Adjust the left position as a percentage of the viewport width */
+    margin: 20vh auto; /* Center vertically */
 }
 
 .about h1 {
-    display: flex;
-    height: 18%;
-    width: 145%;
     font-family: Oswald;
     font-weight: bold;
-    font-size: 2.4vw; /* Adjust font size as a percentage of the viewport width */
-    background-color: rgba(0, 0, 255, 0);
-    color:rgb(0, 115, 192);
-    top: 78vh;
-    right: 30vw;
-
+    font-size: 2vw;
+    color: rgb(0, 115, 192);
+    top: -6vh;
+    left: -19.5vw;
 }
 
 .our-core {
-    height: 25%;
-    width: 37%;
-    display: flex;
-    flex-direction: column;
-    text-wrap:balance;
-    align-items: center;
-    text-align: left;
+    width: 50%; /* Adjusted for better appearance */
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1.3vw; /* Adjust font size as a percentage of the viewport width */
-    line-height: 3.2vh; /* Adjust line height using vh */
-    padding:5px;
+    font-size: 1.5vw; /* Adjusted for better appearance */
+    line-height: 1.7em; /* Adjusted for better appearance */
+    padding: 5px;
     position: relative;
-    top:76vh;
-    right:11.5vw;
+    top: 5vh;
+    right: 19vw;
+    margin: 15vh auto; /* Center vertically */
 }
 
 .horizontal-line {
-    position: absolute;
-    border: none; /* Remove default border */
-    height: 3px; /* Set the height of the line */
-    background-color: #ffd000; /* Set the color of the line */
-  }
+    border: none;
+    height: 3px;
+    background-color: #0084ff6b;
+    margin-top: -100px;
+}
 
-  .horizontal-line-two {
-    border: none; /* Remove default border */
-    height: 5px; /* Set the height of the line */
-    background-color: #ffffff69; /* Set the color of the line */
-    margin-top: -80%;
-  }
+.horizontal-line-two {
+    border: none;
+    height: 5px;
+    background-color: #ffffff69;
+    margin-top: -20px; /* Adjusted for better appearance */
+}
 
 .about h2 {
-    display: flex;
-    height: 3%;
-    width: 21.5%;
     font-family: Oswald;
     font-weight: bold;
-    font-size: 2.4vw; /* Adjust font size as a percentage of the viewport width */
-    background-color: rgba(0, 0, 255, 0);
-    color:rgb(0, 115, 192);
+    font-size: 2vw;
+    color: rgb(0, 115, 192);
     position: relative;
-    top: -20vh;
-    left: 36vw;
+    top: 12vh;
+    left: 48vw;
+    margin-top: -20px; /* Adjusted for better appearance */
 }
 
 .proven-metrics {
-    height: 5%;
-    width:40%;
+    width: 45%;
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1.3vw; /* Adjust font size as a percentage of the viewport width */
-    line-height: 3.2vh; /* Adjust line height using vh */
-    padding:5px;
-    font-size: 1.3vw; /* Adjust font size as a percentage of the viewport width */
+    font-size: 1.5vw; /* Adjusted for better appearance */
+    line-height: 1.7em; /* Adjusted for better appearance */
+    padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color:rgb(255, 255, 255);
+    color: white;
     position: relative;
-    top: -29.5vh;
-    left: 36vw;
+    top: 10vh;
+    left: 48vw;
+    margin-top: -20px; /* Adjusted for better appearance */
+}
+
+.basketball-static,
+.core-static {
+    width: 55%; /* Adjusted for better appearance */
+    max-width: 400px; /* Adjusted for better appearance */
+    height: auto;
+    border-radius: 25px;
+    border: 10px solid rgb(0, 89, 148);
+    position: absolute;
+    z-index: 999;
 }
 
 .basketball-static {
-    position: relative;
-    top: 25vh; /* Adjust top position as needed */
-    right: 8.5vw; /* Adjust left position as needed */
-    width: 33%; /* Adjust width as needed */
-    border-radius: 25px;
-    height: auto; /* Maintain aspect ratio */
-    z-index: 999; /* Ensure the image is above other content */
-    border: 10px solid rgb(0, 89, 148);
-  }
+    top: 47vh;
+    left: 20%;
+    transform: translateX(-50%);
+}
 
-  .core-static {
-    position: relative;
-    top: 120vh; /* Adjust top position as needed */
-    left: 32vw; /* Adjust left position as needed */
-    width: 33%; /* Adjust width as needed */
-    border-radius: 25px;
-    height: auto; /* Maintain aspect ratio */
-    z-index: 999; /* Ensure the image is above other content */
-    border: 10px solid rgb(0, 89, 148);
-  }
+.core-static {
+    top: -3vh;
+    left: 80%;
+    transform: translateX(-50%);
+}
 
 .logo {
     position: absolute;
-    top: 13vh; /* Adjust using vh */
-    left: 16vw; /* Adjust using vw */
+    top: 13vh;
+    left: 16vw;
 }
 
 .ts-logo {
     position: absolute;
-    top: 19vh; /* Adjust using vh */
-    left: 7vw; /* Adjust using vw */
+    top: 19vh;
+    left: 7vw;
 }
 
 .review-image {
-    margin: 0 1vw; /* Adjust spacing between images using vw */
-    width: 10vw; /* Adjust image size as needed using vw */
+    margin: 0 1vw;
+    width: 10vw;
 }
 
 .scroll-container {
@@ -191,4 +172,27 @@ body {
 @font-face {
     font-family: Oswald;
     src: url(./fonts/Oswald.ttf);
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .about,
+    .our-core,
+    .about h2,
+    .proven-metrics {
+        width: 90%;
+        font-size: 3vw;
+        line-height: 3em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about,
+    .our-core,
+    .about h2,
+    .proven-metrics {
+        width: 100%;
+        font-size: 4vw;
+        line-height: 3.5em;
+    }
 }
