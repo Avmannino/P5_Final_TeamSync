@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
     /* Add background image */
     position: static;
     /* Set background image size to cover the entire viewport */
@@ -12,17 +12,18 @@ body {
     background-attachment: fixed;
 }
 
-.sports-page {
-    background-color: rgba(0, 0, 0, 0.808);
+.sports-page-parent {
+    background-color: rgba(0, 0, 0, 0.452);
     height: 200vh;
     width: 100%;
 }
 
-.sports-container {
+.sports-container-parent {
     height: 100%;
     width: 100%; /* Adjust the width as a percentage of the viewport width */
     padding: 5%;
-    background-color: #0000009a;
+    background-color: #0000001c;
     color: white;
     position: relative;
+    z-index: 900;
 }

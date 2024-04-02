@@ -56,8 +56,8 @@ body {
     font-weight: bold;
     font-size: 2vw;
     color: rgb(0, 115, 192);
-    top: -12vh;
-    left: -17vw;
+    top: -8vh;
+    left: -16.5vw;
 }
 
 .our-core {
@@ -93,7 +93,7 @@ body {
     font-size: 2vw;
     color: rgb(0, 115, 192);
     position: relative;
-    top: 18.5vh;
+    top: 18vh;
     left: 48vw;
     margin-top: -20px; /* Adjusted for better appearance */
 }
@@ -125,7 +125,7 @@ body {
 }
 
 .basketball-static {
-    top: 40vh;
+    top: 44vh;
     left: 20%;
     transform: translateX(-50%);
 }

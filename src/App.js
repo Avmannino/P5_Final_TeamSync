@@ -13,14 +13,11 @@ const App = () => {
   return (
     <Router>
       <div className='app'>
-        {/* Render Navbar component */}
         <Navbar />
-        {/* Render LandingPage component */}
         <LandingPage />
-        {/* Render different components for each route */}
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/sports" element={<Sports />} />
+          <Route path="/sports/*" element={<Sports />} /> {/* Render Sports component */}
           <Route path="/schedules" element={<Schedules />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/settings" element={<Settings />} />
