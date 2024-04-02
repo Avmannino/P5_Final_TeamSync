@@ -49,7 +49,7 @@ function LandingPage({ onButtonClick }) {
           <p>
             "Great sports app that keeps you and your team connected. Simple enough for the laziest of team members to keep up with. Always adding new features. Excited to see what the future holds with this app!"
           </p>
-          <img src={googleScore} alt="Google Review" className="review-image" />
+          <img src={googleScore} alt="google-review" className="review-image" />
           <img src={yelpScore} alt="Yelp Review" className="review-image" />
         </section>
       </div>

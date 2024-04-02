@@ -1,19 +1,30 @@
 body {
-    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 255, 255);
+    /* Add background image */
+    background-image: url('./assets/home_bg.jpg');
+    /* Set background image size to cover the entire viewport */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Ensure the background image stays fixed as the viewport scrolls */
+    background-attachment: fixed;
+}
+
+.home-page {
+    background-color: rgba(0, 0, 0, 0.144);
+    height: 450vh;
+    width: 100%;
 }
 
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-color: red;
+    height: 100%;
+    width: 100%; /* Adjust the width as a percentage of the viewport width */
+    padding: 2%;
+    background-color: #0000009a;
+    color: white;
+    position: relative;
 }
 
 .content {
@@ -32,25 +43,117 @@ body {
 }
 
 .about {
-    margin-bottom: 5vh; /* Adjust margin using vh */
+    width: 75%;
+    height: 100%;
+    padding: 0.5px;
+    align-items: center;
+    background-color: #8b000000;
+    color: white;
+    font-family: Oswald;
+    font-weight: normal;
+    border-radius: 0.3vw; /* Adjust the border radius as a percentage of the viewport width */
+    position: relative;
+    top: 20vh; /* Adjust the top position as a percentage of the viewport height */
+    left: 12%; /* Adjust the left position as a percentage of the viewport width */
 }
 
-.home-reviews {
-    height: 13vh; /* Adjust height using vh */
-    width: 20vw; /* Adjust width using vw */
-    margin-top: 5vh; /* Adjust margin using vh */
-    padding: 2vh; /* Adjust padding using vh */
-    background-color: #444e8341;
-    color: white;
-    border-radius: 3vh; /* Adjust border radius using vh */
-    box-shadow: 2vw 2vw 10vh rgb(0, 56, 119); /* Adjust box shadow using vw and vh */
-    border: solid 0.5px rgb(255, 255, 255);
-    overflow: hidden;
-    position: relative;
-    top: 30vh; /* Adjust using vh */
-    left: 58vw; /* Adjust using vw */
-    animation: revealText 1.5s forwards;
+.about h1 {
+    display: flex;
+    height: 18%;
+    width: 145%;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 2.4vw; /* Adjust font size as a percentage of the viewport width */
+    background-color: rgba(0, 0, 255, 0);
+    color:rgb(0, 83, 131);
+    top: 92vh;
+    right: 22vw;
+
 }
+
+.our-core {
+    height: 25%;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    text-wrap:balance;
+    align-items: center;
+    text-align: left;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 1.3vw; /* Adjust font size as a percentage of the viewport width */
+    line-height: 3.2vh; /* Adjust line height using vh */
+    padding:5px;
+    position: relative;
+    top:95vh;
+    right:6.5vw;
+}
+
+.horizontal-line {
+    position: absolute;
+    border: none; /* Remove default border */
+    height: 3px; /* Set the height of the line */
+    background-color: #ffd000; /* Set the color of the line */
+  }
+
+  .horizontal-line-two {
+    border: none; /* Remove default border */
+    height: 3px; /* Set the height of the line */
+    background-color: #ffffff; /* Set the color of the line */
+    margin-top: 50vh;
+  }
+
+.about h2 {
+    display: flex;
+    height: 3%;
+    width: 21.5%;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 2.4vw; /* Adjust font size as a percentage of the viewport width */
+    background-color: rgba(0, 0, 255, 0);
+    color:rgb(0, 83, 131);
+    position: relative;
+    top: 8vh;
+    left: 40vw;
+}
+
+.proven-metrics {
+    height: 5%;
+    width:40%;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 1.3vw; /* Adjust font size as a percentage of the viewport width */
+    line-height: 3.2vh; /* Adjust line height using vh */
+    padding:5px;
+    font-size: 1.3vw; /* Adjust font size as a percentage of the viewport width */
+    background-color: rgba(0, 0, 255, 0);
+    color:rgb(255, 255, 255);
+    position: relative;
+    top: -2.5vh;
+    left: 40vw;
+}
+
+.basketball-static {
+    position: relative;
+    top: 44vh; /* Adjust top position as needed */
+    right: 3vw; /* Adjust left position as needed */
+    width: 33%; /* Adjust width as needed */
+    border-radius: 25px;
+    height: auto; /* Maintain aspect ratio */
+    z-index: 999; /* Ensure the image is above other content */
+    border: 20px solid rgb(0, 89, 148);
+  }
+
+  .core-static {
+    position: relative;
+    top: 130vh; /* Adjust top position as needed */
+    left: 40vw; /* Adjust left position as needed */
+    width: 33%; /* Adjust width as needed */
+    border-radius: 25px;
+    height: auto; /* Maintain aspect ratio */
+    z-index: 999; /* Ensure the image is above other content */
+    border: 20px solid rgb(0, 89, 148);
+  }
 
 .logo {
     position: absolute;
@@ -70,5 +173,22 @@ body {
 }
 
 .scroll-container {
+    position: relative;
+    top: 43vh;
     width: 100%;
+}
+
+@font-face {
+    font-family: TB;
+    src: url(./fonts/TB.ttf);
+}
+
+@font-face {
+    font-family: Nas;
+    src: url(./fonts/Nas.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(./fonts/Oswald.ttf);
 }

@@ -24,7 +24,7 @@ body {
 
 .under-logo {
     position: relative;
-    top: 10%;
+    top: 2%;
     /* Adjust as needed */
     left: 4%;
 }
@@ -45,7 +45,7 @@ body {
     border-radius: 5vw; /* Adjust the border radius as a percentage of the viewport width */
     overflow: hidden;
     position: relative;
-    top: -5vh; /* Adjust the top position as a percentage of the viewport height */
+    top: -23vh; /* Adjust the top position as a percentage of the viewport height */
     left: 50%; /* Adjust the left position as a percentage of the viewport width */
     transform: translateX(-50%); /* Center horizontally */
     animation: slideInRightToLeft 1.5s forwards;
@@ -144,16 +144,16 @@ body {
 
 
 .logo {
-    position: absolute;
-    top: 14vh; /* Adjust using vh */
-    left: 20vw; /* Adjust using vw */
+    position: relative;
+    top: 26vh; /* Adjust using vh */
+    left: 18.5vw; /* Adjust using vw */
     width: 7%; /* Adjust width as a percentage of the viewport width */
 }
 
 .ts-logo {
-    position: absolute;
-    top: 28.5vh; /* Adjust using vh */
-    left: 16vw; /* Adjust using vw */
+    position: relative;
+    top: 32.5vh; /* Adjust using vh */
+    left: 8vw; /* Adjust using vw */
     width: 15%; /* Adjust width as a percentage of the viewport width */
 }
 
@@ -192,7 +192,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 55.7vh;
-    left: 12.5vw;
+    left: 12vw;
 }
 
 .landing-button:hover {
@@ -218,7 +218,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 55.8vh;
-    left: 20.7vw;
+    left: 20vw;
     border: 2.5px solid rgb(255, 255, 255);
 }
 

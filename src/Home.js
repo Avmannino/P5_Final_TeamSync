@@ -2,24 +2,30 @@ import React from 'react';
 import './Home.css';
 import ScrollingBar from './ScrollingBar';
 import Navbar from './Navbar';
-import googleScore from './assets/google_review.png';
-import yelpScore from './assets/yelp_review.png';
+import basketballStatic from './assets/basketball_static.png';
+import coreStatic from'./assets/core_static.png';
 
 const Home = () => {
     return (
-        <div className='home-container'>
+        <div className='home-page'>
+            <div className='home-container'>
                 <div className='about'>
-                    <h1>Save Time With The #1 Team Management App</h1>
-                    <p>
+                    <hr className="horizontal-line" />
+                    <h1>OUR CORE</h1>
+                    <img src={coreStatic} alt="core" className="core-static" />
+                    <p className='our-core'>
                         We make life easier for coaches, parents and club/league administrators by bringing everything into an all-in-one team management solution. Get your team up and running faster with our stress-reducing and time-saving features.
                     </p>
+                    <img src={basketballStatic} alt="basketball" className="basketball-static" />
+                    <h2>PROVEN METRICS</h2>
+                    <p className='proven-metrics'>
+                        TeamSync enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software. Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
+                    </p>
                 </div>
-                <div className="home-reviews">
-                    <img src={googleScore} alt="Google Review" className="review-image" />
-                    <img src={yelpScore} alt="Yelp Review" className="review-image" />
+                <hr className="horizontal-line-two" />
+                <div className='scroll-container'>
+                    <ScrollingBar />
                 </div>
-            <div className='scroll-container'>
-                <ScrollingBar />
             </div>
         </div>
     );
