@@ -4,7 +4,7 @@ body {
     /* Remove default margin */
     padding: 0;
     /* Remove default padding */
-    height: 100vh;
+    height: 93.5vh;
     /* Make sure the body fills the entire viewport height */
     display: flex;
     /* Use flexbox to center content vertically */
@@ -31,23 +31,116 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    ;
 }
 
+.under-logo {
+    position: relative;
+    top: -12vh;
+    left: 0vw;
+}
 
+.landing-container {
+    background-color: rgba(0, 0, 34, 0.795);
+    height: 100vh;
+    width: 100%;
+}
+
+/* LandingPage.css */
+
+.landing-reviews {
+    height: 13%;
+    width: 20%;
+    margin-top: 50px; /* Adjust the margin as needed */
+    padding: 20px;
+    background-color: #444e8341;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 4px 4px 25px rgb(0, 56, 119);
+    border: solid 0.5px rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    top: 30vh;
+    left: 58vw;
+    animation: revealText 1.5s forwards;
+  }
+  
+  @keyframes revealText {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .landing-reviews h2,
+  .landing-reviews p {
+    opacity: 0;
+  }
+  
+  .landing-reviews h2 {
+    animation: fadeInText 1s forwards;
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .landing-reviews p {
+    animation: slideInText 0.5s 0.5s forwards;
+  }
+  
+  @keyframes slideInText {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Additional styles for text */
+  .landing-reviews h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .landing-reviews p {
+    position: absolute;
+    top: -1vh;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+    color: white;
+    background-color: rgba(255, 0, 0, 0);
+
+  }
+  
 .logo {
 
     /* Adjust the width of the logo */
-    height: 30vh;
-    width: 30vh;
+    position: relative;
+    top: 13vh;
+    left: 16vw;
     /* Maintain aspect ratio */
 }
 
 .ts-logo {
-    height: 7vh;
-    width: 35vh;
     position: relative;
-    top: -9vh
+    top: 19vh;
+    left: 7vw;
 }
 
 .content {
@@ -72,33 +165,57 @@ body {
 
 
 .landing-button {
-    font-family: nowayback;
+    font-family: cabin;
     font-weight: 0;
-    font-size: 1.5vh;
+    font-size: 1.6vh;
     color: #fff;
-    background-color: #004864;
-    padding: 1.5vh 2.5vh;
-    border: solid #ffffff 2px;
+    background-color: #005170;
+    padding: 1.3vh 2.7vh;
     box-shadow: rgb(0, 0, 0) 0px 4px 26px 4px;
-    border-radius: 6vh;
-    transition: 300ms;
+    border-radius: 0vh;
+    transition: 100ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
     align-items: center;
     cursor: pointer;
-    margin-right: 29vh;
-    margin-left: 29.3vh;
-    margin-top: -1.5vh;
+    position: absolute;
+    top: 55.7vh;
+    left: 12.5vw;
 }
 
 .landing-button:hover {
-    transition: 300ms;
-    padding: 15px 25px;
+    transition: 100ms;
+    padding: 1.3vh 2.7vh;
     transform: translateY(-0px);
     background-color: #ffffff;
     color: #004864;
-    border: solid 3px #004864;
+}
+
+.price-landing-button {
+    font-family: cabin;
+    font-weight: 0;
+    font-size: 1.6vh;
+    color: #fff;
+    background-color: #00000000;
+    padding: 1.1vh 3vh;
+    box-shadow: rgb(0, 0, 0) 0px 4px 26px 4px;
+    border-radius: 0vh;
+    transition: 100ms;
+    transform: translateY(0);
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 55.8vh;
+    left: 20.7vw;
+    border: 2.5px solid rgb(255, 255, 255);
+}
+
+.price-landing-button:hover {
+    transition: 100ms;
+    padding: 1.1vh 3vh;
+    transform: translateY(-0px);
+    background-color: #ffffff;
+    color: #004864;
+    border: solid 2.5px #004864;
 }
 
 @font-face {
@@ -112,70 +229,112 @@ body {
 }
 
 h1 {
-    font-family: nowayback;
-    font-size: 1.4rem;
+    font-family: cabin;
+    font-size: 4.5rem;
     display: flex;
-    align-items: center;
-    color: #404040;
+    align-items: left;
+    color: #ff0000;
     font-weight: normal;
     position: absolute;
-    margin-left: 25px;
-    left: 201%;
+    margin-left: 20vw;
+}
+
+.motto {
+    font-family: cabin;
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 37vh;
+    left: 5vw;
+    display: inline-flex;
+    margin-left: 6.5vw;
+}
+
+.motto-two {
+    font-family: cabin;
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 43vh;
+    left: 5vw;
+    display: inline-flex;
+    margin-left: 6.5vw;
 }
 
 .slid {
-    color: rgb(128, 128, 128);
+    color: rgb(255, 0, 0);
     position: absolute;
-    top: 68vh;
-    left: 46.1vw;
-    margin-left: -1.2vw;
+    font-size: 3.5rem;
+    font-weight: normal;
+    margin-top: 15px;
+    top: 43.5vh;
+    left:-18vw;
+    display: inline-flex;
+    margin-left: 6.5vw;
 
 }
 
 .slider {
     position: relative;
-    top: -10vh;
+    top: -15vh;
     height: 1.25em;
-    width: 400px;
+    width: 1400px;
     overflow: hidden;
-    margin-left: -1vw;
+    margin-bottom: 6vh;
 }
 
 .slider__word {
-    font-family: nowayback;
-    font-size: 23px;
+    font-family: cabin;
+    font-size: 3.5rem;
     font-weight: normal;
     position: absolute;
-    margin-left: 235px;
-    margin-top: 0.5vh;
+    margin-left: 735px;
     margin-bottom: 1vh;
     width: 100%;
-    height: 100%;
-    line-height: 1em;
+    height: 110px;
+    line-height: -400px;
     transform: translateY(100%);
-    animation: slide 6.15s linear infinite;
-    color: #ffffff;
-  }
+    animation: slide 9.5s linear infinite;
+    color: #004a75;
+}
 
-  .slider__word:nth-child(1) {
-    animation-delay: 1.15s;
+.slider__word:nth-child(0) {
+    animation-delay: 0.1s;
+}
+
+.slider__word:nth-child(1) {
+    animation-delay: 1.5s;
 }
 
 .slider__word:nth-child(2) {
-    animation-delay: 2.40s;
+    animation-delay: 3s;
 }
 
 .slider__word:nth-child(3) {
-    animation-delay: 3.70s;
+    animation-delay: 4.5s;
 }
 
 .slider__word:nth-child(4) {
-    animation-delay: 4.95s;
-} /* Better */
+    animation-delay: 6s;
+}
 
 .slider__word:nth-child(5) {
-    animation-delay: 6.15s;
-} /* Faster */
+    animation-delay: 7.5s;
+}
+
+/* Better */
+
+.slider__word:nth-child(6) {
+    animation-delay: 9s;
+}
+
+/* Faster */
+
+.slider__word:nth-child(7) {
+    animation-delay: 9.5s;
+}
 
 
 
@@ -185,26 +344,37 @@ h1 {
 @keyframes slide {
     0% {
         transform: translateY(100%);
-        opacity: 0.1;
+        opacity: 0;
     }
 
-    15% {
-        transform: translateY(0);
-        opacity: 1;
-    }
 
     30% {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateY(95%);
+        opacity: 0;
     }
 
     45% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    60% {
         transform: translateY(-100%);
         opacity: 1;
     }
 
+    80% {
+        transform: translateY(-120%);
+        opacity: 0;
+    }
+
     100% {
-        transform: translateY(-100%);
-        opacity: 0.1;
+        transform: translateY(-150%);
+        opacity: 0;
     }
 }

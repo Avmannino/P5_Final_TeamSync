@@ -1,8 +1,8 @@
 .sports-tiles-parent {
     display: inline-flex;
     position: absolute;
-    top: 55vh;
-    left: 10vh;
+    top: 35vh;
+    left: -35vw;
     gap: 3.5vh;
     height: 40vh;
     width: 100%;
@@ -13,7 +13,7 @@
   .baseball-tile-container {
     display: flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     gap: 20px;
     border-radius: 25px;
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 250px;
     /* Adjust based on your preference */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -58,7 +58,7 @@
   .football-tile-container {
     display: flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     gap: 20px;
     border-radius: 25px;
@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 250px;
     /* Adjust based on your preference */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -103,7 +103,7 @@
   .soccer-tile-container {
     display: flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     gap: 20px;
     border-radius: 25px;
@@ -128,7 +128,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 250px;
     /* Adjust based on your preference */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -149,7 +149,7 @@
   .ice-hockey-tile-container {
     display: flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     gap: 20px;
     border-radius: 25px;
@@ -174,7 +174,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 250px;
     /* Adjust based on your preference */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -195,7 +195,7 @@
   .basketball-tile-container {
     display: flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     gap: 20px;
     border-radius: 25px;
@@ -221,7 +221,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 250px;
     /* Adjust based on your preference */
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -242,7 +242,7 @@
   .tennis-tile-container {
     display: flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
     gap: 20px;
     border-radius: 25px;
@@ -267,7 +267,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 250px;
     /* Adjust based on your preference */
     cursor: pointer;
     transition: transform 0.3s ease;

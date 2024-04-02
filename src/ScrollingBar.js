@@ -10,6 +10,9 @@ import XHG from './assets/xhg_logo.png';
 import Playpass from './assets/playpass_logo.png';
 import Gemini from './assets/gemini_logo.png';
 import SportsEngine from './assets/sportsengine_logo.png';
+import PHNX from './assets/phnx_logo.png';
+import ISM from './assets/ism_logo.png';
+import SciSports from './assets/scisports_logo.png';
 
 function ScrollingBar() {
   return (
@@ -26,6 +29,9 @@ function ScrollingBar() {
         <img src={Playpass} alt="Playpass Logo" />
         <img src={Gemini} alt="Gemini Logo" />
         <img src={SportsEngine} alt="Engine Logo" />
+        <img src={PHNX} alt="PHNX Logo" />
+        <img src={ISM} alt="ISM Logo" />
+        <img src={SciSports} alt="Scisports Logo" />
         {/* Add more images as needed */}
       </div>
     </div>
