@@ -9,31 +9,11 @@ function Pricing({ onButtonClick }) {
         onButtonClick();
     };
 
-    const handleScrollDown = () => {
-        const windowHeight = window.innerHeight;
-        window.scrollTo({
-            top: windowHeight * 1.00,
-            behavior: 'smooth',
-        });
-    };
-
-    const handleScrollUp = () => { // Define handleScrollUp function
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    };
 
     return (
         <>
             <div className='pricing-page'>
                 <div className='pricing-container'>
-                    <div className="floating-arrow-up" onClick={handleScrollUp}>
-                        <img src={arrowUpPNG} alt="Arrow up" className="arrow-up-img" />
-                    </div>
-                    <div className="floating-arrow-down" onClick={handleScrollDown}>
-                        <img src={arrowDownPNG} alt="Arrow down" className="arrow-down-img" />
-                    </div>
                     <h1 className='pricing-header'>
                         PRICING
                     </h1>

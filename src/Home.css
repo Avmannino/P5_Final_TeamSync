@@ -13,21 +13,27 @@ body {
 }
 
 .home-page {
-    background-color: rgba(0, 0, 0, 0.144);
-    height: 210vh; /* Adjusted to 100vh */
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 220vh; 
     width: 100%;
+    position: absolute;
+    top: 0vh;
+    left:0vw;
 }
 
 .home-container {
     width: 100%;
+    /* margin-top: 25%; */
     padding: 5%;
-    background-color: #0000009a;
+    background-color: rgba(0, 0, 0, 0.692);
     color: white;
+    position: relative;
+    top: 220vh;
+    left:0vw;
 }
 
 .content {
-    width: 80%;
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     margin: 5vh auto; /* Center vertically */
 }
@@ -40,110 +46,158 @@ body {
     z-index: 1000; /* Ensure it's above other content */
 }
 
-.ts-logo {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute;
-    margin-bottom: -5vh;
-    left:3vw;
-}
 
 
-
-.about {
-    width: 75%;
-    padding: 10px;
-    background-color: #8b000000;
-    color: white;
-    font-family: Oswald;
-    font-weight: normal;
-    border-radius: 10px; /* Adjusted for better appearance */
-    position: relative;
-    margin: 20vh auto; /* Center vertically */
-}
-
-.about h1 {
+.home-container h1 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: rgb(0, 115, 192);
-    top: 1vh;
-    left: -27vw;
+    top: -202.5vh;
+    left: -10vw;
 }
 
 .our-core {
-    width: 45%; /* Adjusted for better appearance */
+    width: 26%; /* Adjusted for better appearance */
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1.5vw; /* Adjusted for better appearance */
+    font-size: 1vw; /* Adjusted for better appearance */
     line-height: 1.7em; /* Adjusted for better appearance */
     padding: 5px;
     position: relative;
-    top: 1vh;
-    right: 28vw;
+    top: -210vh;
+    right: 31.7vw;
     margin: 15vh auto; /* Center vertically */
 }
 
-.horizontal-line {
-    border: none;
-    height: 3px;
-    background-color: #0084ff6b;
-    margin-top: -200px;
-}
 
-.horizontal-line-two {
-    border: none;
-    height: 5px;
-    background-color: #ffffff69;
+.home-container h2 {
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: rgb(0, 115, 192);
+    position: relative;
+    top: -160.5vh;
+    left: 56.8vw;
     margin-top: -20px; /* Adjusted for better appearance */
 }
 
-.about h2 {
+.home-container h3 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: rgb(0, 115, 192);
     position: relative;
-    top: 16vh;
-    left: 43vw;
+    top: -119.5vh;
+    left: 5.8vw;
+    margin-top: -20px; /* Adjusted for better appearance */
+}
+
+.home-container h4 {
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: rgb(0, 115, 192);
+    position: relative;
+    top: -89vh;
+    left: 57.5vw;
     margin-top: -20px; /* Adjusted for better appearance */
 }
 
 .proven-metrics {
-    width: 45%;
+    width: 26%;
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1.5vw; /* Adjusted for better appearance */
+    font-size: 1vw; /* Adjusted for better appearance */
     line-height: 1.7em; /* Adjusted for better appearance */
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
     color: white;
     position: relative;
-    top: 13vh;
-    left: 43vw;
-    margin-top: -20px; /* Adjusted for better appearance */
+    top: -176vh;
+    left: 20vw;
+    margin: 15vh auto; /* Center vertically */
 }
 
-.basketball-static,
-.core-static {
+.scheduling {
+    width: 24%;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 1vw; /* Adjusted for better appearance */
+    line-height: 1.7em; /* Adjusted for better appearance */
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    color: white;
+    position: relative;
+    top: -135vh;
+    right: 32vw;
+    margin: 15vh auto; /* Center vertically */
+}
+
+.hockey {
+    width: 24%;
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 1vw; /* Adjusted for better appearance */
+    line-height: 1.7em; /* Adjusted for better appearance */
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    color: white;
+    position: relative;
+    top: -104vh;
+    left: 20vw;
+    margin: 15vh auto; /* Center vertically */
+}
+
+.baseball-static {
     width: 55%; /* Adjusted for better appearance */
-    max-width: 500px; /* Adjusted for better appearance */
+    max-width: 850px; /* Adjusted for better appearance */
     height: auto;
     border-radius: 25px;
-    border: 10px solid rgb(0, 89, 148);
+    border: 7px solid rgb(0, 89, 148);
     position: absolute;
     z-index: 999;
-}
-
-.basketball-static {
-    top: 60vh;
-    left: 18%;
+    top: -115vh;
+    left: 24%;
     transform: translateX(-50%);
 }
 
-.core-static {
-    top: 5vh;
-    left: 70%;
+.laptop-static {
+    width: 55%; /* Adjusted for better appearance */
+    max-width: 850px; /* Adjusted for better appearance */
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 999;
+    top:-195vh;
+    left: 72vw;
+    transform: translateX(-50%);
+}
+
+
+.schedules-static {
+    width: 55%; /* Adjusted for better appearance */
+    max-width: 700px; /* Adjusted for better appearance */
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 999;
+    border: 7px solid rgb(0, 89, 148);
+    top: -35vh;
+    left: 72vw;
+    transform: translateX(-50%);
+}
+
+.hockey-static {
+    width: 55%; /* Adjusted for better appearance */
+    max-width: 850px; /* Adjusted for better appearance */
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 999;
+    border: 7px solid rgb(0, 89, 148);
+    top: 55vh;
+    left: 25vw;
     transform: translateX(-50%);
 }
 
@@ -166,7 +220,7 @@ body {
 
 .scroll-container {
     position: relative;
-    top: 43vh;
+    top: 105vh;
     width: 100%;
 }
 

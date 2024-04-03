@@ -22,23 +22,17 @@ body {
 .pricing-container {
     height: 100%;
     width: 100%;
-
     background-color: #00000077;
     color: white;
 }
 
-.asterisk {
-    font-family: Oswald;
-    font-size: 25px;
-    color: rgb(0, 83, 151);
-}
 
 .pricing-header {
     height: 0.5vh;
     width: 20%;
     position: relative;
-    top: 32vh;
-    left: 19.4vw;
+    top: 2vh;
+    left: 2.4vw;
     background-color: rgba(255, 0, 0, 0);
     font-family: Oswald;
     font-size: 50px;
@@ -47,8 +41,8 @@ body {
 
 .pricing-deals-one {
     position: relative;
-    top: 41.5vh;
-    left: 12vw;
+    top: 81.5vh;
+    left: 1vw;
     background-color: rgba(255, 255, 0, 0);
     height: 25.2%;
     width: 22.35%;
@@ -108,8 +102,8 @@ li {
 
 .pricing-deals-two {
     position: relative;
-    top: -21.5vh;
-    left: 38vw;
+    top: 18vh;
+    left: 25vw;
     background-color: rgba(43, 255, 0, 0);
     height: 25.2%;
     width: 22.4%;
@@ -122,8 +116,8 @@ li {
 
 .pricing-deals-three {
     position: relative;
-    bottom: 85vh;
-    left: 64vw;
+    bottom: 45vh;
+    left: 47.5vw;
     background-color: rgba(255, 255, 0, 0);
     height: 25%;
     width: 22.3%;
@@ -331,7 +325,7 @@ li {
     position: relative;
     width: 60%;
     height: 31%;
-    bottom: 75vh;
+    bottom: 35vh;
     left: 20vw;
     background-color: rgba(255, 0, 0, 0);
     border: 3px solid rgb(0, 107, 150);

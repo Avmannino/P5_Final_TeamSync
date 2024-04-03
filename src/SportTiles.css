@@ -11,8 +11,8 @@
 .sports-tiles-parent {
   display: inline-flex;
   position: absolute;
-  top: 11vh;
-  left: 7vw;
+  top: 61vh;
+  right: 40vw;
   gap: 3.5vh;
   height: 40vh;
   width: 100%;

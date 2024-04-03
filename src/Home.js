@@ -2,28 +2,35 @@ import React from 'react';
 import './Home.css';
 import ScrollingBar from './ScrollingBar';
 import Navbar from './Navbar';
-import basketballStatic from './assets/basketball_static.png';
-import coreStatic from './assets/core_static.png';
-import logo from './assets/ts_logo.png';
+import baseballStatic from './assets/baseball_static.png';
+import Laptop from './assets/laptop_static.png';
+import scheduleStatic from './assets/schedules_static.png';
+import hockeyStatic from './assets/hockey_static.png';
 
 const Home = () => {
     return (
         <div className='home-page'>
-            <img src={logo} alt="logo" className="ts-logo" />
             <div className='home-container'>
-                <div className='about'>
-                    <h1>OUR CORE</h1>
-                    <img src={coreStatic} alt="core" className="core-static" />
-                    <p className='our-core'>
-                        We make life easier for coaches, parents and club/league administrators by bringing everything into an all-in-one team management solution. Get your team up and running faster with our stress-reducing and time-saving features.
-                    </p>
-                    <img src={basketballStatic} alt="basketball" className="basketball-static" />
-                    <h2>PROVEN METRICS</h2>
-                    <p className='proven-metrics'>
-                        TeamSync enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software. Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
-                    </p>
-                </div>
-                <hr className="horizontal-line-two" />
+                <h1>OUR CORE</h1>
+                <img src={Laptop} alt="laptop" className="laptop-static" />
+                <p className='our-core'>
+                    TeamSync is your all-in-one solution to automate and grow any facility, club, league, academy, camp or recreation organization. No matter what type of program you offer or dream of, TeamSync will give you an edge over the competition. Get your team up and running faster with our stress-free UI and extensive features.
+                </p>
+                <img src={baseballStatic} alt="basketball" className="baseball-static" />
+                <h2>PROVEN METRICS</h2>
+                <p className='proven-metrics'>
+                    TeamSync enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software. Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
+                </p>
+                <h3>TAKE SCHEDULING TO NEW HEIGHTS</h3>
+                <img src={scheduleStatic} alt="schedule" className="schedules-static" />
+                <p className='scheduling'>
+                    Say goodbye to last-minute schedule conflicts or equipment shortages. Optimize the use of your physical resources and facility space with expert scheduling software. Easily consolidate and color-code all of your classes, clinics, and rentals in one centralized place.
+                </p>
+                <h4>ICY INSIGHTS</h4>
+                <img src={hockeyStatic} alt="hockey-img" className="hockey-static" />
+                <p className='hockey'>
+                While other apps may focus on The Big 3 (MLB, NFL, NBA) we pride ourselves on being one of the select few that offers comprehensive analytics for all teams and skaters in the National Hockey League (NHL). Track every second of every shift, everyday.
+                </p>
                 <div className='scroll-container'>
                     <ScrollingBar />
                 </div>
