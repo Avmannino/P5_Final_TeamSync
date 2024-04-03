@@ -14,19 +14,19 @@ body {
   overflow: hidden;
   white-space: nowrap;
   display: flex;
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
   min-height: 90px;
   position: relative;
 
   top: -200vh;
-  background-color: rgba(226, 226, 226, 0);
+  background-color: rgba(0, 108, 170, 0);
   border-radius: 10px;
   z-index: 1000;
 }
 
 .image-container {
   display: flex;
-  padding-left: 20px;
+  padding-left: 40px;
   align-items: center;
   /* Adjust the width dynamically based on the size of images */
   /* width: auto; */
@@ -43,10 +43,10 @@ body {
 }
 
 .scroller-container img {
-  margin-right: 55px;
-  width: auto;
+  margin-right: 105px;
+  width: 225px;
 
-  max-height: 120px;
+  max-height: 125px;
   /* Limit the maximum height to prevent excessively large images */
 }
 

@@ -1,0 +1,136 @@
+.main-feed {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 63.25vw; /* Adjust width for responsiveness */
+    top: 20.9vh;
+    left: -8vw; /* Adjust left position for responsiveness */
+}
+
+.top-navbar {
+    margin-top: 35px;
+    width: 110%; /* Adjust width for responsiveness */
+    height: 13vh; /* Adjust height for responsiveness */
+    padding: 1vh; /* Adjust padding for responsiveness */
+    background-color: #f0f0f0; /* Light grey, adjust as needed */
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    position: absolute;
+    left: -20vh; /* Adjust left position for responsiveness */
+    border-bottom: 5px solid rgb(0, 99, 149);
+    z-index: 9999;
+}
+
+.nav-link {
+    position: relative;
+    top: -1vh;
+    right: 65vw;
+
+}
+
+.nav-link img {
+    margin-right: 10px; /* Adjust the margin-right to increase or decrease spacing */
+}
+
+
+.search-bar {
+    width: 16vw; /* Adjust width for responsiveness */
+    height: 1.5vh; /* Adjust height for responsiveness */
+    padding: 1.5vh; /* Adjust padding for responsiveness */
+    border: 3px solid rgb(115, 115, 115);
+    border-radius: 35px; /* Adjust border radius for responsiveness */
+    position: relative;
+    top: 6.9vh;
+    left: -15vw; /* Adjust right position for responsiveness */
+}
+
+.side-navbar {
+    width: 25vw; /* Adjust width for responsiveness */
+    height: 107vh;
+    padding: 1vh; /* Adjust padding for responsiveness */
+    background-color: #ffffff; /* Light grey, adjust as needed */
+}
+
+.side-navbar.left {
+    float: left;
+    position: relative;
+    top: 7vh;
+    left: -8vw; /* Adjust left position for responsiveness */
+}
+
+.side-navbar.left::after {
+    content: '';
+    position: absolute;
+    top: 12.4%; /* Adjust the top position to where you want the border to start */
+    bottom: 0%; /* Adjust the bottom position to where you want the border to end */
+    right: 0;
+    border-right: 8px solid rgb(0, 99, 149);
+}
+
+.side-navbar.right {
+    float: right;
+    position: relative;
+    top: 7vh;
+    left: -8vw; /* Adjust left position for responsiveness */
+}
+
+.side-navbar.right::after {
+    content: '';
+    position: absolute;
+    top: 12.4%; /* Adjust the top position to where you want the border to start */
+    bottom: 0%; /* Adjust the bottom position to where you want the border to end */
+    left: 0;
+    border-left: 8px solid rgb(0, 99, 149);
+}
+
+
+
+
+.home-logo {
+    width: 2.4vw; /* Adjust width for responsiveness */
+    position: absolute;
+    top: 8.5vh;
+    left: 79.2vw; /* Adjust left position for responsiveness */
+}
+
+.reels-logo {
+    width: 1.9vw; /* Adjust width for responsiveness */
+    position: absolute;
+    top: 8.9vh;
+    left: 86.4vw; /* Adjust left position for responsiveness */
+}
+
+.team-logo {
+    width: 2.75vw; /* Adjust width for responsiveness */
+    position: absolute;
+    top: 8vh;
+    left: 93vw; /* Adjust left position for responsiveness */
+}
+
+.bracket-logo {
+    width: 2vw; /* Adjust width for responsiveness */
+    position: absolute;
+    top: 8.7vh;
+    left: 101vw; /* Adjust left position for responsiveness */
+}
+
+.social-sync {
+    width: 3vw; /* Adjust width for responsiveness */
+    position: absolute;
+    top: 7.4vh;
+    left: 17.5vw; /* Adjust left position for responsiveness */
+}
+
+.sync-text {
+    font-family: cabin;
+    font-weight: bolder;
+    color: rgb(0, 117, 171);
+    font-size: 1.7vw; /* Adjust font size for responsiveness */
+    position: absolute;
+    top: 4.5vh;
+    left: 20.5vw; /* Adjust left position for responsiveness */
+}
+
+.content {
+    display: flex;
+}

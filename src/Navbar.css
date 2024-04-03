@@ -19,7 +19,7 @@
 .nav-logo {
   position: relative;
   top: -1vh; /* Adjust using vh */
-  left: 111vw; /* Adjust using vw */
+  left: 112.5vw; /* Adjust using vw */
   width: 100%; /* Adjust the size of your logo */
 }
 
