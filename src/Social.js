@@ -1,18 +1,20 @@
 import React from 'react';
 import TopNavbar from './TopNavbar'; // Adjust the path as necessary
-import SideNavbar from './SideNavbar'; // Adjust the path as necessary
+import { LeftSideNavbar, RightSideNavbar } from './SideNavbar';
+import './Social.css';
+
 
 function Social() {
   return (
     <div className="social-page">
       <TopNavbar />
-      <div className="content">
-        <SideNavbar position="left" />
-        <div className='main-feed'>
-          
-        </div>
-        {/* Your main content goes here */}
-        <SideNavbar position="right" />
+      <div className='left-nav'>
+        <LeftSideNavbar />
+      </div>
+      <div className='right-nav'>
+        <RightSideNavbar />
+      </div>
+      <div className='main-feed'>
       </div>
     </div>
   );

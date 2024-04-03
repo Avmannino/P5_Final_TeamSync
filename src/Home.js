@@ -14,12 +14,12 @@ const Home = () => {
                 <h1>OUR CORE</h1>
                 <img src={Laptop} alt="laptop" className="laptop-static" />
                 <p className='our-core'>
-                    TeamSync is your all-in-one solution to automate and grow any facility, club, league, academy, camp or recreation organization. No matter what type of program you offer or dream of, TeamSync will give you an edge over the competition. Get your team up and running faster with our stress-free UI and extensive features.
+                    TeamSync™️ is your all-in-one solution to automate and grow any facility, club, league, academy, camp or recreation organization. No matter what type of program you offer or dream of, TeamSync™️ will give you an edge over the competition. Get your team up and running faster with our stress-free UI and extensive features.
                 </p>
                 <img src={baseballStatic} alt="basketball" className="baseball-static" />
                 <h2>PROVEN METRICS</h2>
                 <p className='proven-metrics'>
-                    TeamSync enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software. Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
+                    TeamSync™️ enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software. Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
                 </p>
                 <h3>TAKE SCHEDULING TO NEW HEIGHTS</h3>
                 <img src={scheduleStatic} alt="schedule" className="schedules-static" />

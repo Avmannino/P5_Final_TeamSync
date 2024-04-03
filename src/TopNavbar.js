@@ -9,8 +9,8 @@ import bracketLogo from './assets/bracket_logo.png';
 function TopNavbar() {
   return (
     <div className="top-navbar">
-      <input type="text" placeholder="Search..." className="search-bar" />
-      <p className='sync-text'>socialSync</p>
+      <input type="text" placeholder="🔎  Search..." className="search-bar" />
+      <p className='sync-text'>social</p>
         <img src={socialSync} alt="socialSync" className="social-sync" />
       <div className='nav-link'>
         <img src={homeLogo} alt="Logo" className="home-logo" />

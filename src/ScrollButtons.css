@@ -8,7 +8,7 @@
     /* Adjust as needed */
     height: 75px;
     /* Adjust as needed */
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255);
     /* Semi-transparent background */
     border-radius: 50%;
     /* Make it round */
@@ -23,28 +23,28 @@
 
 .floating-arrow-up:hover,
 .floating-arrow-down:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     /* Darken on hover */
 }
 
 .arrow-up-img,
 .arrow-down-img {
-    width: 65px;
+    width: 58px;
     /* Adjust as needed */
-    height: 45px;
+    height: 49px;
     /* Adjust as needed */
 }
 
 /* Adjust position of the up arrow */
 .floating-arrow-up {
-    top: 14vh;
+    top: 20vh;
     right: 20px;
     /* Adjust as needed */
 }
 
 /* Adjust position of the down arrow */
 .floating-arrow-down {
-    top:75vh;
+    top:80vh;
     right: 20px;
     /* Adjust as needed */
 }

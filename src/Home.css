@@ -40,8 +40,8 @@ body {
 
 .navbar {
     position: fixed;
-    top: 3vh;
-    left: -13vw;
+    top: 8vh;
+    left: 53vw;
     width: 100%;
     z-index: 1000; /* Ensure it's above other content */
 }
