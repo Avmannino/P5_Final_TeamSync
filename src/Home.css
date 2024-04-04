@@ -2,13 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
-    /* Add background image */
     background-image: url('./assets/home_bg.jpg');
-    /* Set background image size to cover the entire viewport */
     background-size: cover;
-    /* Center the background image */
     background-position: center;
-    /* Ensure the background image stays fixed as the viewport scrolls */
     background-attachment: fixed;
 }
 
@@ -18,24 +14,23 @@ body {
     width: 100%;
     position: absolute;
     top: 0vh;
-    left:0vw;
+    left: 0vw;
 }
 
 .home-container {
     width: 100%;
-    /* margin-top: 25%; */
     padding: 5%;
     background-color: rgba(0, 0, 0, 0.692);
     color: white;
     position: relative;
     top: 220vh;
-    left:0vw;
+    left: 0vw;
 }
 
 .content {
     width: 100%;
     text-align: center;
-    margin: 5vh auto; /* Center vertically */
+    margin: 5vh auto;
 }
 
 .navbar {
@@ -43,175 +38,125 @@ body {
     top: 8vh;
     left: 53vw;
     width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
 }
 
-
-
-.home-container h1 {
+.home-container h1, .home-container h2, .home-container h3, .home-container h4 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 2.1vw;
     color: rgb(0, 115, 192);
+    position: relative;
+    margin-top: -20px;
+}
+
+.home-container h1 {
+    font-size: 2.1vw;
     top: -205.5vh;
     left: -10vw;
 }
 
-
-
-.our-core {
-    width: 26%; /* Adjusted for better appearance */
+.our-core, .proven-metrics, .scheduling, .hockey {
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1.3vw; /* Adjusted for better appearance */
-    line-height: 1.4em; /* Adjusted for better appearance */
+    line-height: 1.4em;
     padding: 5px;
-    position: relative;
-    top: -200vh;
-    right: 32vw;
-    margin: 5vh auto; /* Center vertically */
+    background-color: rgba(0, 0, 255, 0);
+    color: white;
+    margin: 5vh auto;
 }
 
-
+.our-core {
+    width: 26%;
+    font-size: 1.3vw;
+    top: -200vh;
+    right: 32vw;
+}
 
 .home-container h2 {
-    font-family: Oswald;
-    font-weight: bold;
     font-size: 2.1vw;
-    color: rgb(0, 115, 192);
-    position: relative;
-    top: -172vh;
+    top: -159vh;
     left: 56.1vw;
-    margin-top: -20px; /* Adjusted for better appearance */
 }
 
 .home-container h3 {
-    font-family: Oswald;
-    font-weight: bold;
     font-size: 1.8vw;
-    color: rgb(0, 115, 192);
-    position: relative;
-    top: -135vh;
+    top: -120vh;
     left: 5.8vw;
-    margin-top: -20px; /* Adjusted for better appearance */
 }
 
 .home-container h4 {
-    font-family: Oswald;
-    font-weight: bold;
     font-size: 2.1vw;
-    color: rgb(0, 115, 192);
-    position: relative;
-    top: -115vh;
+    top: -105vh;
     left: 57.5vw;
-    margin-top: -20px; /* Adjusted for better appearance */
 }
 
-.proven-metrics {
+.proven-metrics, .scheduling {
     width: 27%;
-    font-family: Oswald;
-    font-weight: normal;
-    font-size: 1.3vw; /* Adjusted for better appearance */
-    line-height: 1.4em; /* Adjusted for better appearance */
-    padding: 5px;
-    background-color: rgba(0, 0, 255, 0);
-    color: white;
-    position: relative;
-    top: -177vh;
+    font-size: 1.3vw;
+    top: -165vh;
     left: 20vw;
-    margin: 5vh auto; /* Center vertically */
 }
 
 .scheduling {
-    width: 27%;
-    font-family: Oswald;
-    font-weight: normal;
-    font-size: 1.3vw; /* Adjusted for better appearance */
-    line-height: 1.4em; /* Adjusted for better appearance */
-    padding: 5px;
-    background-color: rgba(0, 0, 255, 0);
-    color: white;
-    position: relative;
-    top: -150vh;
+    top: -135vh;
     right: 30.5vw;
-    margin: 15vh auto; /* Center vertically */
 }
 
 .hockey {
     width: 24%;
-    font-family: Oswald;
-    font-weight: normal;
-    font-size: 1.3vw; /* Adjusted for better appearance */
-    line-height: 1.4em; /* Adjusted for better appearance */
-    padding: 5px;
-    background-color: rgba(0, 0, 255, 0);
-    color: white;
-    position: relative;
-    top: -130vh;
+    font-size: 1.3vw;
+    top: -120vh;
     left: 20vw;
-    margin: 15vh auto; /* Center vertically */
 }
 
-.baseball-static {
-    width: 55%; /* Adjusted for better appearance */
-    max-width: 850px; /* Adjusted for better appearance */
+.baseball-static, .laptop-static, .schedules-static, .hockey-static {
+    width: 55%;
     height: auto;
     border-radius: 25px;
-    border: 7px solid rgb(0, 89, 148);
     position: absolute;
     z-index: 999;
-    top: -125vh;
-    left: 25%;
     transform: translateX(-50%);
+}
+
+.baseball-static, .schedules-static, .hockey-static {
+    max-width: 850px;
+    border: 7px solid rgb(0, 89, 148);
 }
 
 .laptop-static {
-    width: 55%; /* Adjusted for better appearance */
-    max-width: 850px; /* Adjusted for better appearance */
-    height: auto;
-    border-radius: 25px;
-    position: absolute;
-    z-index: 999;
-    top:-195vh;
-    left: 72vw;
-    transform: translateX(-50%);
+    max-width: 850px;
 }
 
+.baseball-static {
+    top: -125vh;
+    left: 25%;
+}
+
+.laptop-static {
+    top: -195vh;
+    left: 72vw;
+}
 
 .schedules-static {
-    width: 55%; /* Adjusted for better appearance */
-    max-width: 650px; /* Adjusted for better appearance */
-    height: auto;
-    border-radius: 25px;
-    position: absolute;
-    z-index: 999;
-    border: 7px solid rgb(0, 89, 148);
     top: -55vh;
     left: 72vw;
-    transform: translateX(-50%);
 }
 
 .hockey-static {
-    width: 55%; /* Adjusted for better appearance */
-    max-width: 850px; /* Adjusted for better appearance */
-    height: auto;
-    border-radius: 25px;
-    position: absolute;
-    z-index: 999;
-    border: 7px solid rgb(0, 89, 148);
     top: 20vh;
     left: 25vw;
-    transform: translateX(-50%);
+}
+
+.logo, .ts-logo {
+    position: absolute;
 }
 
 .logo {
-    position: absolute;
     top: 13vh;
     left: 16vw;
 }
 
 .ts-logo {
-    position: absolute;
     top: 19vh;
     left: 7vw;
 }
@@ -227,41 +172,47 @@ body {
     width: 100%;
 }
 
-
-@font-face {
-    font-family: TB;
-    src: url(./fonts/TB.ttf);
-}
-
-@font-face {
-    font-family: Nas;
-    src: url(./fonts/Nas.ttf);
-}
-
-@font-face {
-    font-family: Oswald;
-    src: url(./fonts/Oswald.ttf);
-}
-
 /* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .home-container h1, .home-container h2, .home-container h3, .home-container h4,
+    .our-core, .proven-metrics, .scheduling, .hockey,
+    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+        font-size: 2.5vw;
+    }
+
+    .our-core, .proven-metrics, .scheduling, .hockey {
+        width: 50%;
+    }
+
+    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+        width: 75%;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .about,
-    .our-core,
-    .about h2,
-    .proven-metrics {
+    .home-container h1, .home-container h2, .home-container h3, .home-container h4,
+    .our-core, .proven-metrics, .scheduling, .hockey,
+    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+        font-size: 4vw;
+    }
+
+    .our-core, .proven-metrics, .scheduling, .hockey {
         width: 90%;
-        font-size: 3vw;
-        line-height: 3em;
+    }
+
+    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .about,
-    .our-core,
-    .about h2,
-    .proven-metrics {
-        width: 100%;
-        font-size: 4vw;
+    .home-container h1, .home-container h2, .home-container h3, .home-container h4,
+    .our-core, .proven-metrics, .scheduling, .hockey,
+    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+        font-size: 5vw;
+    }
+
+    .our-core, .proven-metrics, .scheduling, .hockey {
         line-height: 3.5em;
     }
 }
