@@ -5,6 +5,9 @@ import blackLogo from './assets/black_logo.png';
 import tsLogo from './assets/ts_logo.png';
 import googleScore from './assets/google_review.png';
 import yelpScore from './assets/yelp_review.png';
+import userLogo from './assets/user_logo.png';
+import Bubble from './assets/speech_bubble.png';
+import Stars from './assets/stars.png';
 
 function LandingPage({ onButtonClick }) {
   const handleButtonClick = () => {
@@ -27,6 +30,7 @@ function LandingPage({ onButtonClick }) {
               <span className='slider__word'>Organization,</span>
             </span>
           </h1>
+          <img src={Bubble} about="Bubble" className="comment-bubble" />
           <h2 className='motto'>
             Team
           </h2>
@@ -40,11 +44,11 @@ function LandingPage({ onButtonClick }) {
         {/* New Section for Reviews */}
         <section className="landing-reviews">
           <h2>
-          Julio Hill,
-            04/18/2024
+            Mohammed "Sunny" Omar
           </h2>
+          <img src={userLogo} about="User" className="user-logo" />
           <h3>
-          ⭐️⭐️⭐️⭐️⭐️     5/5
+            <img src={Stars} alt="Stars" className="stars-image" />
           </h3>
           <p>
             "Great sports app that keeps you and your team connected. Simple enough for the laziest of team members to keep up with. Always adding new features. Excited to see what the future holds with this app!"

@@ -1,19 +1,20 @@
 .main-feed {
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     height: 100vh;
-    width: 61.35vw; /* Adjust width for responsiveness */
+    width: 64.2vw; /* Adjust width for responsiveness */
     top: 10vh;
-    left: 0vw; /* Adjust left position for responsiveness */
+    left: -3.2vh;
+
     z-index: 9995;
 }
 
 .left-nav{
     height:100%;
-    width: 20%;
+    width: 15%;
     position: absolute;
     top:11vh;
-    left: -1.5vw;
+    left:0.5vw;
     border-right: 8px solid rgb(0, 99, 149);
     background-color: rgb(255, 255, 255);
 }
@@ -39,10 +40,10 @@
 
 .right-nav{
     height:100%;
-    width: 20%;
+    width: 20.3%;
     position: absolute;
     top: 11vh;
-    right: -1.5vw;
+    right: -1.4vw;
     border-left: 8px solid rgb(0, 99, 149);
     background-color: rgb(255, 255, 255);
 }
@@ -75,12 +76,12 @@
 
 .search-bar {
     width: 21vw; /* Adjust width for responsiveness */
-    height: 0.5vh; /* Adjust height for responsiveness */
+    height: 1.9vh; /* Adjust height for responsiveness */
     padding: 1.5vh; /* Adjust padding for responsiveness */
     border: 4px solid rgb(0, 99, 149);
     border-radius: 45px; /* Adjust border radius for responsiveness */
     position: relative;
-    top: 4vh;
+    top: 3vh;
     left: 3vw; /* Adjust right position for responsiveness */
 }
 
@@ -96,7 +97,7 @@
     float: left;
     position: relative;
     top: 16.1vh;
-    left:-5vw; /* Adjust left position for responsiveness */
+    left:-4.5vw; /* Adjust left position for responsiveness */
 
 }
 

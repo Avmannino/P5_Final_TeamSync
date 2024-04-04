@@ -51,44 +51,47 @@ body {
 .home-container h1 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.1vw;
     color: rgb(0, 115, 192);
-    top: -202.5vh;
+    top: -205.5vh;
     left: -10vw;
 }
+
+
 
 .our-core {
     width: 26%; /* Adjusted for better appearance */
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1vw; /* Adjusted for better appearance */
-    line-height: 1.7em; /* Adjusted for better appearance */
+    font-size: 1.3vw; /* Adjusted for better appearance */
+    line-height: 1.4em; /* Adjusted for better appearance */
     padding: 5px;
     position: relative;
-    top: -210vh;
-    right: 31.7vw;
-    margin: 15vh auto; /* Center vertically */
+    top: -200vh;
+    right: 32vw;
+    margin: 5vh auto; /* Center vertically */
 }
+
 
 
 .home-container h2 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.1vw;
     color: rgb(0, 115, 192);
     position: relative;
-    top: -160.5vh;
-    left: 56.8vw;
+    top: -172vh;
+    left: 56.1vw;
     margin-top: -20px; /* Adjusted for better appearance */
 }
 
 .home-container h3 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     color: rgb(0, 115, 192);
     position: relative;
-    top: -119.5vh;
+    top: -135vh;
     left: 5.8vw;
     margin-top: -20px; /* Adjusted for better appearance */
 }
@@ -96,41 +99,41 @@ body {
 .home-container h4 {
     font-family: Oswald;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.1vw;
     color: rgb(0, 115, 192);
     position: relative;
-    top: -89vh;
+    top: -115vh;
     left: 57.5vw;
     margin-top: -20px; /* Adjusted for better appearance */
 }
 
 .proven-metrics {
-    width: 26%;
+    width: 27%;
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1vw; /* Adjusted for better appearance */
-    line-height: 1.7em; /* Adjusted for better appearance */
+    font-size: 1.3vw; /* Adjusted for better appearance */
+    line-height: 1.4em; /* Adjusted for better appearance */
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
     color: white;
     position: relative;
-    top: -176vh;
+    top: -177vh;
     left: 20vw;
-    margin: 15vh auto; /* Center vertically */
+    margin: 5vh auto; /* Center vertically */
 }
 
 .scheduling {
-    width: 24%;
+    width: 27%;
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1vw; /* Adjusted for better appearance */
-    line-height: 1.7em; /* Adjusted for better appearance */
+    font-size: 1.3vw; /* Adjusted for better appearance */
+    line-height: 1.4em; /* Adjusted for better appearance */
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
     color: white;
     position: relative;
-    top: -135vh;
-    right: 32vw;
+    top: -150vh;
+    right: 30.5vw;
     margin: 15vh auto; /* Center vertically */
 }
 
@@ -138,13 +141,13 @@ body {
     width: 24%;
     font-family: Oswald;
     font-weight: normal;
-    font-size: 1vw; /* Adjusted for better appearance */
-    line-height: 1.7em; /* Adjusted for better appearance */
+    font-size: 1.3vw; /* Adjusted for better appearance */
+    line-height: 1.4em; /* Adjusted for better appearance */
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
     color: white;
     position: relative;
-    top: -104vh;
+    top: -130vh;
     left: 20vw;
     margin: 15vh auto; /* Center vertically */
 }
@@ -157,8 +160,8 @@ body {
     border: 7px solid rgb(0, 89, 148);
     position: absolute;
     z-index: 999;
-    top: -115vh;
-    left: 24%;
+    top: -125vh;
+    left: 25%;
     transform: translateX(-50%);
 }
 
@@ -177,13 +180,13 @@ body {
 
 .schedules-static {
     width: 55%; /* Adjusted for better appearance */
-    max-width: 700px; /* Adjusted for better appearance */
+    max-width: 650px; /* Adjusted for better appearance */
     height: auto;
     border-radius: 25px;
     position: absolute;
     z-index: 999;
     border: 7px solid rgb(0, 89, 148);
-    top: -35vh;
+    top: -55vh;
     left: 72vw;
     transform: translateX(-50%);
 }
@@ -196,7 +199,7 @@ body {
     position: absolute;
     z-index: 999;
     border: 7px solid rgb(0, 89, 148);
-    top: 55vh;
+    top: 20vh;
     left: 25vw;
     transform: translateX(-50%);
 }
@@ -223,6 +226,7 @@ body {
     top: 105vh;
     width: 100%;
 }
+
 
 @font-face {
     font-family: TB;

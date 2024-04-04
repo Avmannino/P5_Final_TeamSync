@@ -19,9 +19,10 @@ const Home = () => {
                 <img src={baseballStatic} alt="basketball" className="baseball-static" />
                 <h2>PROVEN METRICS</h2>
                 <p className='proven-metrics'>
-                    TeamSync™️ enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software. Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
+                    TeamSync™️ enables your performance staff to analyse and report the wealth of data coming from your team's match-ups, efficiently with an industry-leading analysis software.
+                    <p></p>Get full access to Player Metrics, Stats or specific Analytics from a given season or time-period.
                 </p>
-                <h3>TAKE SCHEDULING TO NEW HEIGHTS</h3>
+                <h3>TAKE YOUR SCHEDULES TO NEW HEIGHTS</h3>
                 <img src={scheduleStatic} alt="schedule" className="schedules-static" />
                 <p className='scheduling'>
                     Say goodbye to last-minute schedule conflicts or equipment shortages. Optimize the use of your physical resources and facility space with expert scheduling software. Easily consolidate and color-code all of your classes, clinics, and rentals in one centralized place.
@@ -29,7 +30,7 @@ const Home = () => {
                 <h4>ICY INSIGHTS</h4>
                 <img src={hockeyStatic} alt="hockey-img" className="hockey-static" />
                 <p className='hockey'>
-                While other apps may focus on The Big 3 (MLB, NFL, NBA) we pride ourselves on being one of the select few that offers comprehensive analytics for all teams and skaters in the National Hockey League (NHL). Track every second of every shift, everyday.
+                    While other apps may focus on The Big 3 (MLB, NFL, NBA) we pride ourselves on being one of the select few that offers comprehensive analytics for all teams and skaters in the National Hockey League (NHL). Track every second of every shift, everyday.
                 </p>
                 <div className='scroll-container'>
                     <ScrollingBar />
