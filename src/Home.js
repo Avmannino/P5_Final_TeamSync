@@ -6,10 +6,15 @@ import baseballStatic from './assets/baseball_static.png';
 import Laptop from './assets/laptop_static.png';
 import scheduleStatic from './assets/schedules_static.png';
 import hockeyStatic from './assets/hockey_static.png';
+import logo from './assets/black_logo.png';
+import tsLogo from './assets/ts_logo.png';
+
 
 const Home = () => {
     return (
         <div className='home-page'>
+            <img src={logo} alt="small" className="logo" />
+            <img src={tsLogo} alt="tsLogo" className="ts-logo" />
             <div className='home-container'>
                 <h1>OUR CORE</h1>
                 <img src={Laptop} alt="laptop" className="laptop-static" />

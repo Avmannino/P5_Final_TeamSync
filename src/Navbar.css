@@ -34,14 +34,14 @@
   font-family: cabin; /* Keeping original font family */
   font-weight: normal;
   font-size: 2vh; /* Keeping original font size */
-  color: #ffffff; /* Keeping original font color */
+  color: #005170;
   text-decoration: none;
   padding: 0.3vh 1.8vw;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:focus, .nav-link:hover {
-  background-color: #0084ff;
+  background-color:  #005170;
   border-radius: 15px;
   color: rgb(255, 255, 255);
 }

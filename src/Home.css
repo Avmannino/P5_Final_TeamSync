@@ -1,29 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     background-image: url('./assets/home_bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.home-page {
-    background-color: rgba(0, 0, 0, 0.692);
-    height: 220vh; 
-    width: 100%;
-    position: absolute;
-    top: 0vh;
-    left: 0vw;
-}
 
 .home-container {
-    width: 100%;
+    width: 90%;
+    height: 210%;
     padding: 5%;
-    background-color: rgba(0, 0, 0, 0.692);
-    color: white;
+    background-color: rgba(195, 195, 195, 0.865);
+    color: rgb(0, 0, 0);
     position: relative;
-    top: 220vh;
+    top: 206vh;
     left: 0vw;
 }
 
@@ -41,7 +34,7 @@ body {
     z-index: 1000;
 }
 
-.home-container h1, .home-container h2, .home-container h3, .home-container h4 {
+.home-container h1 {
     font-family: Oswald;
     font-weight: bold;
     color: rgb(0, 115, 192);
@@ -49,68 +42,78 @@ body {
     margin-top: -20px;
 }
 
-.home-container h1 {
-    font-size: 2.1vw;
-    top: -205.5vh;
-    left: -10vw;
+.home-container h2 {
+    font-family: Oswald;
+    font-weight: bold;
+    color: rgb(0, 115, 192);
+    position: relative;
+    margin-top: -20px;
 }
 
-.our-core, .proven-metrics, .scheduling, .hockey {
+.home-container h3 {
+    font-family: Oswald;
+    font-weight: bold;
+    color: rgb(0, 115, 192);
+    position: relative;
+    margin-top: -20px;
+}
+
+.home-container h4 {
+    font-family: Oswald;
+    font-weight: bold;
+    color: rgb(0, 115, 192);
+    position: relative;
+    margin-top: -20px;
+
+}
+
+.our-core {
+    position: relative;
+    font-family: Oswald;
+    font-weight: normal;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(0, 0, 0);
+    margin: 5vh auto;
+
+}
+
+.proven-metrics {
+    position: relative;
     font-family: Oswald;
     font-weight: normal;
     line-height: 1.4em;
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 5vh auto;
 }
 
-.our-core {
-    width: 26%;
-    font-size: 1.3vw;
-    top: -200vh;
-    right: 32vw;
-}
-
-.home-container h2 {
-    font-size: 2.1vw;
-    top: -159vh;
-    left: 56.1vw;
-}
-
-.home-container h3 {
-    font-size: 1.8vw;
-    top: -120vh;
-    left: 5.8vw;
-}
-
-.home-container h4 {
-    font-size: 2.1vw;
-    top: -105vh;
-    left: 57.5vw;
-}
-
-.proven-metrics, .scheduling {
-    width: 27%;
-    font-size: 1.3vw;
-    top: -165vh;
-    left: 20vw;
-}
-
 .scheduling {
-    top: -135vh;
-    right: 30.5vw;
+    position: relative;
+    font-family: Oswald;
+    font-weight: normal;
+    line-height: 1.4em;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(0, 0, 0);
+    margin: 5vh auto;
 }
 
 .hockey {
-    width: 24%;
-    font-size: 1.3vw;
-    top: -120vh;
-    left: 20vw;
+    position: relative;
+    font-family: Oswald;
+    font-weight: normal;
+    line-height: 1.4em;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(0, 0, 0);
+    margin: 5vh auto;
 }
 
-.baseball-static, .laptop-static, .schedules-static, .hockey-static {
-    width: 55%;
+
+
+.laptop-static {
     height: auto;
     border-radius: 25px;
     position: absolute;
@@ -118,101 +121,300 @@ body {
     transform: translateX(-50%);
 }
 
-.baseball-static, .schedules-static, .hockey-static {
-    max-width: 850px;
-    border: 7px solid rgb(0, 89, 148);
-}
-
-.laptop-static {
-    max-width: 850px;
-}
-
 .baseball-static {
-    top: -125vh;
-    left: 25%;
-}
-
-.laptop-static {
-    top: -195vh;
-    left: 72vw;
+    max-width: 880px;
+    border: 5px solid rgb(0, 89, 148);
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 999;
+    transform: translateX(-50%);
 }
 
 .schedules-static {
-    top: -55vh;
-    left: 72vw;
+
+    max-width: 675px;
+    border: 5px solid rgb(0, 89, 148);
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 999;
+    transform: translateX(-50%);
 }
 
 .hockey-static {
-    top: 20vh;
-    left: 25vw;
-}
 
-.logo, .ts-logo {
+    max-width: 850px;
+    border: 5px solid rgb(0, 89, 148);
+    height: auto;
+    border-radius: 25px;
     position: absolute;
+    z-index: 999;
+    transform: translateX(-50%);
 }
 
-.logo {
-    top: 13vh;
-    left: 16vw;
-}
 
-.ts-logo {
-    top: 19vh;
-    left: 7vw;
-}
+
 
 .review-image {
     margin: 0 1vw;
     width: 10vw;
 }
 
-.scroll-container {
-    position: relative;
-    top: 105vh;
-    width: 100%;
-}
+
 
 /* Media Queries for responsiveness */
-@media screen and (max-width: 1024px) {
-    .home-container h1, .home-container h2, .home-container h3, .home-container h4,
-    .our-core, .proven-metrics, .scheduling, .hockey,
-    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
-        font-size: 2.5vw;
+
+/* FITS @ 1080p 100% Scaling*/
+@media screen and (max-width: 1925px) {
+
+    .home-page {
+        background-color: rgba(195, 195, 195, 0.865);
+        height: 220vh;
+        width: 100%;
+        position: absolute;
+        top: -10vh;
+        left: 0vw;
     }
 
-    .our-core, .proven-metrics, .scheduling, .hockey {
-        width: 50%;
+
+    .home-container h1,
+    .home-container h2,
+    .home-container h3,
+    .home-container h4,
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey,
+    .baseball-static,
+    .laptop-static,
+    .schedules-static,
+    .hockey-static {
+        font-size: 1.15vw;
     }
 
-    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .home-container h1, .home-container h2, .home-container h3, .home-container h4,
-    .our-core, .proven-metrics, .scheduling, .hockey,
-    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
-        font-size: 4vw;
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey {
+        width: 33.5%;
     }
 
-    .our-core, .proven-metrics, .scheduling, .hockey {
-        width: 90%;
+    .logo {
+        position: relative;
+
+
     }
 
-    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+    /*------------SOCCER--------------*/
+    .laptop-static {
+        top: -180vh;
+        left: 70vw;
+        max-width: 775px;
+    }
+
+    .home-container h1 {
+        top: -185vh;
+        right: 46.5vw;
+    }
+
+    .our-core {
+        top: -190vh;
+        right: 26vw;
+    }
+
+    /*------------BASEBALL--------------*/
+    .baseball-static {
+        top: -89vh;
+        left: 25vw;
+        max-width: 750px;
+    }
+
+    .home-container h2 {
+        top: -124.5vh;
+        left: 50.7vw;
+    }
+
+    .proven-metrics {
+        top: -130vh;
+        left: 21vw;
+    }
+
+    /*------------BASKETBALL--------------*/
+    .schedules-static {
+        top: -15vh;
+        left: 70vw;
+        max-width: 650px;
+    }
+
+    .home-container h3 {
+        top: -67vh;
+        left: 3.7vw;
+    }
+
+    .scheduling {
+        top: -72vh;
+        right: 26vw;
+    }
+
+    /*------------HOCKEY--------------*/
+    .hockey-static {
+        top: 92vh;
+        left: 26vw;
+        max-width: 875px;
+    }
+
+    .home-container h4 {
+        top: 7vh;
+        left: 52.7vw;
+    }
+
+    .hockey {
+        top: 2vh;
+        left: 23vw;
+    }
+
+    .scroll-container {
+        position: relative;
+        top: 230vh;
         width: 100%;
     }
+
+}
+
+/* FITS @ 4k 100% Scaling*/
+@media screen and (min-width: 3825px) {
+
+    .home-page {
+        background-color: rgba(0, 0, 0, 0.692);
+        height: 220vh;
+        width: 100%;
+        position: absolute;
+        top: -10vh;
+        left: 0vw;
+    }
+
+    .home-container h1,
+    .home-container h2,
+    .home-container h3,
+    .home-container h4,
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey,
+    .baseball-static,
+    .laptop-static,
+    .schedules-static,
+    .hockey-static {
+        font-size: 1.1vw;
+    }
+
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey {
+        width: 27.5%;
+    }
+
+
+    /*------------SOCCER--------------*/
+    .laptop-static {
+        top: -165vh;
+        left: 70vw;
+        max-width: 1200px;
+    }
+
+    .home-container h1 {
+        top: -176vh;
+        right: 43vw;
+    }
+
+    .our-core {
+        top: -180.5vh;
+        right: 23vw;
+    }
+
+    /*------------BASEBALL--------------*/
+    .baseball-static {
+        top: -105vh;
+        left: 25vw;
+        max-width: 1050px;
+    }
+
+    .home-container h2 {
+        top: -150vh;
+        left: 52.5vw;
+    }
+
+    .proven-metrics {
+        top: -155vh;
+        left: 20vw;
+    }
+
+    /*------------BASKETBALL--------------*/
+    .schedules-static {
+        top: -50vh;
+        left: 70vw;
+        max-width: 950px;
+    }
+
+    .home-container h3 {
+        top: -115vh;
+        left: 9.5vw;
+    }
+
+    .scheduling {
+        top: -120vh;
+        right: 23vw;
+    }
+
+    /*------------HOCKEY--------------*/
+    .hockey-static {
+        top: 25vh;
+        left: 28vw;
+        max-width: 1200px;
+    }
+
+    .home-container h4 {
+        top: -75vh;
+        left: 52.5vw;
+    }
+
+    .hockey {
+        top: -80vh;
+        left: 20vw;
+    }
+
+    .scroll-container {
+        position: relative;
+        top: 145vh;
+        width: 105%;
+    }
+
+
 }
 
 @media screen and (max-width: 576px) {
-    .home-container h1, .home-container h2, .home-container h3, .home-container h4,
-    .our-core, .proven-metrics, .scheduling, .hockey,
-    .baseball-static, .laptop-static, .schedules-static, .hockey-static {
+
+    .home-container h1,
+    .home-container h2,
+    .home-container h3,
+    .home-container h4,
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey,
+    .baseball-static,
+    .laptop-static,
+    .schedules-static,
+    .hockey-static {
         font-size: 5vw;
     }
 
-    .our-core, .proven-metrics, .scheduling, .hockey {
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey {
         line-height: 3.5em;
     }
 }

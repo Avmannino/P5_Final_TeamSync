@@ -1,184 +1,223 @@
-.main-feed {
-    position: relative;
-    background-color: rgb(255, 0, 0);
-    height: 100vh;
-    width: 64.2vw; /* Adjust width for responsiveness */
-    top: 10vh;
-    left: -3.2vh;
-
-    z-index: 9995;
-}
-
-.left-nav{
-    height:100%;
-    width: 15%;
-    position: absolute;
-    top:11vh;
-    left:0.5vw;
-    border-right: 8px solid rgb(0, 99, 149);
-    background-color: rgb(255, 255, 255);
-}
-
-.left-link {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    position: relative;
-    top: 5vh;
-    left: 4vw;
-    font-family: Klavika;
-    font-size: 20px;
-    font-weight: bold;
-    color:grey;
-    text-decoration: none;
-}
-
-.left-link:hover{
-    background-color: rgba(132, 132, 132, 0.465);
-}
+/* FITS @ 2560 x 1440p 100% Scaling*/
+@media screen and (min-width: 2560px) {
 
 
-.right-nav{
-    height:100%;
-    width: 20.3%;
-    position: absolute;
-    top: 11vh;
-    right: -1.4vw;
-    border-left: 8px solid rgb(0, 99, 149);
-    background-color: rgb(255, 255, 255);
-}
+    .main-feed {
+        position: relative;
+        background-color: rgb(255, 0, 0);
+        height: 100vh;
+        width: 64.2vw;
+        /* Adjust width for responsiveness */
+        top: 10vh;
+        left: -3.2vh;
 
-.top-navbar {
-    margin-top: 0vh;
-    width: 110%; /* Adjust width for responsiveness */
-    height: 10vh; /* Adjust height for responsiveness */
-    padding: 1vh; /* Adjust padding for responsiveness */
-    background-color: #000000; /* Light grey, adjust as needed */
-    display: flex;
-    justify-content: center; /* Center the search bar */
-    position: absolute;
-    left: -20vh; /* Adjust left position for responsiveness */
-    border-bottom: 6px solid rgb(0, 99, 149);
-    z-index: 9997;
-}
+        z-index: 9995;
+    }
 
-.nav-link {
-    position: relative;
-    top: -5.6vh;
-    right: 65vw;
+    .left-nav {
+        height: 100%;
+        width: 15%;
+        position: absolute;
+        top: 11vh;
+        left: 0.5vw;
+        border-right: 8px solid rgb(0, 99, 149);
+        background-color: rgb(255, 255, 255);
+    }
 
-}
+    .left-link {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        top: 5vh;
+        left: 4vw;
+        font-family: Klavika;
+        font-size: 20px;
+        font-weight: bold;
+        color: grey;
+        text-decoration: none;
+    }
 
-.nav-link img {
-    margin-right: 10px; /* Adjust the margin-right to increase or decrease spacing */
-}
-
-
-.search-bar {
-    width: 21vw; /* Adjust width for responsiveness */
-    height: 1.9vh; /* Adjust height for responsiveness */
-    padding: 1.5vh; /* Adjust padding for responsiveness */
-    border: 4px solid rgb(0, 99, 149);
-    border-radius: 45px; /* Adjust border radius for responsiveness */
-    position: relative;
-    top: 3vh;
-    left: 3vw; /* Adjust right position for responsiveness */
-}
-
-.side-navbar {
-    width: 25vw; /* Adjust width for responsiveness */
-    height: 107vh;
-    padding: 1vh; /* Adjust padding for responsiveness */
-    background-color: #767676; /* Light grey, adjust as needed */
-    z-index: 9996;
-}
-
-.side-navbar.left {
-    float: left;
-    position: relative;
-    top: 16.1vh;
-    left:-4.5vw; /* Adjust left position for responsiveness */
-
-}
-
-.side-navbar.left::after {
-    content: '';
-    position: absolute;
-    top: 0vh; /* Adjust the top position to where you want the border to start */
-    bottom: 0%; /* Adjust the bottom position to where you want the border to end */
-    right: 0;
-    border-right: 8px solid rgb(0, 99, 149);
-}
-
-.side-navbar.right {
-    float: right;
-    position: relative;
-    top: 7vh;
-    left:45.7vw; /* Adjust left position for responsiveness */
-}
-
-.side-navbar.right::after {
-    content: '';
-    position: absolute;
-    top: 12.4%; /* Adjust the top position to where you want the border to start */
-    bottom: 0%; /* Adjust the bottom position to where you want the border to end */
-    left: 0;
-    border-left: 8px solid rgb(0, 99, 149);
-}
+    .left-link:hover {
+        background-color: rgba(132, 132, 132, 0.465);
+    }
 
 
+    .right-nav {
+        height: 100%;
+        width: 20.3%;
+        position: absolute;
+        top: 11vh;
+        right: -1.4vw;
+        border-left: 8px solid rgb(0, 99, 149);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .top-navbar {
+        margin-top: 0vh;
+        width: 110%;
+        /* Adjust width for responsiveness */
+        height: 10vh;
+        /* Adjust height for responsiveness */
+        padding: 1vh;
+        /* Adjust padding for responsiveness */
+        background-color: #000000;
+        /* Light grey, adjust as needed */
+        display: flex;
+        justify-content: center;
+        /* Center the search bar */
+        position: absolute;
+        left: -20vh;
+        /* Adjust left position for responsiveness */
+        border-bottom: 6px solid rgb(0, 99, 149);
+        z-index: 9997;
+    }
+
+    .nav-link {
+        position: relative;
+        top: -5.6vh;
+        right: 65vw;
+
+    }
+
+    .nav-link img {
+        margin-right: 10px;
+        /* Adjust the margin-right to increase or decrease spacing */
+    }
 
 
-.home-logo {
-    width: 2vw; /* Adjust width for responsiveness */
-    position: absolute;
-    top: 9vh;
-    left: 79vw; /* Adjust left position for responsiveness */
-}
+    .search-bar {
+        width: 21vw;
+        /* Adjust width for responsiveness */
+        height: 1.9vh;
+        /* Adjust height for responsiveness */
+        padding: 1.5vh;
+        /* Adjust padding for responsiveness */
+        border: 4px solid rgb(0, 99, 149);
+        border-radius: 45px;
+        /* Adjust border radius for responsiveness */
+        position: relative;
+        top: 3vh;
+        left: 3vw;
+        /* Adjust right position for responsiveness */
+    }
 
-.reels-logo {
-    width: 1.9vw; /* Adjust width for responsiveness */
-    position: absolute;
-    top: 9.2vh;
-    left: 85.6vw; /* Adjust left position for responsiveness */
-}
+    .side-navbar {
+        width: 25vw;
+        /* Adjust width for responsiveness */
+        height: 107vh;
+        padding: 1vh;
+        /* Adjust padding for responsiveness */
+        background-color: #767676;
+        /* Light grey, adjust as needed */
+        z-index: 9996;
+    }
 
-.team-logo {
-    width: 2.35vw; /* Adjust width for responsiveness */
-    position: absolute;
-    top: 8.9vh;
-    left: 92vw; /* Adjust left position for responsiveness */
-}
+    .side-navbar.left {
+        float: left;
+        position: relative;
+        top: 16.1vh;
+        left: -4.5vw;
+        /* Adjust left position for responsiveness */
 
-.bracket-logo {
-    width: 2vw; /* Adjust width for responsiveness */
-    position: absolute;
-    top: 9.3vh;
-    left: 99.8vw; /* Adjust left position for responsiveness */
-}
+    }
 
-.social-sync {
-    width: 3vw; /* Adjust width for responsiveness */
-    position: absolute;
-    top: 3vh;
-    left: 19.8vw; /* Adjust left position for responsiveness */
-}
+    .side-navbar.left::after {
+        content: '';
+        position: absolute;
+        top: 0vh;
+        /* Adjust the top position to where you want the border to start */
+        bottom: 0%;
+        /* Adjust the bottom position to where you want the border to end */
+        right: 0;
+        border-right: 8px solid rgb(0, 99, 149);
+    }
 
-.sync-text {
-    font-family: cabin;
-    font-weight: bolder;
-    color: rgb(0, 117, 171);
-    font-size: 1.6vw; /* Adjust font size for responsiveness */
-    position: absolute;
-    top: 0.5vh;
-    left:23vw; /* Adjust left position for responsiveness */
-}
+    .side-navbar.right {
+        float: right;
+        position: relative;
+        top: 7vh;
+        left: 45.7vw;
+        /* Adjust left position for responsiveness */
+    }
 
-.content {
-    display: flex;
-}
+    .side-navbar.right::after {
+        content: '';
+        position: absolute;
+        top: 12.4%;
+        /* Adjust the top position to where you want the border to start */
+        bottom: 0%;
+        /* Adjust the bottom position to where you want the border to end */
+        left: 0;
+        border-left: 8px solid rgb(0, 99, 149);
+    }
 
-@font-face {
-    font-family: Klavika;
-    src: url(./fonts/klavika.otf);
+
+
+
+    .home-logo {
+        width: 2vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 9vh;
+        left: 79vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .reels-logo {
+        width: 1.9vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 9.2vh;
+        left: 85.6vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .team-logo {
+        width: 2.35vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 8.9vh;
+        left: 92vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .bracket-logo {
+        width: 2vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 9.3vh;
+        left: 99.8vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .social-sync {
+        width: 3vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 3vh;
+        left: 19.8vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .sync-text {
+        font-family: cabin;
+        font-weight: bolder;
+        color: rgb(0, 117, 171);
+        font-size: 1.6vw;
+        /* Adjust font size for responsiveness */
+        position: absolute;
+        top: 0.5vh;
+        left: 23vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .content {
+        display: flex;
+    }
+
+    @font-face {
+        font-family: Klavika;
+        src: url(./fonts/klavika.otf);
+    }
 }
