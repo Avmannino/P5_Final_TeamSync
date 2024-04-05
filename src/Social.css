@@ -1,27 +1,81 @@
-/* FITS @ 2560 x 1440p 100% Scaling*/
-@media screen and (min-width: 2560px) {
+/* FITS 2560 x 1440p 100% Scaling*/
+
+
+@media screen and (min-width: 2540px) {
 
 
     .main-feed {
         position: relative;
-        background-color: rgb(255, 0, 0);
-        height: 100vh;
-        width: 64.2vw;
+        background-color: rgb(255, 255, 255);
+        height: 103vh;
+        width: 64.74vw;
         /* Adjust width for responsiveness */
-        top: 10vh;
-        left: -3.2vh;
-
+        top: 9.9vh;
+        left: -3.35vh;
         z-index: 9995;
     }
 
-    .left-nav {
+    .main-feed-container {
         height: 100%;
-        width: 15%;
-        position: absolute;
-        top: 11vh;
-        left: 0.5vw;
-        border-right: 8px solid rgb(0, 99, 149);
+        width: 75%;
         background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 12%;
+    }
+
+    .post-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 65%;
+        height: 15%;
+        position: relative;
+        left: 17.5%;
+        top: 25vh;
+        border: 0.01px solid rgba(0, 0, 0, 0.292);
+        border-radius: 15px;
+    }
+
+    .post-input-box {
+        width: 18.5vw;
+        height: 2vh;
+        padding: 1.5vh;
+        border: 0.1px solid rgb(0, 99, 149);
+        border-radius: 35px;
+        position: relative;
+        top: 1.5vh;
+        left: 2.5vw;
+        font-family: cabin;
+        font-size: 19px;
+    }
+
+    .post-button {
+        position: relative;
+        left: 3vw;
+        top: 3vh;
+    }
+
+    .user-image {
+        width: 3.5vw;
+        border-radius: 35px;
+        position: relative;
+        top: 4.5vh;
+        left: 1.5vw;
+    }
+
+    .left-nav {
+        height: 104.5%;
+        width: 15.52%;
+        position: absolute;
+        top: 8.3vh;
+        left: 0vw;
+        border-right: 5px solid rgba(103, 103, 103, 0.492);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .left-link-container {
+        background-color: rgba(0, 0, 255, 0);
+        height: 35vh;
+        position: relative;
+        top: 0vh;
     }
 
     .left-link {
@@ -30,38 +84,83 @@
         padding: 10px;
         position: relative;
         top: 5vh;
-        left: 4vw;
+        left: 3.5vw;
         font-family: Klavika;
-        font-size: 20px;
+        font-size: 23px;
         font-weight: bold;
-        color: grey;
+        color: rgb(54, 54, 54);
         text-decoration: none;
     }
 
     .left-link:hover {
-        background-color: rgba(132, 132, 132, 0.465);
+        background-color: rgba(0, 68, 108, 0.465);
+        margin-right: 44%;
     }
 
 
     .right-nav {
-        height: 100%;
+        height: 104.5%;
         width: 20.3%;
         position: absolute;
-        top: 11vh;
+        top: 8.4vh;
         right: -1.4vw;
-        border-left: 8px solid rgb(0, 99, 149);
+        border-left: 5px solid rgba(103, 103, 103, 0.492);
         background-color: rgb(255, 255, 255);
     }
+
+    .friends-list {
+        background-color: rgba(255, 0, 0, 0);
+        height: 400px;
+        position: relative;
+        top: 25vh;
+        border-top: 2px solid rgba(128, 128, 128, 0.58);
+        padding-top: 20px;
+    }
+
+    .online {
+        font-family: cabin;
+        font-size: 28px;
+        font-weight: bold;
+        color: rgb(0, 99, 149);
+        text-align: left;
+        position: relative;
+        top: 25.5vh;
+        right: 131.5%;
+        width:100%
+    }
+
+    .friend-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 4vh;
+        margin-bottom: 10px;
+        position: relative;
+        left: 1vw;
+    }
+
+    .friend-name {
+        display: flex;
+        /* flex-direction: row-reverse; */ /* Remove this line */
+        position: relative;
+        top: -3.7vh;
+        left: 3.4vw;
+        font-family: Cabin;
+        font-size: 20px;
+        text-align: right;
+        color: rgb(89, 89, 89);
+    }
+    
 
     .top-navbar {
         margin-top: 0vh;
         width: 110%;
         /* Adjust width for responsiveness */
-        height: 10vh;
+        height: 7.5vh;
         /* Adjust height for responsiveness */
         padding: 1vh;
         /* Adjust padding for responsiveness */
-        background-color: #000000;
+        background-color: #27444f;
         /* Light grey, adjust as needed */
         display: flex;
         justify-content: center;
@@ -73,11 +172,35 @@
         z-index: 9997;
     }
 
-    .nav-link {
+    .left-nav-link {
         position: relative;
-        top: -5.6vh;
-        right: 65vw;
+        top: -8.5vh;
+        right: 112vw;
+    }
 
+
+    .right-nav-link {
+        position: relative;
+        top: -8.3vh;
+        right: 63vw;
+    }
+
+    .far-east-nav-link {
+
+    }
+
+    .user-image-nav {
+        width: 27%;
+        position: relative;
+        top: 2.5vh;
+        left: 43.8vw;
+    }
+
+    .logout-nav {
+        width: 19%;
+        position: relative;
+        top: 1.8vh;
+        left: 43.5vw;
     }
 
     .nav-link img {
@@ -85,11 +208,18 @@
         /* Adjust the margin-right to increase or decrease spacing */
     }
 
+    .friends-icon {
+        width: 18%;
+        position: relative;
+        top: 30vh;
+        left: 7.5vw;
+    }
+
 
     .search-bar {
-        width: 21vw;
+        width: 18.5vw;
         /* Adjust width for responsiveness */
-        height: 1.9vh;
+        height: .7vh;
         /* Adjust height for responsiveness */
         padding: 1.5vh;
         /* Adjust padding for responsiveness */
@@ -97,27 +227,27 @@
         border-radius: 45px;
         /* Adjust border radius for responsiveness */
         position: relative;
-        top: 3vh;
-        left: 3vw;
-        /* Adjust right position for responsiveness */
+        top: 2.5vh;
+        left: 4.5vw;
+        font-family: cabin;
+        font-size: 19px;
     }
 
     .side-navbar {
         width: 25vw;
         /* Adjust width for responsiveness */
-        height: 107vh;
+        height: 109vh;
         padding: 1vh;
         /* Adjust padding for responsiveness */
-        background-color: #767676;
+        background-color: #002aff;
         /* Light grey, adjust as needed */
         z-index: 9996;
     }
 
     .side-navbar.left {
-        float: left;
         position: relative;
-        top: 16.1vh;
-        left: -4.5vw;
+        top: 1vh;
+        left: -40.5vw;
         /* Adjust left position for responsiveness */
 
     }
@@ -134,7 +264,6 @@
     }
 
     .side-navbar.right {
-        float: right;
         position: relative;
         top: 7vh;
         left: 45.7vw;
@@ -153,14 +282,41 @@
     }
 
 
+    .inbox-logo {
+        width: 1.55vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 12vh;
+        left: 75.1vw;
+        /* Adjust left position for responsiveness */
+    }
+
+
+    .message-logo {
+        width: 1.35vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 12.4vh;
+        left: 78.3vw;
+        /* Adjust left position for responsiveness */
+    }
+
+    .notification-logo {
+        width: 1.85vw;
+        /* Adjust width for responsiveness */
+        position: absolute;
+        top: 11.8vh;
+        left: 81vw;
+        /* Adjust left position for responsiveness */
+    }
 
 
     .home-logo {
-        width: 2vw;
+        width: 1.55vw;
         /* Adjust width for responsiveness */
         position: absolute;
-        top: 9vh;
-        left: 79vw;
+        top: 12vh;
+        left: 81.1vw;
         /* Adjust left position for responsiveness */
     }
 
@@ -168,35 +324,35 @@
         width: 1.9vw;
         /* Adjust width for responsiveness */
         position: absolute;
-        top: 9.2vh;
-        left: 85.6vw;
+        top: 11.7vh;
+        left: 86.1vw;
         /* Adjust left position for responsiveness */
     }
 
     .team-logo {
-        width: 2.35vw;
+        width: 1.6vw;
         /* Adjust width for responsiveness */
         position: absolute;
-        top: 8.9vh;
-        left: 92vw;
+        top: 12vh;
+        left: 91.5vw;
         /* Adjust left position for responsiveness */
     }
 
     .bracket-logo {
-        width: 2vw;
+        width: 1.6vw;
         /* Adjust width for responsiveness */
         position: absolute;
-        top: 9.3vh;
-        left: 99.8vw;
+        top: 12.1vh;
+        left: 97vw;
         /* Adjust left position for responsiveness */
     }
 
     .social-sync {
-        width: 3vw;
+        width: 4vw;
         /* Adjust width for responsiveness */
         position: absolute;
-        top: 3vh;
-        left: 19.8vw;
+        top: 1.8vh;
+        left: 13.5vw;
         /* Adjust left position for responsiveness */
     }
 
@@ -207,8 +363,8 @@
         font-size: 1.6vw;
         /* Adjust font size for responsiveness */
         position: absolute;
-        top: 0.5vh;
-        left: 23vw;
+        top: 1.3vh;
+        left: 17.5vw;
         /* Adjust left position for responsiveness */
     }
 
