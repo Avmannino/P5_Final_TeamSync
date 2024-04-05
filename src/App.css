@@ -26,11 +26,12 @@ body {
   background-repeat: no-repeat; 
 }
 
-/* UFC Fight Maps Logo*/
+
 
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 5.5%;
-}
+} 
+

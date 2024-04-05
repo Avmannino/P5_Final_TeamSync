@@ -12,7 +12,7 @@ body {
     background-position: center;
     /* Ensure the background image stays fixed as the viewport scrolls */
     background-attachment:fixed;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 0, 0);
     height: 255vh; /* Adjusted to 100vh */
     width: 100%;
     position: absolute;
@@ -21,9 +21,14 @@ body {
 }
 
 .sports-container {
-    height: 100%;
-    width: auto;
-    padding: 5%;
-    background-color: #0000002d;
+    height: 200%;
+    width: 100%;
+    background-color: #2600ff;
     color: white;
+    position: relative;
+    top: 5vh;
+    right: 20vw;
+    display: flex;
+    flex-direction: row;
 }
+

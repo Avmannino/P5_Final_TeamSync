@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import styled from "styled-components";
+import Dashboard from "./Dashboard";
+import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
 import Home from './Home';
 import Sports from './Sports';
