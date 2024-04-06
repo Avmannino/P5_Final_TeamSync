@@ -1,20 +1,14 @@
 import React from 'react'
-import './Dashboard.css';
-import styled from "styled-components";
-import Dashboard from "./Dashboard";
-import Sidebar from "./Sidebar";
-import LineChart from "./LineChart";
+import './Dashboard.css'
+import Dashboard from './Dashboard'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
-const Baseball = () => {
-    return (
-        <div className='sports-page'>
-            <div className='sports-container'>
-                <Sidebar />
-                <Dashboard />
-                <LineChart />
-            </div>
-        </div>
-    )
+const theme = extendTheme({});
+
+export default function Baseball() {
+  return (
+    <ChakraProvider theme={theme}>
+      <Dashboard />
+    </ChakraProvider>
+  )
 }
-
-export default Baseball;

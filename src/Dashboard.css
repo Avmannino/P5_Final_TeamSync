@@ -1,34 +1,88 @@
-body {
-    margin: 0;
-    padding: 0;
+.base {
+    border-radius: 25px;
 }
 
-.sports-page {
-    background-color: rgba(255, 0, 0, 0);
-    height: 200vh; /* Adjusted to 100vh */
-    width: 100%;
-    position:relative;
-    top: -10vh;
-    right:-8vw;
-    z-index: 997;
+.llamas-box {
+    background-color: rgba(166, 165, 165, 0.641);
+    width: 23%;
+    height: 30vh;
+    position: absolute;
+    top: 1vh;
+    left: 44vw;
+    font-family: Dashboard;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 35px;
+    border: 2px solid #6500a3 ;
+
 }
 
-.sports-container {
-    height: 170%;
-    width: 120%;
-    background-color: #000141;
-    color: white;
+.llamas {
     position: relative;
-    top: -5vh;
-    right: 15vw;
-    display: flex;
-    flex-direction: row;
-    z-index: 1001;
+    top: 1.5vh;
+    left: 6vw;;
+    width: 40%;
+    border-radius: 30px;
+    font-family: Dashboard;
+    font-size: 30px;
+    align-items: center;
 }
 
-.line-chart {
+.llamas-header {
     position: relative;
-    top: 40vh;
-    right: 25vw;
+    top: 3vh;
+    font-family: Dashboard;
+    font-size: 30px;
+    font-weight: 500;
 }
 
+.llamas-location {
+    position: relative;
+    top: 2.5vh;
+    font-family: Dashboard;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.llamas-record {
+    position: relative;
+    top: 4.5vh;
+    font-family: Dashboard;
+    font-size: 25px;
+    font-weight: 100;
+}
+  
+
+
+
+.custom-table td,
+.custom-table th {
+    padding: none;
+    /* Adjust these values to reduce spacing */
+    line-height: 1.5em;
+    text-align: center;
+    color: #ffffff;
+    font-family: Dashboard;
+    font-weight: normal;
+}
+
+.custom-table th {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.custom-table th {
+    background-color: #1f263c;
+}
+
+.custom-table td {
+    background-color: #1f263ca7;
+    
+}
+
+
+
+@font-face {
+    font-family: Dashboard;
+    src: url(./fonts/Dashboard.otf);
+}

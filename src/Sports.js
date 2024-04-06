@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import SportTiles from './SportTiles';
+// import SportTiles from './SportTiles';
 import Baseball from './Baseball';
 import Football from './Football';
 import Soccer from './Soccer';
@@ -12,8 +12,6 @@ import './Sports.css';
 const Sports = () => {
   return (
     <div className='sports-page-parent'>
-      <div className='sports-container-parent'>
-      <SportTiles /> {/* Render SportTiles component here */}
       <Routes>
         <Route path="baseball" element={<Baseball />} />
         <Route path="football" element={<Football />} />
@@ -23,7 +21,6 @@ const Sports = () => {
         <Route path="tennis" element={<Tennis />} />
       </Routes>
       </div>
-    </div>
   );
 };
 

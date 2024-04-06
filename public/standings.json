@@ -1,0 +1,27 @@
+[
+    {
+        "player": "John Doe",
+        "team": "Red Sox",
+        "position": "Pitcher"
+    },
+    {
+        "player": "Jane Smith",
+        "team": "Yankees",
+        "position": "Catcher"
+    },
+    {
+        "player": "Mike Johnson",
+        "team": "Dodgers",
+        "position": "Shortstop"
+    },
+    {
+        "player": "Emily Brown",
+        "team": "Cubs",
+        "position": "First Base"
+    },
+    {
+        "player": "Alex Rodriguez",
+        "team": "Mets",
+        "position": "Outfielder"
+    }
+]

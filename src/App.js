@@ -1,9 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import styled from "styled-components";
-import Dashboard from "./Dashboard";
-import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
 import Home from './Home';
 import Sports from './Sports';
@@ -11,7 +8,8 @@ import Schedules from './Schedules';
 import Pricing from './Pricing';
 import Social from './Social';
 import LandingPage from './LandingPage'; // Import LandingPage component
-import ScrollButtons from './ScrollButtons'; // Import ScrollButtons component
+import ScrollButtons from './ScrollButtons'; // Import ScrollButtons
+
 
 const App = () => {
   // Define an array of routes where the Navbar should not be rendered

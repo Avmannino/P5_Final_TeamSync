@@ -1,4 +1,4 @@
-/* Define keyframes for slide animation */
+
 @keyframes slideFromRight {
   from {
     transform: translateX(100%);
