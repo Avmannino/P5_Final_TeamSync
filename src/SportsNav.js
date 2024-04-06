@@ -24,6 +24,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   color: white;
 
+
   .title {
     display: flex;
     flex-direction: column;
@@ -39,6 +40,9 @@ const Nav = styled.nav`
   }
 
   .search {
+    position: relative;
+    top: 40vh;
+    left: -65vw;
     background-color: #212121;
     display: flex;
     align-items: center;

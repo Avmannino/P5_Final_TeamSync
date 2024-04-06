@@ -49,7 +49,6 @@ export default function Sidebar() {
             <Section>
                 <div className="top">
                     <div className="brand">
-                        <FaMedal />
                         <span>Team Dashboard</span>
                     </div>
                     <div className="toggle">

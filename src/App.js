@@ -15,7 +15,7 @@ import ScrollButtons from './ScrollButtons'; // Import ScrollButtons component
 
 const App = () => {
   // Define an array of routes where the Navbar should not be rendered
-  const noNavbarRoutes = ['/social'];
+  const noNavbarRoutes = ['/social', '/sports/baseball'];
 
   // Get the current pathname using window.location.pathname
   const currentPath = window.location.pathname;
