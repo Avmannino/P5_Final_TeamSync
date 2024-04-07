@@ -2,13 +2,19 @@
     border-radius: 25px;
 }
 
+.body {
+    position: absolute;
+    height: 100vh;
+    background-color: black;
+}
+
 .llamas-box {
     background-color: rgba(166, 165, 165, 0.641);
-    width: 23%;
-    height: 30vh;
+    width: 20%;
+    height: 27.5vh;
     position: absolute;
     top: 1vh;
-    left: 44vw;
+    left: 45vw;
     font-family: Dashboard;
     font-size: 30px;
     text-align: center;
@@ -19,9 +25,9 @@
 
 .llamas {
     position: relative;
-    top: 1.5vh;
-    left: 6vw;;
-    width: 40%;
+    top: 1vh;
+    left: 7vw;;
+    width: 30%;
     border-radius: 30px;
     font-family: Dashboard;
     font-size: 30px;
@@ -30,23 +36,35 @@
 
 .llamas-header {
     position: relative;
-    top: 3vh;
+    top: -0vh;
+    left:-15.5vw;
     font-family: Dashboard;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
+    width:56%;
+    color: black;
 }
 
 .llamas-location {
     position: relative;
-    top: 2.5vh;
+    top: -0vh;
     font-family: Dashboard;
     font-size: 19px;
     font-weight: 100;
 }
 
+.llamas-record-head {
+    position: relative;
+    top: 1.5vh;
+    left: 1vw;
+    font-family: Dashboard;
+    font-size: 15px;
+    font-weight: 100;
+}
+
 .llamas-record {
     position: relative;
-    top: 4.5vh;
+    top: 1.5vh;
     font-family: Dashboard;
     font-size: 25px;
     font-weight: 100;

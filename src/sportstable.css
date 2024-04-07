@@ -1,0 +1,13 @@
+@import "rsuite/dist/rsuite.css";
+
+#root{ padding: 10px; }
+
+.sports-table {
+    position: absolute;
+    width: 100vw;
+    top: 25vh;
+    left: 15vw;
+    background-color: rgba(255, 0, 0, 0);
+    color: rgb(0, 106, 182);
+    font-family: Dashboard;
+}

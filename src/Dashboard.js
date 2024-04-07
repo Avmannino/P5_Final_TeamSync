@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { DayPicker } from 'react-day-picker';
 import { DayClickEventHandler } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
+import NavSide from './NavSide';
+import Table from './SportsTable';
 import {
   Box,
   Button,
@@ -14,7 +16,6 @@ import {
   ChakraProvider,
   Flex,
   Grid,
-  Table,
   Thead,
   Tbody,
   Tr,
@@ -27,7 +28,7 @@ import {
   Text,
   extendTheme,
 } from '@chakra-ui/react';
-import { Bar, Line, Pie } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -41,17 +42,18 @@ import {
   Legend,
 } from 'chart.js';
 import { color } from 'chart.js/helpers';
+import SportsTable from './SportsTable';
 
 // Define the Sidebar component
 const Sidebar = () => {
   return (
-    <Box w="350px" h="100vh" zIndex='base' bg="#3d485c;" color="white" align="center" borderRight='6px solid #2b1f3c' position='absolute'>
+    <Box w="425px" h="150vh" zIndex='base' bg="#3d485c;" color="white" align="center" borderRight='6px solid #2b1f3c' position='absolute' top='0vh' left='0vw'>
       <VStack p="5" align="stretch">
-        <Stack spacing={8} align="center" position='relative' top='15vh'>
-          <Link fontSize='25px'>Announcements</Link>
-          <Link fontSize='25px'>Injuries</Link>
-          <Link fontSize='25px'>Calendar</Link>
-          <Link fontSize='25px'>Recruitment</Link>
+        <Stack spacing={10} textAlign="left" position='relative' top='20vh' left='0vw'>
+          <Link fontSize='30px'>Announcements</Link>
+          <Link fontSize='30px'>Injuries</Link>
+          <Link fontSize='30px'>Calendar</Link>
+          <Link fontSize='30px'>Recruitment</Link>
         </Stack>
       </VStack>
     </Box>
@@ -330,7 +332,7 @@ const playerStats = [
 ]
 
 const bookedDays = [new Date(2024, 3, 2), new Date(2024, 3, 3), new Date(2024, 3, 11), new Date(2024, 3, 12), new Date(2024, 3, 13), new Date(2024, 3, 16), new Date(2024, 3, 15), new Date(2024, 3, 16), new Date(2024, 3, 28), new Date(2024, 3, 29), new Date(2024, 3, 30)];
-const bookedStyle = { border: '2.3px dashed #410069' };
+const bookedStyle = { border: '2.2px dashed #ce6c88' };
 
 
 // Extend the theme to set the font family
@@ -357,37 +359,39 @@ export default function Dashboard() {
   return (
     <ChakraProvider theme={customTheme} bg='black'>
       <Box>
-
         <div className='llamas-box'>
-          <img src={llamas} className='llamas' />
+          <img src={llamas} alt='LL' className='llamas' />
           <h1 className='llamas-header'>
             The Las Vegas Llamas
           </h1>
           <h4 className='llamas-location'>
             Las Vegas, Nevada
           </h4>
-          <p className='llamas-record'>2023 - W:46  L:78</p>
+          <p className='llamas-record-head'>Win Loss</p>
+          <p className='llamas-record'>2023: 46  78</p>
         </div>
       </Box>
 
-      <Flex justifyContent="space-between" gap={15}>
+      <Flex>
         {/* Render the Sidebar */}
-        <Sidebar />
+        {/* <Sidebar /> */}
+          <NavSide />
         <Box flex="1" p={0}>
-          <InputGroup mb={0} w="40%" h='4%' maxW="225px" position='absolute' left='0.3vw' top='13vh' fontSize='25px' borderRadius='25px' backgroundColor='grey'>
+          <InputGroup mb={0} w="12.5%" h='4%' position='absolute' left='1vw' top='45vh' fontSize='25px' borderRadius='10px'>
             <Input placeholder="Search..." />
             <InputRightElement children={<Button colorScheme="blue" h='3vh' width='2.2vw' position='absolute' left='2vw' top='0.2vh' backgroundColor='transparent' border='.5px solid white' fontSize='10px' borderRadius='10'>Search</Button>} />
           </InputGroup>
-          <Grid templateColumns="repeat(auto-fill, minmax(250px, 1fr))" gap={6} h='150%'>
-            <Box boxShadow="base" borderRadius="15px" p={0} h='50%' w='300%' marginLeft="67vw" marginTop="0px" fontSize='25px'>
+          <Grid templateColumns="repeat(auto-fill, minmax(250px, 1fr))" gap={6} h='45%' w='35%' >
+            <Box boxShadow="base" borderRadius="15px" p={0} h='50%' w='250%' marginLeft="65vw" marginTop="65vh" fontSize='25px' position='static'>
               <Bar data={barData} />
             </Box>
-            <Box boxShadow="base" borderRadius="l5px" p={4} w='300%' marginLeft="2.5vw">
+            <Box boxShadow="base" borderRadius="l5px" p={4} w='230%' marginLeft="2vw" marginTop='65vh'>
               <Line data={lineData} />
             </Box>
-            <Box boxShadow="base" p={4} overflowY="auto" maxHeight="calc(3 * 144px + 2 * 1rem)" width="1050px" marginTop="35vh" marginLeft="11.5vw" border="3px solid black" backgroundColor='#4b4b4b76' borderRadius="17px">
+            <Box flex="1" p={0}><SportsTable /></Box>
+            {/* <Box boxShadow="base" p={4} overflowY="auto" height="34%" width="1850px" position='relative' marginTop="170vh" marginLeft="-4.5vw" border="3px solid black" backgroundColor='#4b4b4b76' borderRadius="17px">
               <Table variant="simple" className="custom-table" border="4px" borderColor="#fee5b4" borderRadius="md" color='red' bg="#003e705a" width="100%">
-                <TableCaption placement="top" marginRight="45%" fontSize='30px'>Player Statistics</TableCaption>
+                <TableCaption placement="top" marginRight="0%" marginTop='-1%' fontSize='30px'>Player Statistics</TableCaption>
                 <Thead>
                   <Tr>
                     <Th>Name</Th>
@@ -439,11 +443,11 @@ export default function Dashboard() {
                   ))}
                 </Tbody>
               </Table>
-            </Box>
+            </Box> */}
 
             <Grid templateColumns="repeat(auto-fill, minmax(250px, 1fr))" gap={6}>
-              <Box position="relative" style={{ zIndex: 9999 }}>
-                <Box position="absolute" top="50vh" right="31.1vw" backgroundColor='#af113f' borderRadius='35px' width='120%' color='white'>
+              <Box position="relative" fontSize="20px" style={{ zIndex: 9999 }}>
+                <Box position="absolute" top="-45vh" left="-3.5vw" backgroundColor='#af113f' borderRadius='35px' width='12%' height='2%' color='white'>
                   <DayPicker
                     defaultMonth={new Date(2024, 3, 18)}
                     modifiers={{ booked: bookedDays }}
@@ -454,10 +458,6 @@ export default function Dashboard() {
                   />
                 </Box>
               </Box>
-
-
-
-
             </Grid>
 
           </Grid>

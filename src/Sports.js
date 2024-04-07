@@ -11,16 +11,16 @@ import './Sports.css';
 
 const Sports = () => {
   return (
-    <div className='sports-page-parent'>
-      <Routes>
-        <Route path="baseball" element={<Baseball />} />
-        <Route path="football" element={<Football />} />
-        <Route path="soccer" element={<Soccer />} />
-        <Route path="icehockey" element={<IceHockey />} />
-        <Route path="basketball" element={<Basketball />} />
-        <Route path="tennis" element={<Tennis />} />
-      </Routes>
-      </div>
+
+    <Routes>
+      <Route path="baseball" element={<Baseball />} />
+      <Route path="football" element={<Football />} />
+      <Route path="soccer" element={<Soccer />} />
+      <Route path="icehockey" element={<IceHockey />} />
+      <Route path="basketball" element={<Basketball />} />
+      <Route path="tennis" element={<Tennis />} />
+    </Routes>
+
   );
 };
 
