@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { DayPicker } from 'react-day-picker';
 import { DayClickEventHandler } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
-import NavSide from './NavSide';
 import Table from './SportsTable';
 import {
   Box,
@@ -43,22 +42,24 @@ import {
 } from 'chart.js';
 import { color } from 'chart.js/helpers';
 import SportsTable from './SportsTable';
+import CustomSidenav from './NavSide';
+import NavSide from './NavSide';
 
-// Define the Sidebar component
-const Sidebar = () => {
-  return (
-    <Box w="425px" h="150vh" zIndex='base' bg="#3d485c;" color="white" align="center" borderRight='6px solid #2b1f3c' position='absolute' top='0vh' left='0vw'>
-      <VStack p="5" align="stretch">
-        <Stack spacing={10} textAlign="left" position='relative' top='20vh' left='0vw'>
-          <Link fontSize='30px'>Announcements</Link>
-          <Link fontSize='30px'>Injuries</Link>
-          <Link fontSize='30px'>Calendar</Link>
-          <Link fontSize='30px'>Recruitment</Link>
-        </Stack>
-      </VStack>
-    </Box>
-  );
-};
+// // Define the Sidebar component
+// const Sidebar = () => {
+//   return (
+//     <Box w="425px" h="150vh" zIndex='base' bg="#3d485c;" color="white" align="center" borderRight='6px solid #2b1f3c' position='absolute' top='0vh' left='0vw'>
+//       <VStack p="5" align="stretch">
+//         <Stack spacing={10} textAlign="left" position='relative' top='20vh' left='0vw'>
+//           <Link fontSize='30px'>Announcements</Link>
+//           <Link fontSize='30px'>Injuries</Link>
+//           <Link fontSize='30px'>Calendar</Link>
+//           <Link fontSize='30px'>Recruitment</Link>
+//         </Stack>
+//       </VStack>
+//     </Box>
+//   );
+// };
 
 
 
@@ -99,12 +100,19 @@ const barData = {
       ],
       borderWidth: 2,
       borderRadius: 3,
-      fontFamily: Dashboard,
-      fontSize: 30
     },
   ],
+  options: { // Add options object for setting chart-level configurations
+    plugins: {
+      legend: {
+        labels: {
+          fontFamily: 'Dashboard',
+          fontSize: 30
+        }
+      }
+    }
+  }
 };
-
 // Line Chart Data
 const lineData = {
   labels: ['Apr.', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.'],
@@ -374,8 +382,7 @@ export default function Dashboard() {
 
       <Flex>
         {/* Render the Sidebar */}
-        {/* <Sidebar /> */}
-          <NavSide />
+        <NavSide />
         <Box flex="1" p={0}>
           <InputGroup mb={0} w="12.5%" h='4%' position='absolute' left='1vw' top='45vh' fontSize='25px' borderRadius='10px'>
             <Input placeholder="Search..." />
@@ -389,61 +396,7 @@ export default function Dashboard() {
               <Line data={lineData} />
             </Box>
             <Box flex="1" p={0}><SportsTable /></Box>
-            {/* <Box boxShadow="base" p={4} overflowY="auto" height="34%" width="1850px" position='relative' marginTop="170vh" marginLeft="-4.5vw" border="3px solid black" backgroundColor='#4b4b4b76' borderRadius="17px">
-              <Table variant="simple" className="custom-table" border="4px" borderColor="#fee5b4" borderRadius="md" color='red' bg="#003e705a" width="100%">
-                <TableCaption placement="top" marginRight="0%" marginTop='-1%' fontSize='30px'>Player Statistics</TableCaption>
-                <Thead>
-                  <Tr>
-                    <Th>Name</Th>
-                    <Th>Pos</Th>
-                    <Th>Number</Th>
-                    <Th>Bats</Th>
-                    <Th>Age</Th>
-                    <Th>Country</Th>
-                    <Th>Games</Th>
-                    <Th>AB</Th>
-                    <Th>R</Th>
-                    <Th>H</Th>
-                    <Th>2B</Th>
-                    <Th>3B</Th>
-                    <Th>HR</Th>
-                    <Th>RBI</Th>
-                    <Th>BB</Th>
-                    <Th>SO</Th>
-                    <Th>AVG</Th>
-                    <Th>OBP</Th>
-                    <Th>SLG</Th>
-                    <Th>OPS</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  {playerStats.slice(0, 12).map((player) => (
-                    <Tr key={player.id}>
-                      <Td>{player.name}</Td>
-                      <Td>{player.position}</Td>
-                      <Td>{player.number}</Td>
-                      <Td>{player.bats}</Td>
-                      <Td>{player.age}</Td>
-                      <Td>{player.country}</Td>
-                      <Td>{player.games}</Td>
-                      <Td>{player.ab}</Td>
-                      <Td>{player.runs}</Td>
-                      <Td>{player.hits}</Td>
-                      <Td>{player.doubles}</Td>
-                      <Td>{player.triples}</Td>
-                      <Td>{player.hr}</Td>
-                      <Td>{player.rbi}</Td>
-                      <Td>{player.bb}</Td>
-                      <Td>{player.so}</Td>
-                      <Td>{player.avg}</Td>
-                      <Td>{player.obp}</Td>
-                      <Td>{player.slg}</Td>
-                      <Td>{player.ops}</Td>
-                    </Tr>
-                  ))}
-                </Tbody>
-              </Table>
-            </Box> */}
+
 
             <Grid templateColumns="repeat(auto-fill, minmax(250px, 1fr))" gap={6}>
               <Box position="relative" fontSize="20px" style={{ zIndex: 9999 }}>

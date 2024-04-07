@@ -4,12 +4,11 @@
 
 .navside {
     background-color: red;
-    color: rgb(0, 106, 182);
-    height: 200vh;
-    width: 100%;
+    height: 190%;
     position: absolute;
-    top: 0vh;
-    left: 0vw;
-    font-size: 5px;
+    padding-top: 1vh;
+    top: 30vh;
+    left: 7vw;
+    font-size: 10px;
     font-family: Dashboard;
 }
