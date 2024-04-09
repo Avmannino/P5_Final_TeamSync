@@ -1,16 +1,22 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './Navside.css';
+
 import { Sidenav, Nav, Toggle } from 'rsuite';
 import EmailIcon from '@rsuite/icons/Email';
 import CalendarIcon from '@rsuite/icons/Calendar';
 import PeoplesIcon from '@rsuite/icons/Peoples';
 import SpeakerIcon from '@rsuite/icons/Speaker';
-import UserBadgeIcon from '@rsuite/icons/UserBadge';
+import MemberIcon from '@rsuite/icons/Member';
+
+
 
 const NavSide = () => {
   const [expanded, setExpanded] = React.useState(true);
   const [activeKey, setActiveKey] = React.useState('1');
   return (
-    <div style={{ width: 240 }}>
+    <div className='Navside'>
       <Toggle
         onChange={setExpanded}
         checked={expanded}
@@ -43,7 +49,7 @@ const NavSide = () => {
               <Nav.Item eventKey="4-2">Applications</Nav.Item>
               <Nav.Item eventKey="4-3">Policies</Nav.Item>
               
-            <Nav.Menu placement="rightStart" eventKey="5" title="Contacts" icon={<UserBadgeIcon />}>
+            <Nav.Menu placement="rightStart" eventKey="5" title="Contacts" icon={<MemberIcon />}>
               <Nav.Item eventKey="5-1">Player Contacts</Nav.Item>
               <Nav.Item eventKey="5-2">Staff Contacts</Nav.Item>
             </Nav.Menu>

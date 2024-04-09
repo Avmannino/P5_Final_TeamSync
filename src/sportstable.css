@@ -1,13 +1,28 @@
+/* Import rsuite styles */
 @import "rsuite/dist/rsuite.css";
 
-#root{ padding: 10px; }
+#root {
+  padding: 105%;
+}
 
+/* Apply styles to the sports table container */
 .sports-table {
-    position: absolute;
-    width: 100vw;
-    top: 25vh;
-    left: 35vw;
-    background-color: rgba(255, 0, 0, 0);
-    color: rgb(0, 106, 182);
-    font-family: Dashboard;
+  position: relative;
+  background-color: rgba(151, 151, 151, 0);
+  color: rgb(255, 255, 255);
+  font-family: Dashboard;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: 0px;
+}
+
+/* Adjust cell content alignment */
+.rs-table-cell-content {
+  display: flex;
+  align-items: center; /* Adjust the vertical alignment as needed */
+}
+
+@font-face {
+  font-family: Dashboard;
+  src: url(./fonts/Dashboard.otf);
 }
