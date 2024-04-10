@@ -1,3 +1,25 @@
 @import "rsuite/dist/rsuite.css";
 
 #root{ padding: 10px; }
+
+.side-bar-dash {
+    position: sticky;
+    width: 285px;
+    height: auto;
+}
+
+.dashboard-nav-item {
+    color: #008b8b;
+  }
+
+  .group-nav-item {
+    color: yellow;
+  }
+  
+  .advanced-nav-item {
+    color: #161616
+  }
+  
+  .settings-nav-item {
+    color: yellow;
+  }
