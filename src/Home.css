@@ -286,138 +286,53 @@ body {
 @media screen and (min-width: 2530px) {
 
     .home-page {
-        background-color: rgba(195, 195, 195, 0.865);
-        height: 220vh;
-        width: 100%;
-        position: absolute;
-        top: -7vh;
-        left: 0vw;
-    }
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2vh;
+        min-height: 110vh;
+        width: 100vw;
+        align-items: center;
+        padding: 20px; /* Adds some padding around the container */
+        background-color: rgba(218, 218, 218, 0.829);
+        font-family: Dashboard;
 
+    }
+    
     .home-container {
-        width: 100%;
-        height: 210%;
-        padding: 5%;
-        background-color: rgba(195, 195, 195, 0.865);
-        color: rgb(0, 0, 0);
-        position: relative;
-        top: 206.7vh;
-        left: 0vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%; 
+        width: 100vw; 
     }
-
-    .navbar {
-        position: absolute;
-        top: 10vh;
-        left: -8vw;
-        width: 100%;
-        z-index: 1000;
+    
+    img {
+        width: 100%; /* Makes images responsive */
+        max-width: 600px; /* Adjust as necessary */
+        height: auto;
     }
-
-
-    .home-container h1,
-    .home-container h2,
-    .home-container h3,
-    .home-container h4,
-    .our-core,
-    .proven-metrics,
-    .scheduling,
-    .hockey,
-    .baseball-static,
-    .laptop-static,
-    .schedules-static,
-    .hockey-static {
-        font-size: 1.25vw;
+    
+    .laptop-static, .baseball-static, .schedules-static, .hockey-static {
+        margin: 20px 0; /* Adds vertical spacing */
     }
-
-    .our-core,
-    .proven-metrics,
-    .scheduling,
-    .hockey {
-        width: 33.5%;
+    
+    .our-core, .proven-metrics, .scheduling, .hockey {
+        text-align: center; /* Centers text */
+        padding: 0 15px; /* Adds some padding */
+        margin: 20px 0; /* Adds vertical spacing */
     }
-
-    .logo {
-        position: relative;
-
-
-    }
-
-    /*------------SOCCER--------------*/
-    .laptop-static {
-        top: -180vh;
-        left: 72vw;
-        max-width: 1050px;
-    }
-
-    .home-container h1 {
-        top: -185vh;
-        right: 49.5vw;
-    }
-
-    .our-core {
-        top: -190vh;
-        right: 27vw;
-    }
-
-    /*------------BASEBALL--------------*/
-    .baseball-static {
-        top: -104vh;
-        left: 26vw;
-        max-width: 900px;
-    }
-
-    .home-container h2 {
-        top: -146vh;
-        left: 54.7vw;
-    }
-
-    .proven-metrics {
-        top: -151vh;
-        left: 25vw;
-    }
-
-    /*------------BASKETBALL--------------*/
-    .schedules-static {
-        top: -35vh;
-        left: 70vw;
-        max-width: 800px;
-    }
-
-    .home-container h3 {
-        top: -99.5vh;
-        left: 3.7vw;
-    }
-
-    .scheduling {
-        top: -105vh;
-        right: 26vw;
-    }
-
-    /*------------HOCKEY--------------*/
-    .hockey-static {
-        top: 52vh;
-        left: 27vw;
-        max-width: 1000px;
-    }
-
-    .home-container h4 {
-        top: -47vh;
-        left: 52.7vw;
-    }
-
-    .hockey {
-        top: -52vh;
-        left: 23vw;
-    }
-
+    
     .scroll-container {
-        position: relative;
-        top: 165vh;
         width: 100%;
+        margin-top: 30px;
     }
 
+    @font-face {
+        font-family: Dashboard;
+        src: url(./fonts/Dashboard.otf);
+    }
 }
-
 
 
 /* FITS @ 4k 100% Scaling*/

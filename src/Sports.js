@@ -1,6 +1,7 @@
+// Sports.js
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import SportTiles from './SportTiles';
+import SportTiles from './SportTiles';
 import Baseball from './Baseball';
 import Football from './Football';
 import Soccer from './Soccer';
@@ -11,16 +12,17 @@ import './Sports.css';
 
 const Sports = () => {
   return (
-
-    <Routes>
-      <Route path="baseball" element={<Baseball />} />
-      <Route path="football" element={<Football />} />
-      <Route path="soccer" element={<Soccer />} />
-      <Route path="icehockey" element={<IceHockey />} />
-      <Route path="basketball" element={<Basketball />} />
-      <Route path="tennis" element={<Tennis />} />
-    </Routes>
-
+    <div className='sports-wrapper'>
+      <SportTiles />
+      <Routes>
+        <Route path="baseball" element={<Baseball />} />
+        <Route path="football" element={<Football />} />
+        <Route path="soccer" element={<Soccer />} />
+        <Route path="icehockey" element={<IceHockey />} />
+        <Route path="basketball" element={<Basketball />} />
+        <Route path="tennis" element={<Tennis />} />
+      </Routes>
+    </div>
   );
 };
 

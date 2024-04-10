@@ -1,22 +1,24 @@
-
 @keyframes slideFromRight {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
 }
 
 .sports-tiles-parent {
+  position: relative;
   display: inline-flex;
-  position: absolute;
-  top: 61vh;
-  right: 40vw;
-  gap: 3.5vh;
-  height: 40vh;
+  top: 45vh;
+  left: 5vw;
+  gap: 8.5vh;
+  height: 32vh;
   width: 100%;
-  animation: slideFromRight 0.5s ease forwards; /* Apply the animation */
+  z-index: 0;
+  animation: slideFromRight 0.5s ease forwards;
+  /* Apply the animation */
 }
 
 /* BASEBALL */
@@ -24,7 +26,8 @@
 .baseball-tile-container {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30.45vh;
+  width: 278px;
   justify-content: center;
   gap: 2vw;
   border-radius: 25px;
@@ -37,33 +40,35 @@
 }
 
 .baseball-tile-container:hover {
-  transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
+  transform: scale(1.04) translateZ(10px);
+  transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .baseball-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 22vh;
-  left: -2vw;
+  left: -2vw; */
   padding: 12px;
-  height: 30.8vh;
+  height: 31vh;
   border-radius: 25px;
-  width: 215px;
+  width: 285px;
   border: 8px solid #0000;
-  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
-  animation: 7s rotate linear infinite;
+  background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
+  animation: 5.5s rotate linear infinite;
 }
 
 .baseball-box:hover {
   transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
-  height: 32.9vh;
-  width: 238px;
+  transition: transform 0.2s ease;
+  height: 31.5vh;
+  width: 295px;
   border-radius: 25px;
   border: 4px solid #0000;
+  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -82,18 +87,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 215px;
+  width: 280px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   gap: 20px;
 }
 
 .baseball-name {
-  margin-top: 26.5vh;
-  font-size: 27px;
+  margin-top: 23vh;
+  font-size: 29px;
   font-weight: normal;
   font-family: nowayback;
   color: white;
+  text-decoration: none;
 }
 
 /* FOOTBALL */
@@ -101,9 +107,10 @@
 .football-tile-container {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30.45vh;
+  width: 278px;
   justify-content: center;
-  gap: 20px;
+  gap: 2vw;
   border-radius: 25px;
   border: 2px solid rgb(75, 74, 74);
   padding: 15px;
@@ -114,33 +121,35 @@
 }
 
 .football-tile-container:hover {
-  transform: scale(1.06) translateZ(10px);
+  transform: scale(1.04) translateZ(10px);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .football-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 22vh;
-  left: 13.5vw;
+  left: -2vw; */
   padding: 12px;
-  height: 30.8vh;
+  height: 31vh;
   border-radius: 25px;
-  width: 215px;
+  width: 285px;
   border: 8px solid #0000;
-  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
-  animation: 7s rotate linear infinite;
+  background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
+  animation: 5.5s rotate linear infinite;
 }
 
 .football-box:hover {
   transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
-  height: 32.9vh;
-  width: 238px;
+  transition: transform 0.2s ease;
+  height: 31.5vh;
+  width: 295px;
   border-radius: 25px;
   border: 4px solid #0000;
+  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -159,18 +168,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 215px;
+  width: 280px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   gap: 20px;
 }
 
 .football-name {
-  margin-top: 26.5vh;
-  font-size: 27px;
+  margin-top: 23vh;
+  font-size: 29px;
   font-weight: normal;
   font-family: nowayback;
   color: white;
+  text-decoration: none;
 }
 
 /* SOCCER */
@@ -178,9 +188,10 @@
 .soccer-tile-container {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30.45vh;
+  width: 278px;
   justify-content: center;
-  gap: 20px;
+  gap: 2vw;
   border-radius: 25px;
   border: 2px solid rgb(75, 74, 74);
   padding: 15px;
@@ -191,33 +202,35 @@
 }
 
 .soccer-tile-container:hover {
-  transform: scale(1.06) translateZ(10px);
+  transform: scale(1.04) translateZ(10px);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .soccer-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 22vh;
-  left: 28.8vw;
+  left: -2vw; */
   padding: 12px;
-  height: 30.8vh;
+  height: 31vh;
   border-radius: 25px;
-  width: 215px;
+  width: 285px;
   border: 8px solid #0000;
-  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
-  animation: 7s rotate linear infinite;
+  background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
+  animation: 5.5s rotate linear infinite;
 }
 
 .soccer-box:hover {
   transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
-  height: 32.9vh;
-  width: 238px;
+  transition: transform 0.2s ease;
+  height: 31.5vh;
+  width: 295px;
   border-radius: 25px;
   border: 4px solid #0000;
+  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -236,27 +249,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 215px;
+  width: 280px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   gap: 20px;
 }
 
 .soccer-name {
-  margin-top: 26.5vh;
-  font-size: 27px;
+  margin-top: 23vh;
+  font-size: 29px;
   font-weight: normal;
   font-family: nowayback;
   color: white;
+  text-decoration: none;
 }
+
 /* ICE HOCKEY */
 
 .ice-hockey-tile-container {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30.45vh;
+  width: 278px;
   justify-content: center;
-  gap: 20px;
+  gap: 2vw;
   border-radius: 25px;
   border: 2px solid rgb(75, 74, 74);
   padding: 15px;
@@ -267,33 +283,35 @@
 }
 
 .ice-hockey-tile-container:hover {
-  transform: scale(1.06) translateZ(10px);
+  transform: scale(1.04) translateZ(10px);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .ice-hockey-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 22vh;
-  left: 43.9vw;
+  left: -2vw; */
   padding: 12px;
-  height: 30.8vh;
+  height: 31vh;
   border-radius: 25px;
-  width: 215px;
+  width: 285px;
   border: 8px solid #0000;
-  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
-  animation: 7s rotate linear infinite;
+  background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
+  animation: 5.5s rotate linear infinite;
 }
 
 .ice-hockey-box:hover {
   transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
-  height: 32.9vh;
-  width: 238px;
+  transition: transform 0.2s ease;
+  height: 31.5vh;
+  width: 295px;
   border-radius: 25px;
   border: 4px solid #0000;
+  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -312,18 +330,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 215px;
+  width: 280px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   gap: 20px;
 }
 
 .ice-hockey-name {
-  margin-top: 26.5vh;
-  font-size: 27px;
+  margin-top: 23vh;
+  font-size: 29px;
   font-weight: normal;
   font-family: nowayback;
   color: white;
+  text-decoration: none;
 }
 
 /* BASKETBALL */
@@ -331,9 +350,10 @@
 .basketball-tile-container {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30.45vh;
+  width: 278px;
   justify-content: center;
-  gap: 20px;
+  gap: 2vw;
   border-radius: 25px;
   border: 2px solid rgb(75, 74, 74);
   padding: 15px;
@@ -344,33 +364,35 @@
 }
 
 .basketball-tile-container:hover {
-  transform: scale(1.06) translateZ(10px);
+  transform: scale(1.04) translateZ(10px);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .basketball-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 22vh;
-  left: 59vw;
+  left: -2vw; */
   padding: 12px;
-  height: 30.8vh;
+  height: 31vh;
   border-radius: 25px;
-  width: 215px;
+  width: 285px;
   border: 8px solid #0000;
-  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
-  animation: 7s rotate linear infinite;
+  background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
+  animation: 5.5s rotate linear infinite;
 }
 
 .basketball-box:hover {
   transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
-  height: 32.9vh;
-  width: 238px;
+  transition: transform 0.2s ease;
+  height: 31.5vh;
+  width: 295px;
   border-radius: 25px;
   border: 4px solid #0000;
+  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -389,18 +411,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 215px;
+  width: 280px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   gap: 20px;
 }
 
 .basketball-name {
-  margin-top: 26.5vh;
-  font-size: 27px;
+  margin-top: 23vh;
+  font-size: 29px;
   font-weight: normal;
   font-family: nowayback;
   color: white;
+  text-decoration: none;
 }
 
 /* TENNIS */
@@ -408,9 +431,10 @@
 .tennis-tile-container {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 30.45vh;
+  width: 278px;
   justify-content: center;
-  gap: 20px;
+  gap: 2vw;
   border-radius: 25px;
   border: 2px solid rgb(75, 74, 74);
   padding: 15px;
@@ -421,33 +445,35 @@
 }
 
 .tennis-tile-container:hover {
-  transform: scale(1.06) translateZ(10px);
+  transform: scale(1.04) translateZ(10px);
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .tennis-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 22vh;
-  left: 74.5vw;
+  left: -2vw; */
   padding: 12px;
-  height: 30.8vh;
+  height: 31vh;
   border-radius: 25px;
-  width: 215px;
+  width: 285px;
   border: 8px solid #0000;
-  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #0099ff) border-box;
-  animation: 7s rotate linear infinite;
+  background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
+  animation: 5.5s rotate linear infinite;
 }
 
 .tennis-box:hover {
   transform: scale(1.06) translateZ(10px);
-  transition: transform 0.15s ease;
-  height: 32.9vh;
-  width: 238px;
+  transition: transform 0.2s ease;
+  height: 31.5vh;
+  width: 295px;
   border-radius: 25px;
   border: 4px solid #0000;
+  text-decoration: none;
 }
 
 @keyframes rotate {
@@ -466,16 +492,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 215px;
+  width: 280px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   gap: 20px;
 }
 
 .tennis-name {
-  margin-top: 26.5vh;
-  font-size: 27px;
+  margin-top: 23vh;
+  font-size: 29px;
   font-weight: normal;
   font-family: nowayback;
   color: white;
+  text-decoration: none;
 }

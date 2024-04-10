@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-
-
 import { Button } from 'reactstrap';
 import Navbar from './Navbar';
 import Home from './Home';
 import Sports from './Sports';
-import Schedules from './Schedules';
+// import Schedules from './Schedules';
 import Pricing from './Pricing';
 import Social from './Social';
 import LandingPage from './LandingPage'; // Import LandingPage component
@@ -16,7 +14,7 @@ import ScrollButtons from './ScrollButtons'; // Import ScrollButtons
 
 const App = () => {
   // Define an array of routes where the Navbar should not be rendered
-  const noNavbarRoutes = ['/social', '/sports/baseball'];
+  const noNavbarRoutes = ['/social'];
 
   // Get the current pathname using window.location.pathname
   const currentPath = window.location.pathname;
@@ -31,7 +29,6 @@ const App = () => {
         {shouldRenderNavbar && <Navbar />}
         <Routes>
           <Route path="/" element={<LandingPage />} /> {/* Landing page route */}
-          {/* Routes for other pages */}
           <Route path="/home" element={<Home />} />
           <Route path="/sports/*" element={<Sports />} /> {/* Render Sports component */}
           {/* <Route path="/schedules" element={<Schedules />} /> */}

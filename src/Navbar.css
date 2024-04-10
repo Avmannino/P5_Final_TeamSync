@@ -135,137 +135,61 @@
 
 /* ========================FITS @ 2560x1440p 100% Scaling----------------------------------*/
 
-@media screen and (min-width: 2540px) {
+@media screen and (min-width: 2520px) {
 
   .navbar {
-    display: flex;
-    position: fixed;
-    top: 3vh;
+    position: relative;
+    top: 9vh;
+    left: 55vw;
+    width: 35vw;
+    display: flexbox;
+    flex-direction: row;
     justify-content: space-between;
-    border-radius: 3vh;
     align-items: center;
-    padding: 0 2vw;
-    height: 8vh;
-    width: 100%;
-    /* Adjusted to be full width for better responsiveness */
-    z-index: 999;
+    background-color: #33333300; /* Example background color */
+    color: white;
+    padding: 10px; /* Example padding */
+    font-family: Dashboard;
+    font-size: 25px;
+    z-index: 9999;
   }
-
-  .navlogo-container {
-    margin-left: -12vw;
-    /* Adjusted back from previous modification */
-    margin-top: 2vh;
-  }
-
+  
   .nav-logo {
-    position: relative;
-    top: -1vh;
-    /* Keeping original top adjustment */
-    left: 112.5vw;
-    /* Kept as per your original specification */
-    width: 100%;
-    /* Keeping your specified logo size */
+    text-decoration: none;
+    color: inherit;
   }
-
+  
+  .nav-logo img {
+    width: 100px; /* Adjust the width of the logo */
+    position: relative;
+    left: 35vw;
+  }
+  
   .nav-items {
-    display: inline-block;
-    align-items: center;
+    display: flex;
   }
-
+  
   .nav-link {
-    display: inline-block;
-    text-align: left;
-    font-family: cabin;
-    /* Keeping original font family */
-    font-weight: normal;
-    font-size: 2vh;
-    /* Keeping original font size */
-    color: #005170;
     text-decoration: none;
-    padding: 0.3vh 1.8vw;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white; /* Example link color */
+    margin-right: 40px; /* Adjust spacing between links */
+    display: inline-block; /* Ensure the links are displayed inline */
+    transition: color 0.1s ease; /* Smooth transition for color change */
   }
 
-  .nav-link:focus,
   .nav-link:hover {
-    background-color: #005170;
-    border-radius: 15px;
-    color: rgb(255, 255, 255);
+    background-color: #005170; /* Change the color on hover */
+  }
+  
+  .nav-link:last-child {
+    margin-right: 0; /* Remove margin from the last link */
   }
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  @font-face {
+    font-family: Dashboard;
+    src: url(./fonts/Dashboard.otf);
   }
-
-  .dropdown-content {
-    visibility: hidden;
-    position: absolute;
-    left: 5px;
-    /* Keeping your specific alignment */
-    background-color: #0059ac00;
-    /* Reverting to your original background color */
-    min-width: 115px;
-    /* Keeping original width */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    overflow: hidden;
-    transition: visibility 0s, transform 0.5s ease;
-    transform-origin: top;
-    transform: scaleY(0);
-    margin-top: 4px;
-    border: 2px solid #0084ff;
-    /* Keeping original border styling */
-    border-radius: 15px;
-    font-family: Cabin;
-    /* Ensuring your font is correctly applied */
-    text-align: center;
-    font-size: 15px;
-    /* Keeping your specified font size */
-  }
-
-  .dropdown-content a {
-    color: rgb(255, 255, 255);
-    /* Keeping original text color */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border: 0.2px solid rgba(0, 79, 131, 0.529);
-    /* Keeping your border style */
-  }
-
-  .dropdown-content a:hover {
-    background-color: #4b6678;
-    /* Reverting to your specified hover color */
-  }
-
-  .dropdown:hover .dropdown-content {
-    visibility: visible;
-    transform: scaleY(1);
-    transition-delay: 0s, 0s;
-  }
-
-  @media (min-width: 2540px) {
-
-    .nav-items,
-    .dropdown-content {
-      width: 100%;
-      /* Ensuring full width for smaller screens */
-    }
-
-    .nav-link,
-    .dropdown-content a {
-      font-size: 1vw;
-      /* Adjusted for better visibility on smaller screens */
-    }
-
-    .dropdown-content {
-      left: 0;
-      /* Adjust for alignment on smaller screens */
-    }
-  }
-
-}
+}  
 
 /* ========================FITS @ 4K 100% Scaling----------------------------------*/
 
@@ -277,7 +201,7 @@
     top: 2vh;
     justify-content: space-between;
     border-radius: 3vh;
-    align-items: center;
+    align-items: left;
     padding: 0 2vw;
     height: 8vh;
     width: 100%;

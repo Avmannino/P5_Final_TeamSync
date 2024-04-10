@@ -24,14 +24,14 @@ body {
 
 .under-logo {
     position: relative;
-    top: 2%;
+    top: 0%;
     /* Adjust as needed */
-    left: 4%;
+    left: 5%;
 }
 
 .landing-container {
     background-color: rgba(0, 0, 34, 0.795);
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 

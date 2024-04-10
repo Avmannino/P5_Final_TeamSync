@@ -1,19 +1,22 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Add background image */
+.sports-wrapper {
+    display: flex;
+    background-color: rgba(0, 89, 100, 0.808);
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/sports_bg.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
 }
 
-.sports-page-parent {
-    background-color: rgba(228, 0, 0, 0);
-    height: 200vh;
-    width: 100%;
-}
+
 
 .sports-container-parent {
     height: 100%;
-    width: 100%; /* Adjust the width as a percentage of the viewport width */
+    width: 100%;
+    /* Adjust the width as a percentage of the viewport width */
     padding: 5%;
     background-color: #000000c9;
     color: white;
