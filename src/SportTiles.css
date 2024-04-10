@@ -58,7 +58,7 @@
   width: 285px;
   border: 8px solid #0000;
   background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
-  animation: 5.5s rotate linear infinite;
+  animation: 5s rotate linear infinite;
 }
 
 .baseball-box:hover {
@@ -220,7 +220,7 @@
   width: 285px;
   border: 8px solid #0000;
   background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
-  animation: 5.5s rotate linear infinite;
+  animation: 6.5s rotate linear infinite;
 }
 
 .soccer-box:hover {
@@ -301,7 +301,7 @@
   width: 285px;
   border: 8px solid #0000;
   background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
-  animation: 5.5s rotate linear infinite;
+  animation: 5s rotate linear infinite;
 }
 
 .ice-hockey-box:hover {
@@ -463,7 +463,7 @@
   width: 285px;
   border: 8px solid #0000;
   background: linear-gradient(#00000000, #000000) padding-box, linear-gradient(var(--angle), #000000, #ff9100) border-box;
-  animation: 5.5s rotate linear infinite;
+  animation: 4.5s rotate linear infinite;
 }
 
 .tennis-box:hover {

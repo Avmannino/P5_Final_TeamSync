@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './styles.css';
 import './Calendar.css';
+
 
 
 import { Calendar, Whisper, Popover, Badge } from 'rsuite';

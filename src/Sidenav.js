@@ -73,11 +73,11 @@ const Sidebar = () => (
         <Nav>
           <Nav.Menu eventKey="1" title="Roster" icon={<GroupIcon />} panel style={headerTeamStyles}>
             <Nav.Item divider line style={dividerStyles} />
-            <Nav.Item eventKey="2-1" panel style={lineOneStyles}>Starting</Nav.Item>
+            <Nav.Item eventKey="2-1" panel style={lineOneStyles}>
+              <Link to="/sports/baseball/starting" style={{ color: 'inherit', textDecoration: 'inherit' }}>Lineup</Link>
+            </Nav.Item>
             <Nav.Item eventKey="2-2" panel style={lineOneStyles}>
-              <Link to="/sports/calendar" style={{ color: 'inherit', textDecoration: 'inherit' }}>
-                Calendar
-              </Link>
+              <Link to="/sports/baseball/calendar" style={{ color: 'inherit', textDecoration: 'inherit' }}>Calendar</Link>
             </Nav.Item>
             <Nav.Item eventKey="2-3" panel style={lineOneStyles}>Injuries</Nav.Item>
             <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Game Reels</Nav.Item>

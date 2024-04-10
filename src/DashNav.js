@@ -2,21 +2,20 @@ import React from 'react';
 import { Nav } from 'rsuite';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
 
-import FacebookSquareIcon from '@rsuite/icons/legacy/FacebookSquare';
-import GithubAltIcon from '@rsuite/icons/legacy/GithubAlt';
-import CircleIcon from '@rsuite/icons/legacy/Circle';
 import MenuIcon from '@rsuite/icons/Menu';
 import MemberIcon from '@rsuite/icons/Member';
 import MessageIcon from '@rsuite/icons/Message';
 import GrowthIcon from '@rsuite/icons/Growth';
 import PhoneFillIcon from '@rsuite/icons/PhoneFill';
+import { MdOutlineSportsFootball } from "react-icons/md";
+
 
 const TopDashNav = () => (
   <Nav>
     <Nav.Item icon={<MenuIcon />}>
       <Link to="/">Home</Link>
     </Nav.Item>
-    <Nav.Item icon={<GithubAltIcon />}>
+    <Nav.Item icon={<MdOutlineSportsFootball />}>
       <Link to="/sports">Sports</Link>
     </Nav.Item>
     <Nav.Item icon={<GrowthIcon />}>

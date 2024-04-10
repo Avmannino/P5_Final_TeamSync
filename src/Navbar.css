@@ -14,7 +14,7 @@
     height: 8vh;
     width: 100%;
     /* Adjusted to be full width for better responsiveness */
-    z-index: 999;
+    z-index: 990;
   }
 
   .navlogo-container {
@@ -151,7 +151,7 @@
     padding: 10px; /* Example padding */
     font-family: Dashboard;
     font-size: 25px;
-    z-index: 9999;
+    z-index: 9990;
   }
   
   .nav-logo {

@@ -1,0 +1,66 @@
+/* Baseball.css */
+
+.team-card {
+    position: relative;
+    width: 450px; /* Adjust width as needed */
+    height: 250px;
+    margin: 20px; /* Adjust margin as needed */
+    z-index: 9993;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+    border: 1px solid white;
+    color: white;
+    font-family: Dashboard;
+  }
+  
+  .panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Added */
+    padding: 10px;
+    background-color: #f0f0f000; /* Adjust background color as needed */
+  }
+  
+  .panel-text {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.panel-text p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+}
+  
+  .llama-img {
+    width: 125px; /* Adjust size as needed */
+    height: 125px; /* Adjust size as needed */
+    border-radius: 65px;
+    margin-bottom: 40px;
+  }
+  
+  .panel-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .panel-header p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .panel {
+    border-radius: 5px; /* Adjust border radius as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  

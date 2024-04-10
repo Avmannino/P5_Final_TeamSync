@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Using Link from react-router-dom for navigation
 import './Navbar.css'; // Ensure the CSS file is correctly linked
-import navLogo from "./assets/ts_logo.png"; // Fix the import path for the navLogo image
-import tsLogo from "./assets/nav_logo2.png";
+
 
 const Navbar = () => {
   return (
