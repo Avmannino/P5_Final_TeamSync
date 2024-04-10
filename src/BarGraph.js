@@ -1,4 +1,5 @@
 import React from "react";
+import { Panel } from 'rsuite';
 import { Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -10,7 +11,6 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Box } from '@chakra-ui/react';
 
 ChartJS.register(
   CategoryScale,
@@ -52,10 +52,20 @@ const barData = {
 
 function BarGraph() {
   return (
-    <Box boxShadow="base" borderRadius="15px" p={5} h="auto" w="100%" marginLeft="auto" marginRight="auto" marginTop="20px">
-      <Bar data={barData} options={{ maintainAspectRatio: false }} />
-    </Box>
+    <Panel bordered header="Team Leaders - Home Runs" boxShadow="base" borderRadius="15px"
+      style={{
+        padding: '20px',
+        height: '400px', // Adjust the height here
+        width: '600px', // Adjust the width here
+        marginTop: '10px',
+        fontSize: '55px',
+        position: 'relative',
+        overflow: 'hidden' // Ensure the chart fits within the panel
+      }}>
+      <Bar data={barData} options={{ maintainAspectRatio: true }} />
+    </Panel>
   );
 }
+
 
 export default BarGraph;

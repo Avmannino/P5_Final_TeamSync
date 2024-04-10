@@ -1,21 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles.css';
-import { Panel, Placeholder } from 'rsuite';
-import SportsTable from './SportsTable';
-import './Card.css';
+import { Panel, Placeholder, Row, Col } from 'rsuite';
+import 'rsuite/dist/rsuite.min.css'; // Ensure you import RSuite styles
 
-const Card = () => (
-  <>
-    <Panel className='card-one' header="Staring Roster" collapsible>
-      <SportsTable />
-    </Panel>
-
-    <Panel className='card-two' header="ERA" collapsible>
-      
-    </Panel>
-
-  </>
+const Card = (props) => (
+  <Panel {...props} bordered header="Card title">
+    
+  </Panel>
 );
 
-export default Card;
+const DashCard = () => (
+  <Row>
+    <Col md={6} sm={12}>
+      <Card />
+    </Col>
+    <Col md={6} sm={12}>
+      <Card />
+    </Col>
+    <Col md={6} sm={12}>
+      <Card />
+    </Col>
+    <Col md={6} sm={12}>
+      <Card />
+    </Col>
+  </Row>
+);
+
+export default DashCard; // Use this line if creating a single component file

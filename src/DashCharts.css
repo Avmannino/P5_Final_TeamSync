@@ -1,0 +1,37 @@
+.line-graph {
+    position: relative;
+    top: 12vh;
+    right: 44.5vw;
+    width: 600px;
+    height: 100px;
+    font-family: Dashboard;
+    color:white;
+}
+
+.radar-chart {
+    position: relative;
+    top: 8vh;
+    right: -20vw;
+    width: 580px;
+    /* height: 150px; */
+    color: white;
+    font-family: Dashboard;
+}
+
+.progress-bar {
+    position: relative;
+    top: -41.5vh;
+    right: 44.5vw;
+    width: 600px;
+
+}
+
+
+.heat-map {
+    position: relative;
+    bottom: -10%;
+    right: -16vw;
+    width: 720px;
+    font-family: Dashboard;
+    color: white;
+}
