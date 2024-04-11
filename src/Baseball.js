@@ -3,10 +3,13 @@ import { Panel } from 'rsuite';
 import Dashboard from './Dashboard';
 import Llamas from './assets/llamas_logo.png';
 import './Baseball.css';
+// import BaseballField from './BaseballField';
 
 export default function Baseball() {
   return (
-    <div>
+    <>
+    <div className='baseball-page'>
+    {/* <Panel><BaseballField /></Panel> */}
       <div className='team-card'>
         <Panel header={<CustomPanelHeader />}>
           <div className='panel-text'>
@@ -17,7 +20,8 @@ export default function Baseball() {
         </Panel>
       </div>
       <Dashboard />
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -1,23 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Permanent+Marker&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#root {
+  /* Add your styles here */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00021f !important;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: black;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Dashboard;/* Choose a suitable font family */
+  font-size: 17px; /* Set a base font size */
+  background-color: #00021f !important; /* Set a background color */
+  color: #333; /* Set a default text color */
+  background-size:cover; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@font-face {
+  font-family: Dashboard;
+  src: url(./fonts/Dashboard.otf);
 }
 
 ::-webkit-scrollbar {
-  background-color: black;
-  width: 0.4vw;
+  background-color: rgb(0, 123, 139);
+  width: 0.7vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #009ab9;
+  background: #00778f;
 }
 
 .show {

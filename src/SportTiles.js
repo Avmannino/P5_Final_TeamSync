@@ -28,7 +28,7 @@ const SportTiles = () => {
         <Link to="/sports/football" className="football-tile-container">
           {FootballTile.map((footballTile, index) => (
             <div key={index} className="football-tile">
-              <div className="football-name">{footballTile.name}</div>
+              <div className="football-name">{footballTile.name}<p>(Coming Soon)</p></div>
             </div>
           ))}
         </Link>
@@ -68,7 +68,7 @@ const SportTiles = () => {
         <Link to="/sports/tennis" className="tennis-tile-container">
           {TennisTile.map((tennisTile, index) => (
             <div key={index} className="tennis-tile">
-              <div className="tennis-name">{tennisTile.name}</div>
+              <div className="tennis-name">{tennisTile.name}<p>(Coming Soon)</p></div>
             </div>
           ))}
         </Link>

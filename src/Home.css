@@ -1,15 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    background-image: url('./assets/home_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-
 .content {
     width: 100%;
     text-align: center;
@@ -21,7 +9,7 @@ body {
 .home-container h1 {
     font-family: Oswald;
     font-weight: bold;
-    color: rgb(0, 115, 192);
+    color: #005170;
     position: relative;
     margin-top: -20px;
 }
@@ -29,7 +17,7 @@ body {
 .home-container h2 {
     font-family: Oswald;
     font-weight: bold;
-    color: rgb(0, 115, 192);
+    color: #005170;
     position: relative;
     margin-top: -20px;
 }
@@ -37,7 +25,7 @@ body {
 .home-container h3 {
     font-family: Oswald;
     font-weight: bold;
-    color: rgb(0, 115, 192);
+    color: #005170;
     position: relative;
     margin-top: -20px;
 }
@@ -45,7 +33,7 @@ body {
 .home-container h4 {
     font-family: Oswald;
     font-weight: bold;
-    color: rgb(0, 115, 192);
+    color: #005170;
     position: relative;
     margin-top: -20px;
 
@@ -57,7 +45,7 @@ body {
     font-weight: normal;
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.685);
     margin: 5vh auto;
 
 }
@@ -132,13 +120,12 @@ body {
     transform: translateX(-50%);
 }
 
-
-
-
-.review-image {
-    margin: 0 1vw;
-    width: 10vw;
+.tiles-bar {
+    position: relative;
+    top: 170.5vh;
 }
+
+
 
 
 
@@ -154,25 +141,20 @@ body {
         position: absolute;
         top: -10vh;
         left: 0vw;
+        background-image: url('./assets/home_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     .home-container {
-        width: 90%;
+        width: 100%;
         height: 210%;
-        padding: 5%;
         background-color: rgba(195, 195, 195, 0.865);
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         position: relative;
         top: 206vh;
         left: 0vw;
-    }
-
-    .navbar {
-        position: fixed;
-        top: 5vh;
-        left: -15vw;
-        width: 100%;
-        z-index: 1000;
     }
 
 
@@ -190,6 +172,7 @@ body {
     .hockey-static {
         font-size: 1.15vw;
     }
+
 
     .our-core,
     .proven-metrics,
@@ -289,43 +272,171 @@ body {
         display: flex;
         justify-content: center;
         position: relative;
-        top: 2vh;
-        min-height: 110vh;
+        top: -1vh;
+        height: 100vh;
         width: 100vw;
         align-items: center;
-        padding: 20px; /* Adds some padding around the container */
+        overflow: auto;
         background-color: rgba(218, 218, 218, 0.829);
+        background-image: url('./assets/home_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         font-family: Dashboard;
 
     }
-    
+
     .home-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100%; 
-        width: 100vw; 
+        height: 200vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.842);
     }
-    
+
     img {
-        width: 100%; /* Makes images responsive */
-        max-width: 600px; /* Adjust as necessary */
+        width: 100%;
+        /* Makes images responsive */
+        max-width: 600px;
+        /* Adjust as necessary */
         height: auto;
     }
-    
-    .laptop-static, .baseball-static, .schedules-static, .hockey-static {
-        margin: 20px 0; /* Adds vertical spacing */
+
+    .home-tiles {
+        position: relative;
+        bottom: 181vh;
+        left: 16vw;
     }
-    
-    .our-core, .proven-metrics, .scheduling, .hockey {
-        text-align: center; /* Centers text */
-        padding: 0 15px; /* Adds some padding */
-        margin: 20px 0; /* Adds vertical spacing */
+
+    .one {
+        position: relative;
+        bottom: 190vh;
+        left: 26.5vw;
     }
-    
+
+    .two {
+        position: relative;
+        bottom: 189.8vh;
+        left: 32vw;
+    }
+
+    .three {
+        position: relative;
+        bottom: 190vh;
+        left: 37.2vw;
+    }
+
+    .one,
+    .two,
+    .three{
+        font-family: Oswald;
+        font-size: 19px;
+        color: grey;
+    }
+
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey,
+    .baseball-static,
+    .laptop-static,
+    .schedules-static,
+    .hockey-static {
+        font-size: 1vw;
+    }
+
+    .home-container h1,
+    .home-container h2,
+    .home-container h3,
+    .home-container h4 {
+        font-size: 1.3vw;
+    }
+
+    .our-core,
+    .proven-metrics,
+    .scheduling,
+    .hockey {
+        display: flex;
+        flex-direction: column;
+        column-width: 20%;
+        width: 25%;
+        text-align: left;
+    }
+
+    /*------------SOCCER--------------*/
+    .laptop-static {
+        top: 80vh;
+        left: 35vw;
+        max-width: 775px;
+        position: relative;
+    }
+
+    .home-container h1 {
+        top: 92vh;
+        right: 43vw;
+    }
+
+    .our-core {
+        top: 43vh;
+        right: 23.5vw;
+    }
+
+    /*------------BASEBALL--------------*/
+    .baseball-static {
+        top: 105vh;
+        left: 25vw;
+        max-width: 750px;
+    }
+
+    .home-container h2 {
+        top: 60vh;
+        left: 14.7vw;
+    }
+
+    .proven-metrics {
+        top: 54vh;
+        left: 22.5vw;
+    }
+
+    /*------------BASKETBALL--------------*/
+    .schedules-static {
+        top: 155vh;
+        left: 68vw;
+        max-width: 650px;
+    }
+
+    .home-container h3 {
+        top: 107.5vh;
+        right: 25vw;
+    }
+
+    .scheduling {
+        top: 102vh;
+        right: 20.1vw;
+    }
+
+    /*------------HOCKEY--------------*/
+    .hockey-static {
+        top: 220vh;
+        left: 28vw;
+        max-width: 805px;
+    }
+
+    .home-container h4 {
+        top: 140vh;
+        left: 14vw;
+    }
+
+    .hockey {
+        top: 135vh;
+        left: 22.5vw;
+    }
+
     .scroll-container {
+        position: relative;
+        top: 230vh;
         width: 100%;
-        margin-top: 30px;
     }
 
     @font-face {
@@ -358,13 +469,6 @@ body {
         left: 0vw;
     }
 
-    .navbar {
-        position: fixed;
-        top: 6vh;
-        left: 54vw;
-        width: 100%;
-        z-index: 1000;
-    }
 
     .home-container h1,
     .home-container h2,

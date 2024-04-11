@@ -67,7 +67,7 @@ const Sidebar = () => (
   <div style={{ width: 240, position: 'relative', top: '8vh', background: '#161616' }}>
     <Sidenav defaultOpenKeys={['1', '2']}>
       <Sidenav.Header icon={<DashboardIcon />}>
-        <div style={brandStyles}>------- At-A-Glance -------</div>
+        <div style={brandStyles}><DashboardIcon /> At a Glance</div>
       </Sidenav.Header>
       <Sidenav.Body panel style={bodyStyles}>
         <Nav>
@@ -79,8 +79,11 @@ const Sidebar = () => (
             <Nav.Item eventKey="2-2" panel style={lineOneStyles}>
               <Link to="/sports/baseball/calendar" style={{ color: 'inherit', textDecoration: 'inherit' }}>Calendar</Link>
             </Nav.Item>
-            <Nav.Item eventKey="2-3" panel style={lineOneStyles}>Injuries</Nav.Item>
-            <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Game Reels</Nav.Item>
+            <Nav.Item eventKey="2-3" panel style={lineOneStyles}>
+              <Link to="/sports/baseball/tactics" style={{ color: 'inherit', textDecoration: 'inherit' }}>Tactics</Link>
+              </Nav.Item>
+            <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Injuries</Nav.Item>
+            <Nav.Item eventKey="2-5" panel style={lineOneStyles}>Game Reels</Nav.Item>
           </Nav.Menu>
 
           <Nav.Menu eventKey="2" title="League" icon={<MagicIcon />} panel style={headerAdvancedStyles}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from 'rsuite';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
-
+import'./DashNav.css';
 import MenuIcon from '@rsuite/icons/Menu';
 import MemberIcon from '@rsuite/icons/Member';
 import MessageIcon from '@rsuite/icons/Message';
@@ -11,6 +11,7 @@ import { MdOutlineSportsFootball } from "react-icons/md";
 
 
 const TopDashNav = () => (
+  <div className='dashboard-nav'>
   <Nav>
     <Nav.Item icon={<MenuIcon />}>
       <Link to="/">Home</Link>
@@ -33,6 +34,7 @@ const TopDashNav = () => (
       </Nav.Item>
     </Nav.Menu>
   </Nav>
+  </div>
 );
 
 export default TopDashNav;

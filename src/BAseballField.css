@@ -1,0 +1,9 @@
+
+
+.field {
+    max-width: 100%; /* Ensure it doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Adjust based on layout needs */
+    top: 0;
+}
+

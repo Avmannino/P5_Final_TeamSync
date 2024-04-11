@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import './App.css';
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home';
@@ -17,6 +16,8 @@ import Basketball from "./Basketball";
 import Tennis from "./Tennis";
 import DashCalendar from "./Calendar";
 import SportsTable from "./SportsTable";
+import BaseballField from "./BaseballField";
+
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/sports/baseball/starting",
         element: <SportsTable />
+      },
+      {
+        path: "/sports/baseball/tactics",
+        element: <BaseballField />
       },
       {
         path: "/sports/football",
