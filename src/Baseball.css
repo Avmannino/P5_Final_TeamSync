@@ -14,8 +14,10 @@
 
 .team-card {
     position: relative;
-    width: 850px; /* Adjust width as needed */
-    height: 250px;
+    top: -27vh;
+    left: -1vw;
+    width: 450px; /* Adjust width as needed */
+    height: 300px;
     margin: 20px; /* Adjust margin as needed */
     z-index: 9993;
     background-color: rgba(128, 128, 128, 0.5);
@@ -35,25 +37,31 @@
     align-items: center;
     justify-content: center; /* Added */
     padding: 10px;
-    background-color: #f0f0f000; /* Adjust background color as needed */
+    background-color: #fdf3f300; /* Adjust background color as needed */
   }
   
   .panel-text {
-    margin-bottom: 30px;
-    font-size: 22px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1800px;
+    font-size: 27px;
+    bottom: 4vh;
     font-weight: bold;
     color: white;
 }
 
 .panel-text p {
-    margin-bottom: 30px;
-    font-size: 15px;
-    color: rgb(255, 0, 0);
+    position: relative;
+    top: -4vh;
+    font-size: 17px;
+    color: rgb(32, 32, 32);
 }
   
   .llama-img {
-    width: 125px; /* Adjust size as needed */
-    height: 125px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
     border-radius: 65px;
     margin-bottom: 40px;
   }
@@ -62,13 +70,13 @@
     margin: 0;
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 0, 0);
   }
   
   .panel-header p {
     margin: 0;
     font-size: 16px;
-    color: white;
+    color: rgb(255, 0, 0);
   }
   
   .panel {

@@ -29,3 +29,12 @@
 .rs-timeline-item-content p {
     margin: 0;
 }
+
+h1 {
+    position: absolute;
+    bottom: 45vh;
+    right:-10vw;
+    font-family: Dashboard;
+    font-size: 30px;
+    padding-right: 13vw;
+}

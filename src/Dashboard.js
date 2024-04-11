@@ -11,12 +11,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DashCalendar from './Calendar';
 import NavSide from './NavSide';
 import DashTimeline from './Timeline';
+import Navbar from './Navbar';
+import TimeDrawer from './Drawer';
+import CheckCardDash from './CheckCard';
+// import DashDrawer from './Drawer';
+
 
 const Dashboard = () => {
     return (
         <div className="wrapper">
+            <CheckCardDash />
             <div className="content-area">
-
+                <TimeDrawer />
                 <div className='side-bar'>
                     <Sidebar />
                     <Routes>
@@ -25,7 +31,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="navbar-frame">
-                    {/* Placeholder for potential navbar content */}
+                    <Navbar />
                 </div>
                 <div className="container-fluid">
                     <div className="main">
@@ -34,9 +40,6 @@ const Dashboard = () => {
                         </div>
                         <div className='bar-chart'>
                             <BarGraph />
-                        </div>
-                        <div className='timeline'>
-                            <DashTimeline />
                         </div>
                     </div>
                 </div>

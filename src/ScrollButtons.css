@@ -45,6 +45,6 @@
 /* Adjust position of the down arrow */
 .floating-arrow-down {
     top:80vh;
-    right: 20px;
+    right: 50vw;
     /* Adjust as needed */
 }

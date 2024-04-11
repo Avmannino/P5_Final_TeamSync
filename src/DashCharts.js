@@ -171,7 +171,7 @@ const DashboardCharts = () => {
           <ReactApexChart
             options={{
               chart: {
-                height: 350,
+                height: 50,
                 type: 'heatmap',
               },
               plotOptions: {
@@ -192,20 +192,20 @@ const DashboardCharts = () => {
             }}
             series={heatmapSeries}
             type="heatmap"
-            height={300}
+            height={30}
           />
         </Panel>
       </div>
       <div className="progress-bar">
-        <Panel bordered header="Progress">
+        <Panel bordered header="Daily Steps">
           <ReactApexChart
             options={{
               chart: {
                 type: 'bar',
-                height: 150,
+                height: 149,
                 sparkline: { enabled: true },
-                border: '1px solid white',
-                background: 'white',
+             
+                background: 'transparent',
               },
               plotOptions: {
                 bar: {
@@ -227,7 +227,7 @@ const DashboardCharts = () => {
             }}
             series={[{ data: [80] }]}
             type="bar"
-            height={40}
+            height={30}
           />
         </Panel>
       </div>

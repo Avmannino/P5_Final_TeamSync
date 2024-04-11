@@ -45,7 +45,7 @@ const barData = {
         '#00d5ffa7',
       ],
       borderWidth: 2,
-      borderRadius: 3,
+      borderRadius: 2,
     },
   ],
 };
@@ -54,12 +54,14 @@ function BarGraph() {
   return (
     <Panel bordered header="Team Leaders - Home Runs" boxShadow="base" borderRadius="15px"
       style={{
-        padding: '20px',
+        padding: '60px',
         height: '400px', // Adjust the height here
-        width: '600px', // Adjust the width here
-        marginTop: '10px',
-        fontSize: '55px',
+        width: '650px', // Adjust the width here
+        marginTop: '0px',
+        fontSize: '18px',
         position: 'relative',
+        top:'15.5vh',
+        left: '-14.5vw',
         overflow: 'hidden' // Ensure the chart fits within the panel
       }}>
       <Bar data={barData} options={{ maintainAspectRatio: true }} />

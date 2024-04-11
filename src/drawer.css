@@ -1,7 +1,20 @@
-/* @import "rsuite/dist/rsuite.css";
 
-#root{ padding: 100px; }
 
-.drawer-container {
-    background-color: hsla(0, 0%, 0%, 0.037)
-} */
+
+ 
+
+.draw-it {
+    position: relative;
+    display: flex;
+    z-index: 9999;
+    top: 9.9vh;
+    left: 85vw;
+    color: red;
+    background-color: blue;
+
+}
+
+@font-face {
+    font-family: Dashboard;
+    src: url(./fonts/Dashboard.otf);
+}

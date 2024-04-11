@@ -65,7 +65,7 @@ const bodyStyles = {
 
 
 const Sidebar = () => (
-  <div style={{ width: 240, position: 'relative', top: '12vh', background: '#161616' }}>
+  <div style={{ width: 240, position: 'relative', top: '11.5vh', background: '#161616' }}>
     <Sidenav defaultOpenKeys={['1', '2']}>
       <Sidenav.Header icon={<DashboardIcon />}>
         <div style={brandStyles}></div>
