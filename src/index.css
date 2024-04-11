@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Permanent+Marker&display=swap");
 
 #root {
-  /* Add your styles here */
+
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00021f !important;
-}
+  background-color: #00021f;
+} 
 
-body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  font-family: Dashboard;/* Choose a suitable font family */
-  font-size: 17px; /* Set a base font size */
-  background-color: #00021f !important; /* Set a background color */
-  color: #333; /* Set a default text color */
+.body {
+  margin: 0; 
+  padding: 0;
+  font-family: Dashboard;
+  font-size: 17px; 
+  background-color: #00021f !important; 
+  color: #333; 
   background-size:cover; 
   background-repeat: no-repeat; 
   width: 100%;

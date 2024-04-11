@@ -13,7 +13,7 @@ const App = () => {
   const location = useLocation();
 
   // Define an array of routes where the Navbar should not be rendered
-  const noNavbarRoutes = ['/social', '/sports/baseball', 'sports/icehockey', '/sports/soccer'];
+  const noNavbarRoutes = ['/social'];
 
   // Determine if the Navbar should be rendered based on the current route
   const shouldRenderNavbar = !noNavbarRoutes.includes(location.pathname);

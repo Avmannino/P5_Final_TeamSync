@@ -10,13 +10,13 @@ const ScrollButtons = () => {
 
   const handleScrollDown = () => {
     scrollInterval.current = setInterval(() => {
-      window.scrollBy(0, 7); // Adjust the scroll speed as needed
+      window.scrollBy(0, 205); // Adjust the scroll speed as needed
     }, 1); // Adjust the scroll interval as needed
   };
 
   const handleScrollUp = () => {
     scrollInterval.current = setInterval(() => {
-      window.scrollBy(0, -7); // Adjust the scroll speed as needed
+      window.scrollBy(0, -205); // Adjust the scroll speed as needed
     }, 1); // Adjust the scroll interval as needed
   };
 

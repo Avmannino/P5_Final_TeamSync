@@ -1,7 +1,7 @@
 /* Scroll buttons */
 .floating-arrow-up,
 .floating-arrow-down {
-    position: fixed;
+    position: relative;
     bottom: 20px;
     /* Adjust as needed */
     width: 75px;

@@ -295,13 +295,7 @@
         background-color: rgba(0, 0, 0, 0.842);
     }
 
-    img {
-        width: 100%;
-        /* Makes images responsive */
-        max-width: 600px;
-        /* Adjust as necessary */
-        height: auto;
-    }
+
 
     .home-tiles {
         position: relative;

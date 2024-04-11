@@ -13,7 +13,7 @@ import GearIcon from '@rsuite/icons/legacy/Gear';
 const lineOneStyles = {
   padding: '15px 20px',
   color: '#fff',
-  background: '#161616',
+  background: '#333333',
   borderRight: "2px solid #008b8b"
 };
 
@@ -21,7 +21,7 @@ const lineOneStyles = {
 const headerTeamStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#1a1d24',
+  background: '#333333',
   color: ' #fff',
 
 };
@@ -29,7 +29,7 @@ const headerTeamStyles = {
 const headerAdvancedStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#1a1d24',
+  background: '#333333',
   color: ' #fff',
   borderTop: "1px solid #008b8b"
 };
@@ -37,7 +37,7 @@ const headerAdvancedStyles = {
 const headerSettingsStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#1a1d24',
+  background: '#333333',
   color: ' #fff',
   borderTop: "1px solid #008b8b"
 
@@ -45,29 +45,30 @@ const headerSettingsStyles = {
 
 const dividerStyles = {
   color: '#007d9c',
-  border: '2px solid #008b8b'
+  border: '2px solid #333333'
 };
 
 const brandStyles = {
   // borderRight: "2px solid #008b8b",
-  borderTop: "2px solid #008b8b",
-  borderBottom: "0.5px solid grey",
+  borderRight: "2px solid white",
+  borderBottom: "0.5px solid #333333",
   fontSize: 20,
   textAlign: 'center',
-  background: '#1a1d24',
+  background: '#333333',
 }
 
 const bodyStyles = {
   background: '#1a1d24',
-  // borderRight:"2px solid #008b8b"
+  borderRight:"3px solid white",
+  borderBottom:"3px solid white"
 }
 
 
 const Sidebar = () => (
-  <div style={{ width: 240, position: 'relative', top: '8vh', background: '#161616' }}>
+  <div style={{ width: 240, position: 'relative', top: '12vh', background: '#161616' }}>
     <Sidenav defaultOpenKeys={['1', '2']}>
       <Sidenav.Header icon={<DashboardIcon />}>
-        <div style={brandStyles}><DashboardIcon /> At a Glance</div>
+        <div style={brandStyles}></div>
       </Sidenav.Header>
       <Sidenav.Body panel style={bodyStyles}>
         <Nav>

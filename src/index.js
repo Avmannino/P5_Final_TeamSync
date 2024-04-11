@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -17,6 +17,9 @@ import Tennis from "./Tennis";
 import DashCalendar from "./Calendar";
 import SportsTable from "./SportsTable";
 import BaseballField from "./BaseballField";
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import BaseballTacticsPage from "./BaseballTacticsPage";
 
 
 
@@ -52,7 +55,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/sports/baseball/tactics",
-        element: <BaseballField />
+        element: <BaseballTacticsPage />
       },
       {
         path: "/sports/football",
@@ -65,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "/sports/icehockey",
         element: <IceHockey />
+      },
+      {
+        path: "/sports/icehockey/calendar",
+        element: <DashCalendar />
       },
       {
         path: "/sports/basketball",

@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Pricing.css';
-import arrowDownPNG from './assets/arrow-down.png'; // Import your PNG image file
-import arrowUpPNG from './assets/arrow-up.png';
+import Loader from './Loader';
 
 function Pricing({ onButtonClick }) {
+    const [isLoading, setIsLoading] = useState(true); // Initially set to true to show loader
+
     const handleButtonClick = () => {
         onButtonClick();
     };
 
+    useEffect(() => {
+        // Simulate loading delay (remove this in your actual code)
+        const timeout = setTimeout(() => {
+            setIsLoading(false); // Set loading to false when loading is done
+        }, 1000); // 2000 milliseconds (2 seconds) delay for demonstration
+
+        return () => clearTimeout(timeout); // Cleanup function to clear timeout
+    }, []);
 
     return (
         <>
-            <div className='pricing-page'>
-                <div className='pricing-container'>
-                    <h1 className='pricing-header'>
-                        PRICING
-                    </h1>
-                    <div className='pricing-deals-one'>
+            {isLoading ? (
+                <Loader />
+            ) : (
+                <div className='pricing-page'>
+                    <div className='pricing-container'>
                         <h2>FREE</h2>
                         <h1 className='price-one'>
                         </h1>
@@ -107,11 +115,12 @@ function Pricing({ onButtonClick }) {
                             </li>
 
 
-
                         </ul>
+
+
                     </div>
                 </div>
-            </div>
+            )}
         </>
     );
 }
