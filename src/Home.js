@@ -10,14 +10,14 @@ import Loader from './Loader';
 
 
 const Home = () => {
-    const [isLoading, setIsLoading] = useState(true); // Initially set to true to show loader
+    const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        // Simulate loading delay (remove this in your actual code)
+ 
         const timeout = setTimeout(() => {
-            setIsLoading(false); // Set loading to false when loading is done
-        }, 1000); // 2000 milliseconds (2 seconds) delay for demonstration
+            setIsLoading(false); 
+        }, 1000); 
 
-        return () => clearTimeout(timeout); // Cleanup function to clear timeout
+        return () => clearTimeout(timeout);
     }, []);
 
     return (

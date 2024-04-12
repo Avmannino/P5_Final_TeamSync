@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, BrowserRouter, Link as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Sports from "./Sports";
 import Pricing from "./Pricing";
@@ -20,6 +20,8 @@ import BaseballField from "./BaseballField";
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import BaseballTacticsPage from "./BaseballTacticsPage";
+import "rsuite/dist/rsuite.min.css";
+import { CustomProvider } from "rsuite";
 
 
 
@@ -59,7 +61,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/sports/football",
-        element: <Football/>
+        element: <Football />
       },
       {
         path: "/sports/soccer",
@@ -97,6 +99,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <CustomProvider theme="dark">
+      <RouterProvider router={router} />
+    </CustomProvider>
   </React.StrictMode>
 );
