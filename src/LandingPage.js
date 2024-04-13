@@ -30,7 +30,7 @@ function LandingPage({ onButtonClick }) {
               <span className='slider__word'>Organization,</span>
             </span>
           </h1>
-          <img src={Bubble} about="Bubble" className="comment-bubble" />
+        {/* <img src={Bubble} about="Bubble" className="comment-bubble" /> */}
           <h2 className='motto'>
             Team
           </h2>
@@ -43,18 +43,18 @@ function LandingPage({ onButtonClick }) {
 
         {/* New Section for Reviews */}
         <section className="landing-reviews">
-          <h2>
+          {/* <h2>
             Mohammed "Sunny" Omar
-          </h2>
-          <img src={userLogo} about="User" className="user-logo" />
+          </h2> */}
+          {/* <img src={userLogo} about="User" className="user-logo" /> */}
           <h3>
-            <img src={Stars} alt="Stars" className="stars-image" />
+            {/* <img src={Stars} alt="Stars" className="stars-image" /> */}
           </h3>
-          <p>
+          {/* <p>
             "Great sports app that keeps you and your team connected. Simple enough for the laziest of team members to keep up with. Always adding new features. Excited to see what the future holds with this app!"
-          </p>
-          <img src={googleScore} alt="google-review" className="review-image" />
-          <img src={yelpScore} alt="Yelp Review" className="review-image" />
+          </p> */}
+          {/* <img src={googleScore} alt="google-review" className="review-image" />
+          <img src={yelpScore} alt="Yelp Review" className="review-image" /> */}
         </section>
       </div>
     </div>

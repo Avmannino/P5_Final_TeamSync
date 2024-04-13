@@ -20,45 +20,60 @@ body, html {
   .dashboard {
     flex-grow: 1; /* Allows the dashboard to take up all available space except what the vertical card needs */
     margin-right: 20px; /* Space between the dashboard and the vertical card */
+    position: relative;
+    top: 30vh;
+    left: 15vw;
   }
   
   .vertical-card {
-    width: 350px; /* Fixed width for the vertical card */
-    height: 1100px;
-    background-color: #1e1e1e; /* Dark background for the card */
+    width: 400px; /* Fixed width for the vertical card */
+    height: 1000px;
+    background-color:#002b30; /* Dark background for the card */
     color: #e0e0e0; /* Light text for readability */
     padding: 20px; /* Padding inside the card */
-    border-radius: 8px; /* Rounded corners for the card */
+    border-radius:28px; /* Rounded corners for the card */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: absolute;
+    z-index: -1;
+    right: 64vw;
+    top: 15.5vh;
+
+    
   }
 
   .chart-with-background {
     position: relative;
+    left: 24vw;
+    bottom: 25vh;
   }
   
   .chart-background-image {
     position: absolute;
-    top: 0;
-    left: 0vw;
+    top: 0vh;
+    left: 2vw;
     width: 100%;
     height: 100%;
     z-index: 66;
   }
   
-  .HighchartsReact {
-    position: relative;
-    z-index: 1;
+  .graph-container {
+    position: absolute;
+    z-index: 1000;
+    top:9vh;
+    left: -3vw;
+    height: 200px;
     
   }
   
   
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 0.5rem;
+    margin-bottom: 10rem;
     position: relative;
-    left: 40vw;
+    left: 39vw;
+    top:1vh;
   }
   
   .card {
@@ -67,6 +82,9 @@ body, html {
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position:relative;
+    right: 85vw;
+    height: 225px;
   }
   
   .card:hover {
@@ -100,6 +118,9 @@ body, html {
   .chart-container {
     margin: 2rem 0;
     width: 1000px;
+    position:relative;
+    top: 50vh;
+    right: -15vw;
   }
   
   .table-container {
@@ -107,10 +128,15 @@ body, html {
   }
   
   table {
-    width: 100%;
+    width: 700px;
+    height: 500px;
     border-collapse: collapse;
     background: #1e1e1e; /* Match the card background */
     color: #e0e0e0; /* Ensure text is readable on dark background */
+    position:absolute;
+    top: -52vh;
+    left: -41vw;
+    z-index: 50;
   }
   
   table th, 
@@ -121,7 +147,8 @@ body, html {
   }
   
   table th {
-    background-color: #21c87a; /* Maintain the pop of color in headers */
+    background-color: #002b30; /* Maintain the pop of color in headers */
+    border-bottom: 3px solid #ffffff; 
   }
   
   table tr:hover {

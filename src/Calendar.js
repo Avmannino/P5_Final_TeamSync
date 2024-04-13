@@ -4,8 +4,7 @@ import './styles.css';
 import './Calendar.css';
 
 
-
-import { Calendar, Whisper, Popover, Badge } from 'rsuite';
+import { Calendar, Badge } from 'rsuite';
 
 function getTodoList(date) {
   const day = date.getDate();
@@ -30,49 +29,21 @@ function getTodoList(date) {
   }
 }
 
-const DashCalendar = () => {
+const DashCal = () => {
   function renderCell(date) {
     const list = getTodoList(date);
-    const displayList = list.filter((item, index) => index < 2);
 
     if (list.length) {
-      const moreCount = list.length - displayList.length;
-      const moreItem = (
-        <li>
-          <Whisper
-            placement="top"
-            trigger="click"
-            speaker={
-              <Popover>
-                {list.map((item, index) => (
-                  <p key={index}>
-                    <b>{item.time}</b> - {item.title}
-                  </p>
-                ))}
-              </Popover>
-            }
-          >
-            <a>{moreCount} more</a>
-          </Whisper>
-        </li>
-      );
-
-      return (
-        <ul className="calendar-todo-list">
-          {displayList.map((item, index) => (
-            <li key={index}>
-              <Badge /> <b>{item.time}</b> - {item.title}
-            </li>
-          ))}
-          {moreCount ? moreItem : null}
-        </ul>
-      );
+      return <Badge className="calendar-todo-item-badge" />;
     }
 
     return null;
   }
-
-  return <Calendar bordered renderCell={renderCell} />;
+  return (
+    <div style={{ width: 350, height: '600px', position: 'absolute', top: '50vh', left:'25.5vw', zIndex: '9999' }}>
+      <Calendar compact bordered renderCell={renderCell} />{' '}
+    </div>
+  );
 };
 
-export default DashCalendar;
+export default DashCal

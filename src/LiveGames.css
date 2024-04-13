@@ -1,0 +1,12 @@
+.live-games {
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    top: -43vh;
+    right: 5vw;
+    font-family: Dashboard;
+   
+
+}

@@ -3,6 +3,8 @@ import { Panel } from 'rsuite';
 import Dashboard from './Dashboard';
 import Llamas from './assets/llamas_logo.png';
 import './Baseball.css';
+import LiveGames from './LiveGames';
+import DashCal from './Calendar';
 
 
 // import BaseballField from './BaseballField';
@@ -16,12 +18,14 @@ export default function Baseball() {
           <div className='team-card'>
 
             <div className='panel-text'>
+              <LiveGames />
             
             </div>
 
 
           </div>
           <Dashboard />
+          <DashCal />
         </div>
     
     </>

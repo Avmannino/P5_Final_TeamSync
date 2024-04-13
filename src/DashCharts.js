@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { Panel } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
-import { Dashboards } from '@highcharts/dashboards/modules/layout';
-import DashboardHC from './DashHighcharts.js';
-import DashboardsAccessibility from '@highcharts/dashboards/es-modules/Dashboards/Accessibility/DashboardsAccessibility';
-import { DataGrid } from '@highcharts/dashboards/datagrid';
+
 
 import './DashCharts.css';
 
@@ -146,7 +143,7 @@ const DashboardCharts = () => {
   return (
     <div className='dashboard-charts'>
       <div className="line-graph">
-        <Panel bordered header="Sales">
+        <Panel header="Sales">
           <ReactApexChart
             options={generateChartOptions("Sales", sparklineData, colorPalette[0])}
             series={[{ data: sparklineData }]}

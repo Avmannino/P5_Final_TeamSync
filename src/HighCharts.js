@@ -3,7 +3,6 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import './HighCharts.css'; // Ensure this CSS file contains the necessary styling for dark mode
 import backgroundImage from './assets/strikezone.png';
-import DashTimeline from './Timeline';
 // import PatternFill from 'highcharts/modules/pattern-fill';
 
 
@@ -12,7 +11,9 @@ import DashTimeline from './Timeline';
 // Mock Data for the components
 const cardData = [
     { title: 'Vitamin A', value: 900, unit: 'micrograms', description: 'daily recommended dose' },
-    { title: 'Iron', value: 8, unit: 'micrograms', description: 'daily recommended dose' }
+    { title: 'Iron', value: 8, unit: 'micrograms', description: 'daily recommended dose' },
+    { title: 'Iron', value: 10, unit: 'micrograms', description: 'daily recommended dose' },
+    { title: 'Iron', value: 10, unit: 'micrograms', description: 'daily recommended dose' },
 ];
 
 const barChartData = {
@@ -68,15 +69,22 @@ const barChartData = {
         name: 'Iron',
         data: [6.5, 6.5, 0.9, 1, 0.6],
         color: '#3498db' // Example color, change as needed
+    },
+    {
+        name: 'Vitamin b',
+        data: [6421, 2122, 1350, 388, 214],
+        color: '#2ecc71' // Example color, change as needed
     }]
 };
 
 const tableData = [
-    { food: 'Beef Liver', vitaminA: 6421, iron: 6.5 },
-    { food: 'Lamb Liver', vitaminA: 2122, iron: 6.5 },
-    { food: 'Cod Liver Oil', vitaminA: 1350, iron: 0.9 },
-    { food: 'Mackerel', vitaminA: 388, iron: 1 },
-    { food: 'Tuna', vitaminA: 214, iron: 0.6 }
+    { team: 'Dimmsdale Dragons', record: "37-24", gb: "-", last: 6 - 4, streak: "W2" },
+    { team: 'Vienna Vipers', record: "33-30", gb: "5.0", last: 3 - 7, streak: "W2" },
+    { team: 'Las Vegas Llamas', record: "33-31", gb: "7.0", last: 6 - 4, streak: "W3" },
+    { team: 'Binghamton Bears', record: "30-33", gb: "9.0", last: 5 - 5, streak: "L2" },
+    { team: 'Simmsbury Sharks', record: "30-33", gb: "9.0", last: 4 - 6, streak: "L1" },
+    { team: 'Warren Wolves', record: "28-37", gb: "11.0", last: 5 - 5, streak: "L3" },
+    { team: 'Bradentown Buffalo', record: "27-39", gb: "13.0", last: 2 - 8, streak: "L5" }
 ];
 
 const lineChartOptions = {
@@ -93,7 +101,7 @@ const lineChartOptions = {
                     if (series && series.data) { // Make sure series and series.data are defined
                         series.addPoint([x, y], true, true);
                     }
-                }, 450);
+                }, 1000);
             }
         }
     },
@@ -101,7 +109,7 @@ const lineChartOptions = {
         useUTC: false
     },
     title: {
-        text: 'Real-time Data',
+        text: '',
         style: {
             color: '#e0e0e0'
         }
@@ -257,47 +265,48 @@ const Dash = () => {
                         highcharts={Highcharts}
                         options={baseballChartOptions}
                     />
-                    </div>
-                </div>
-                <div className="card-container">
-                    {cardData.map((card, index) => (
-                        <div key={index} className="card">
-                            <h2>{card.title}</h2>
-                            <div className="value">{card.value}</div>
-                            <div className="unit">{card.unit}</div>
-                            <div className="description">{card.description}</div>
-                        </div>
-                    ))}
-                </div>
-                <div className="chart-container">
-                        <HighchartsReact highcharts={Highcharts} options={barChartData} />
-                    <div className="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Food</th>
-                                    <th>Vitamin A</th>
-                                    <th>Iron</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {tableData.map((item, index) => (
-                                    <tr key={index}>
-                                        <td>{item.food}</td>
-                                        <td>{item.vitaminA}</td>
-                                        <td>{item.iron}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div className="vertical-card">
-                    <h2>Vertical Card Title</h2>
-                    <DashTimeline />
                 </div>
             </div>
-            );
+            <div className="card-container">
+                {cardData.map((card, index) => (
+                    <div key={index} className="card">
+                        <h2>{card.title}</h2>
+                        <div className="value">{card.value}</div>
+                        <div className="unit">{card.unit}</div>
+                        <div className="description">{card.description}</div>
+                    </div>
+                ))}
+            </div>
+            <div className="chart-container">
+                <div className="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Team</th>
+                                <th>Record</th>
+                                <th>GB</th>
+                                <th>Last 10</th>
+                                <th>Streak</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {tableData.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{item.team}</td>
+                                    <td>{item.record}</td>
+                                    <td>{item.gb}</td>
+                                    <td>{item.last}</td>
+                                    <td>{item.streak}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div className="vertical-card">
+            </div>
+        </div>
+    );
 }
 
-            export default Dash;
+export default Dash;

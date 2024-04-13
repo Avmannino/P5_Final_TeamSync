@@ -5,13 +5,13 @@ import { position } from '@chakra-ui/react';
 
 function TeamCard() {
   return (
-    <Panel shaded bordered bodyFill style={{ display: 'inline-block', width: 335, height: 450, border:'1px solid #ffffff48', borderRadius: '20px', backgroundColor: '#35353563', fontSize:'25px', position:'absolute', left: '43vw', top:'15vh' }}>
+    <Panel shaded bordered bodyFill style={{ display: 'inline-block', width: 335, height: 450, border:'1px solid #ffffff08', borderRadius: '20px', backgroundColor: '#35353530', fontSize:'25px', position:'absolute', left: '26vw', top:'17vh' }}>
       <img src={llamasLogo} width="260" height="245" style={{position:'relative', left: '35px', top:'15px'}} alt="Llamas Logo" />
       <hr style={{width:'250px', position:'relative', top:'5px', left:'40px'}}></hr>
       <Panel style={{color: 'white', textAlign:'center', fontSize:'22px'}}>
         <p>
           <small style={{fontWeight:'bold', fontSize:'22px', position:'relative', top:'-25px'}}>
-            The Las Vegas Llamas
+            Las Vegas Llamas
           </small>
         </p>
         <p>
@@ -29,7 +29,7 @@ function TeamCard() {
             Record:
           </small>
           <small style={{display: 'flex', flexDirection: 'column', color: '#ffffff98', position:'relative', top:'-74px',left:'-2px', fontSize:'20px' }}>
-                        155-100
+                        258-156 (.623)
           </small>
         </p>
       </Panel>

@@ -1,49 +1,69 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './drawer.css';
-import { Drawer, RadioGroup, Radio, ButtonToolbar, Button, IconButton, Placeholder } from 'rsuite';
+import { Drawer, ButtonToolbar, Button, IconButton, Placeholder } from 'rsuite';
+import AngleRightIcon from '@rsuite/icons/legacy/AngleRight';
+import AngleUpIcon from '@rsuite/icons/legacy/AngleUp';
 import DashTimeline from './Timeline';
-
-
-
-const RadioLabel = ({ children }) => <label style={{ padding: 7 }}>{children}</label>;
+import Dash from './HighCharts';
+import { HighchartsReact } from 'highcharts-react-official';
+import HighchartsComponent from '@highcharts/dashboards/es-modules/Dashboards/Components/HighchartsComponent/HighchartsComponent';
 
 const TimeDrawer = () => {
-    const [size, setSize] = React.useState();
-    const [open, setOpen] = React.useState(false);
-    const [placement, setPlacement] = React.useState('right');
+    const [openRight, setOpenRight] = React.useState(false);
+    const [openBottom, setOpenBottom] = React.useState(false);
 
-    const handleOpen = value => {
-        setSize(value);
-        setOpen(true);
+    const handleOpenRight = () => {
+        setOpenRight(true);
+    };
+
+    const handleOpenBottom = () => {
+        setOpenBottom(true);
     };
 
     return (
-        <>
-
-            <ButtonToolbar>
-                <Button className='games-btn' onClick={() => handleOpen(300)}>
-                    <code style={{ color: '#fff' }}>Upcoming Series</code>
-                </Button>
+        <div>
+            <ButtonToolbar className='btn-toolbar'>
+                <IconButton icon={<AngleRightIcon />} onClick={handleOpenRight}>
+                    Right
+                </IconButton>
+                <IconButton icon={<AngleUpIcon />} onClick={handleOpenBottom}>
+                    Bottom
+                </IconButton>
             </ButtonToolbar>
 
-            <Drawer size={size} placement={placement} className='draw-it' open={open} onClose={() => setOpen(false)}>
-                <div className="drawer-content" style={{ backgroundColor: '#333333' }}>
-                    <Drawer.Header>
-                        <Drawer.Title></Drawer.Title>
-                        <Drawer.Actions>
-                            <Button onClick={() => setOpen(false)}>Cancel</Button>
-                            <Button onClick={() => setOpen(false)} appearance="primary">
-                                Confirm
-                            </Button>
-                        </Drawer.Actions>
-                    </Drawer.Header>
-                    <Drawer.Body>
-                        <DashTimeline />
-                    </Drawer.Body>
-                </div>
+            {/* Drawer that opens from the right */}
+            <Drawer placement="right" open={openRight} size={650} onClose={() => setOpenRight(false)}>
+                <Drawer.Header>
+                    <Drawer.Title></Drawer.Title>
+                    <Drawer.Actions>
+                        <Button onClick={() => setOpenRight(false)}>Cancel</Button>
+                        <Button onClick={() => setOpenRight(false)} appearance="primary">
+                            Confirm
+                        </Button>
+                    </Drawer.Actions>
+                </Drawer.Header>
+                <Drawer.Body>
+                    <DashTimeline />
+                </Drawer.Body>
             </Drawer>
-        </>
+
+            {/* Drawer that opens from the bottom */}
+            <Drawer placement="bottom" open={openBottom} size={850} onClose={() => setOpenBottom(false)}>
+                <Drawer.Header>
+                    <Drawer.Title></Drawer.Title>
+                    <Drawer.Actions>
+                        <Button onClick={() => setOpenBottom(false)}>Cancel</Button>
+                        <Button onClick={() => setOpenBottom(false)} appearance="primary">
+                            Confirm
+                        </Button>
+                    </Drawer.Actions>
+                </Drawer.Header>
+                <Drawer.Body>
+                   <HighchartsReact />
+                </Drawer.Body>
+            </Drawer>
+        </div>
     );
 };
 

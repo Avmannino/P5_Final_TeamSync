@@ -1,7 +1,7 @@
 .line-graph {
     position: relative;
-    top: -10vh;
-    right: 18.5vw;
+    bottom: 36vh;
+    left: 12vw;
     width: 650px;
     height: 110px;
     font-family: Dashboard;
@@ -10,20 +10,23 @@
 
 .radar-chart {
     position: relative;
-    top: 0vh;
-    right: -28vw;
+    top: -65vh;
+    right: -42.5vw;
     width: 520px;
     /* height: 150px; */
     color: white;
     font-family: Dashboard;
 }
 
-.progress-bar {
+/* .progress-bar {
     position: relative;
-    top: 17vh;
-    left: -2vw;
+    top: -152.5vh;
+    left: 33vw;
+    padding-right: 250px;;
+    padding-left: 250px;
+    margin-right: 35px;;
 
-}
+} */
 
 
 
