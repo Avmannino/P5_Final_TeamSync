@@ -1,18 +1,18 @@
 .line-graph {
     position: relative;
-    top: 17.5vh;
-    right: 19vw;
+    top: -10vh;
+    right: 18.5vw;
     width: 650px;
-    height: 100px;
+    height: 110px;
     font-family: Dashboard;
-    color:white;
+    color: #123e3e
 }
 
 .radar-chart {
     position: relative;
-    top: 7vh;
-    right: -31vw;
-    width: 610px;
+    top: 0vh;
+    right: -28vw;
+    width: 520px;
     /* height: 150px; */
     color: white;
     font-family: Dashboard;
@@ -20,19 +20,19 @@
 
 .progress-bar {
     position: relative;
-    top: -41.5vh;
-    left: 48vw;
-    height: 80px;
-    width: 550px;
+    top: 17vh;
+    left: -2vw;
 
 }
 
 
-.heat-map {
+
+
+/* .heat-map {
     position: relative;
     bottom: -22.5%;
     left: 7.1vw;
-    width: 650px;
+    width: 60px;
     font-family: Dashboard;
     color: white;
-}
+} */

@@ -25,7 +25,7 @@ const Navbar = () => {
           <img src={Logo} alt="ts-logo" />
         </Link>
         <div className="nav-items">
-          <IconButton onClick={toggleModeFunc} color="purple" appearance='ghost' style={{position: 'relative', top:'-1vh', right: '57vw', width: '95px'}} size="lg" icon={toggleMode ? <Visible /> : <Unvisible />}></IconButton>
+          <IconButton onClick={toggleModeFunc} appearance='ghost' style={{ border:"2px solid #017879", color: "#017879", position: 'relative', top:'-1vh', right: '58vw', width: '95px'}} size="lg" icon={toggleMode ? <Visible /> : <Unvisible />}></IconButton>
           <Link to="/home" className="nav-link">Home</Link>
           <Link to="/sports" className="nav-link">Sports</Link>
           <Link to="/pricing" className="nav-link">Pricing</Link>

@@ -13,38 +13,48 @@ import NavSide from './NavSide';
 import DashTimeline from './Timeline';
 import Navbar from './Navbar';
 import TimeDrawer from './Drawer';
-import CheckCardDash from './CheckCard';
+import TeamCard from './TeamCard';
+import ContourMap from './CountourChart';
+import Dash from './HighCharts';
 // import DashDrawer from './Drawer';
+
 
 
 const Dashboard = () => {
     return (
-        <div className="wrapper">
-            <CheckCardDash />
-            <div className="content-area">
-                <TimeDrawer />
-                <div className='side-bar'>
-                    <Sidebar />
-                    <Routes>
-                        <Route path="/sports/calendar" element={DashCalendar} />
-                    </Routes>
-                </div>
+            <div className="wrapper">
+                <div className="content-area">
+                    {/* <ContourMap /> */}
+                    <TimeDrawer />
+                    <div className='side-bar'>
+                        <Sidebar />
+                        <Routes>
+                            <Route path="/sports/calendar" element={DashCalendar} />
+                        </Routes>
+                    </div>
+                    <div className='user-card'>
+                    
+                    </div>
 
-                <div className="navbar-frame">
-                    <Navbar />
-                </div>
-                <div className="container-fluid">
-                    <div className="main">
-                        <div className="row sparkboxes mt-4 mb-4">
-                            <DashboardCharts />
-                        </div>
-                        <div className='bar-chart'>
-                            <BarGraph />
+                    <div className="navbar-frame">
+                        <Navbar />
+                    </div>
+                    <div className="container-fluid">
+                        <div className="main">
+                            <TeamCard />
+                            <Dash />
+                          
+                            <div className="row sparkboxes mt-4 mb-4">
+                                <DashboardCharts />
+                                {/* <DashTimeline /> */}
+                            </div>
+                            <div className='bar-chart'>
+                             
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

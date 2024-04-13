@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles.css';
 import './drawer.css';
 import { Drawer, RadioGroup, Radio, ButtonToolbar, Button, IconButton, Placeholder } from 'rsuite';
 import DashTimeline from './Timeline';
@@ -21,19 +20,17 @@ const TimeDrawer = () => {
 
     return (
         <>
-            <RadioGroup inline appearance="picker" value={placement} onChange={setPlacement}>
-            </RadioGroup>
-            <hr />
+
             <ButtonToolbar>
-                <Button style={{position: 'relative', width: '200px', height:'65px', top: '18vh', left: '40vw', fontFamily: 'Dashboard'}} onClick={() => handleOpen(800)}>
-                    <code>Upcoming Games</code>
+                <Button className='games-btn' onClick={() => handleOpen(300)}>
+                    <code style={{ color: '#fff' }}>Upcoming Series</code>
                 </Button>
             </ButtonToolbar>
 
             <Drawer size={size} placement={placement} className='draw-it' open={open} onClose={() => setOpen(false)}>
                 <div className="drawer-content" style={{ backgroundColor: '#333333' }}>
                     <Drawer.Header>
-                        <Drawer.Title>UPCOMING GAMES</Drawer.Title>
+                        <Drawer.Title></Drawer.Title>
                         <Drawer.Actions>
                             <Button onClick={() => setOpen(false)}>Cancel</Button>
                             <Button onClick={() => setOpen(false)} appearance="primary">

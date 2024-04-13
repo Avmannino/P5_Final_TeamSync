@@ -8,36 +8,13 @@
   align-items: center;
 }
 
-
-
-
-
-.team-card {
-    position: relative;
-    top: -27vh;
-    left: -1vw;
-    width: 450px; /* Adjust width as needed */
-    height: 300px;
-    margin: 20px; /* Adjust margin as needed */
-    z-index: 9993;
-    background-color: rgba(128, 128, 128, 0.318);
-    border-radius: 35px;
-    text-align: center;
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    justify-content: center; /* Added */
-    align-items: center; /* Added */
-    border: 1px solid white;
-    color: white;
-    font-family: Dashboard;
-  }
   
   .panel-header {
     display: flex;
     align-items: center;
     justify-content: center; /* Added */
     padding: 10px;
-    background-color: #fdf3f300; /* Adjust background color as needed */
+    background-color: hsla(0, 0%, 21%, 0.387); /* Adjust background color as needed */
   }
   
   .panel-text {

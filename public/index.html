@@ -8,6 +8,24 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <script src="http://requirejs.org/docs/release/2.3.6/comments/require.js"></script>
+  <script>
+      require.config({
+          packages: [{
+              name: 'highcharts',
+              main: 'highcharts'
+          }, {
+              name: 'dashboards',
+              main: 'dashboards'
+          }],
+          paths: {
+              highcharts: 'https://code.highcharts.com',
+              dashboards: 'https://code.highcharts.com/dashboards'
+          }
+      });
+  
+  </script>
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

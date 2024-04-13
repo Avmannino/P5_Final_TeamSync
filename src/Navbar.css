@@ -28,7 +28,7 @@
     position: relative;
     top: -1vh;
     /* Keeping original top adjustment */
-    left: 118.5vw;
+    left: 120vw;
     /* Kept as per your original specification */
     width: 100%;
     /* Keeping your specified logo size */
@@ -125,7 +125,7 @@
     width: 90px; /* Adjust the width of the logo */
     position: fixed;
     top: 1.6vh;
-    right: 8.5vw;
+    right: 5.5vw;
   }
   
   .nav-items {

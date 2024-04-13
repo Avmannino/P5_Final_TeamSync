@@ -14,14 +14,16 @@ const App = () => {
   const location = useLocation();
   // Define an array of routes where the Navbar should not be rendered
   const noNavbarRoutes = ['/social'];
+  const noScrollButtonsRoutes = ['/sports', '/sports/baseball'];
 
   // Determine if the Navbar should be rendered based on the current route
   const shouldRenderNavbar = !noNavbarRoutes.includes(location.pathname);
+  const shouldRenderScrollButtons = !noScrollButtonsRoutes.includes(location.pathname);
 
   return (
       <div className="app">
         {shouldRenderNavbar && <Navbar />}
-        <ScrollButtons />
+        {shouldRenderScrollButtons && <ScrollButtons />}
         <Outlet />
       </div>
   );

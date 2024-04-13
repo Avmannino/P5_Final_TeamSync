@@ -1,14 +1,40 @@
+.games-btn {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 14px;
+    border-radius: 20px;
+    font-family: nowayback;
+    font-weight: normal;
+    text-decoration: none;
+    font-variant: normal;
+    background-color: rgba(69, 69, 69, 0.574);
+    border: 1.5px solid rgb(108, 108, 108);
+    display: inline-block;
+    position: relative;
+    width: 200px; 
+    height:65px;
+    top: 17vh; 
+    left: 35vw;
+}
+
+.games-btn:hover {
+    background-color: #009589;
+    color:black
+}
+
+.games-btn:active {
+    background-color: #15584b;
+    color:black
+}
 
 
-
- 
 
 .draw-it {
     position: relative;
     display: flex;
     z-index: 9999;
     top: 9.9vh;
-    left: 85vw;
+    left: 58vw;
     color: red;
     background-color: blue;
 

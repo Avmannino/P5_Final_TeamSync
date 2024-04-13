@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { Panel } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
+import { Dashboards } from '@highcharts/dashboards/modules/layout';
+import DashboardHC from './DashHighcharts.js';
+import DashboardsAccessibility from '@highcharts/dashboards/es-modules/Dashboards/Accessibility/DashboardsAccessibility';
+import { DataGrid } from '@highcharts/dashboards/datagrid';
 
 import './DashCharts.css';
 
@@ -138,16 +142,6 @@ const DashboardCharts = () => {
     return series;
   };
 
-  const heatmapSeries = [{
-    name: 'Metric1',
-    data: generateData(18, { min: 0, max: 90 })
-  }, {
-    name: 'Metric2',
-    data: generateData(18, { min: 0, max: 90 })
-  }, {
-    name: 'Metric3',
-    data: generateData(18, { min: 0, max: 90 })
-  }];
 
   return (
     <div className='dashboard-charts'>
@@ -166,46 +160,16 @@ const DashboardCharts = () => {
           <ApexRadarChart />
         </Panel>
       </div>
-      <div className="heat-map">
-        <Panel bordered header="Heatmap">
-          <ReactApexChart
-            options={{
-              chart: {
-                height: 50,
-                type: 'heatmap',
-              },
-              plotOptions: {
-                heatmap: {
-                  shadeIntensity: 10.5,
-                  radius: 0,
-                  useSeriesColors: false,
-                },
-              },
-              colors: ["#008FFB"],
-              dataLabels: {
-                enabled: false
-              },
-              series: heatmapSeries,
-              title: {
-                text: "HeatMap Chart"
-              },
-            }}
-            series={heatmapSeries}
-            type="heatmap"
-            height={30}
-          />
-        </Panel>
-      </div>
       <div className="progress-bar">
         <Panel bordered header="Daily Steps">
           <ReactApexChart
             options={{
               chart: {
                 type: 'bar',
-                height: 149,
+                height: 19,
                 sparkline: { enabled: true },
              
-                background: 'transparent',
+                background: '',
               },
               plotOptions: {
                 bar: {
@@ -227,7 +191,7 @@ const DashboardCharts = () => {
             }}
             series={[{ data: [80] }]}
             type="bar"
-            height={30}
+            height={25}
           />
         </Panel>
       </div>

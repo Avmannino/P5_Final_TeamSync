@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         element: <Sports />
       },
       {
-        path: "/sports/baseball",
+        path: "/sports/baseball/*",
         element: <Baseball />
       },
       {

@@ -37,14 +37,14 @@
 
 /* Adjust position of the up arrow */
 .floating-arrow-up {
-    top: 8vh;
-    right: 20px;
+    top: 28vh;
+    left: 90vw;
     /* Adjust as needed */
 }
 
 /* Adjust position of the down arrow */
 .floating-arrow-down {
-    top:80vh;
-    right: 50vw;
+    top:70vh;
+    left: 90vw;
     /* Adjust as needed */
 }
