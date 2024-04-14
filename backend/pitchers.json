@@ -1,0 +1,71 @@
+{
+    "pitchers":
+    [
+        {
+            "id": 1,
+            "name": "Gerrit Cole",
+            "age": 32,
+            "wins": 15,
+            "losses": 4,
+            "era": 2.63,
+            "games_started": 33,
+            "innings_pitched": 209.0,
+            "strikeouts": 222
+        },
+        {
+            "id": 2,
+            "name": "Clarke Schmidt",
+            "age": 27,
+            "wins": 9,
+            "losses": 9,
+            "era": 4.64,
+            "games_started": 32,
+            "innings_pitched": 159.0,
+            "strikeouts": 149
+        },
+        {
+            "id": 3,
+            "name": "Domingo Germán",
+            "age": 30,
+            "wins": 5,
+            "losses": 7,
+            "era": 4.56,
+            "games_started": 19,
+            "innings_pitched": 108.2,
+            "strikeouts": 114
+        },
+        {
+            "id": 4,
+            "name": "Jhony Brito",
+            "age": 25,
+            "wins": 9,
+            "losses": 7,
+            "era": 4.28,
+            "games_started": 13,
+            "innings_pitched": 90.1,
+            "strikeouts": 72
+        },
+        {
+            "id": 5,
+            "name": "Luis Severino",
+            "age": 29,
+            "wins": 4,
+            "losses": 8,
+            "era": 6.65,
+            "games_started": 18,
+            "innings_pitched": 89.1,
+            "strikeouts": 79
+        },
+        {
+            "id": 6,
+            "name": "Carlos Rodón",
+            "age": 30,
+            "wins": 3,
+            "losses": 8,
+            "era": 6.85,
+            "games_started": 14,
+            "innings_pitched": 64.1,
+            "strikeouts": 64
+        }
+    ]
+}
