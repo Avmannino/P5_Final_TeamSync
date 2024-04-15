@@ -29,6 +29,7 @@ const Sports = () => {
         <Loader />
       ) : (
         <div className='sports-wrapper'>
+          <h1 className='sports-header'>CHOOSE YOUR SPORT</h1>
           <SportTiles />
           <Routes>
             <Route path="baseball" element={<Baseball />} />

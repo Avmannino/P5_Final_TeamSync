@@ -15,14 +15,14 @@ if __name__ == "__main__":
             # Iterate over pitchers data and create Pitcher objects
             for d in data["pitchers"]:  # Update to match the JSON structure
                 p = Pitcher(
-                    name=d.get("name"),
-                    age=d.get("age"),
-                    wins=d.get("wins"),
-                    losses=d.get("losses"),
-                    era=d.get("era"),
-                    games_started=d.get("games_started"),
-                    innings_pitched=d.get("innings_pitched"),
-                    strikeouts=d.get("strikeouts"),
+                    name=Pitcher["name"],
+                    age=Pitcher["age"],
+                    wins=Pitcher["wins"],
+                    losses=Pitcher["losses"],
+                    era=Pitcher["era"],
+                    games_started=Pitcher["games_started"],
+                    innings_pitched=Pitcher["innings_pitched"],
+                    strikeouts=Pitcher["strikeouts"],
                 )
                 pitchers_list.append(p)
 

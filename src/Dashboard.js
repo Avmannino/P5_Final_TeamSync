@@ -41,7 +41,6 @@ const Dashboard = () => {
                     </div>
                     <div className="container-fluid">
                         <div className="main">
-                            <TeamCard />
                             <Dash />
                           
                             <div className="row sparkboxes mt-4 mb-4">

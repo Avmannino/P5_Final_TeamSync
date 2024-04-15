@@ -60,4 +60,11 @@
     border-radius: 5px; /* Adjust border radius as needed */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
+
+  .team-card {
+    position: absolute;
+    left: 0vw;
+    top: -2vh;
+    z-index: 9999;
+  }
   

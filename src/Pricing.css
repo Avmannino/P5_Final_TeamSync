@@ -20,32 +20,30 @@ body {
 }
 
 .pricing-container {
-    height: 100%;
-    width: 100%;
-    background-color: #00000077;
+    height: 250vh;
+    width: 100vw;
+    background-color: #0000007e;
     color: white;
 }
 
 
 .pricing-header {
-    height: 0.5vh;
-    width: 20%;
-    position: relative;
-    top: 2vh;
-    left: 2.4vw;
-    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    top: -35vh;
+    left: -18vw;
+    background-color: rgba(197, 0, 0, 0);
     font-family: Oswald;
     font-size: 50px;
     color: white;
 }
 
-.pricing-deals-one {
+.pricing-deals {
     position: relative;
-    top: 81.5vh;
-    left: 1vw;
+    top: 98vh;
+    left: 15.5vw;
     background-color: rgba(255, 255, 0, 0);
-    height: 25.2%;
-    width: 22.35%;
+    height: 25.5%;
+    width: 17.35%;
     border-radius: 25px;
     border: 1.5px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -53,9 +51,20 @@ body {
     text-align: center;
 }
 
-ul {
+.free-header {
+    position: relative;
+    top: 3vh;
+    left: 0.5vw;
+}
+
+.free-list {
     list-style-type: none;
-    font-size: 50px
+    font-size: 50px;
+    position: relative;
+    top: 13vh;
+    left: -0.5vw;
+    text-align: center;
+
 }
 
 li {
@@ -68,15 +77,15 @@ li {
     font-weight: bold;
     color: white;
     position: relative;
-    top: -2vh;
-    left: -9.5vw;
+    top: 20vh;
+    left: 0vw;
 }
 
 
 .pricing-deals-one h2 {
     position: relative;
-    top: 1vh;
-    left: 0vw;
+    top: 15vh;
+    left: 2vw;
     color: white;
     font-family: Oswald;
     font-size: 34px;
@@ -87,14 +96,14 @@ li {
     font-weight: bold;
     color: white;
     position: relative;
-    top: -2vh;
-    left: -9.5vw;
+    top: 2vh;
+    left: -11vw;
 }
 
 .pricing-deals-two h2 {
     position: relative;
-    top: 1vh;
-    left: 10vw;
+    top: 3vh;
+    left: 7vw;
     color: white;
     font-family: Oswald;
     font-size: 34px;
@@ -102,11 +111,11 @@ li {
 
 .pricing-deals-two {
     position: relative;
-    top: 18vh;
-    left: 25vw;
+    top: 34.5vh;
+    left: 40vw;
     background-color: rgba(43, 255, 0, 0);
     height: 25.2%;
-    width: 22.4%;
+    width: 17.35%;
     border-radius: 25px;
     border: 1.5px solid rgb(255, 255, 255);
     color: white;
@@ -116,11 +125,11 @@ li {
 
 .pricing-deals-three {
     position: relative;
-    bottom: 45vh;
-    left: 47.5vw;
+    bottom: 29vh;
+    left: 65.5vw;
     background-color: rgba(255, 255, 0, 0);
-    height: 25%;
-    width: 22.3%;
+    height: 25.5%;
+    width: 17.35%;
     border-radius: 25px;
     border: 1.5px solid rgb(255, 255, 255);
     color: white;
@@ -128,8 +137,13 @@ li {
     font-size: 30px;
 }
 
-ul {
+
+.basic-list {
     list-style-type: none;
+    position: relative;
+    top: 5vh;
+    right: 0.5vw;
+    text-align: center;
 }
 
 li {
@@ -143,17 +157,25 @@ li {
     font-weight: bold;
     color: white;
     position: relative;
-    top: -2vh;
-    left: -10.5vw;
+    top: 3vh;
+    left: -11.5vw;
 }
 
 .pricing-deals-three h2 {
     position: relative;
-    top: 1vh;
-    left: 9vw;
+    top: 4vh;
+    left: 7.5vw;
     color: rgb(255, 255, 255);
     font-family: Oswald;
     font-size: 34px;
+}
+
+.pro-list {
+    list-style-type: none;
+    position: relative;
+    top: 5vh;
+    right: 0.5vw;
+    text-align: center;
 }
 
 .floating-arrow-up,
@@ -204,10 +226,6 @@ li {
     height: 150px;
 }
 
-
-
-
-
 .trial-button {
     font-family: cabin;
     font-weight: bold;
@@ -222,8 +240,8 @@ li {
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: -8vh;
-    left: 7.9vw;
+    top: 8vh;
+    left: -19vw;
     border: 2px solid rgb(255, 81, 0);
 }
 
@@ -250,8 +268,8 @@ li {
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 53vh;
-    left: -20.8vw;
+    top: 50vh;
+    left: -22vw;
     border: 3px solid rgb(255, 81, 0);
 }
 
@@ -278,8 +296,8 @@ li {
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 53vh;
-    left: 5.5vw;
+    top: 50vh;
+    left: 2.5vw;
     border: 3px solid rgb(255, 81, 0);
 }
 
@@ -306,8 +324,8 @@ li {
     align-items: center;
     cursor: pointer;
     position: relative;
-    top: 10.2vh;
-    left: 5.3vw;
+    top: 18vh;
+    left: 3vw;
     border: 3px solid rgb(255, 81, 0);
 }
 
@@ -324,30 +342,14 @@ li {
 .features-container {
     position: relative;
     width: 60%;
-    height: 31%;
-    bottom: 35vh;
-    left: 20vw;
+    height: 18%;
+    bottom: 75vh;
+    left: 18vw;
     background-color: rgba(255, 0, 0, 0);
-    border: 3px solid rgb(0, 107, 150);
     border-radius: 25px;
 }
 
-.features-text h3 {
-    color: rgb(255, 81, 0);
-    font-weight: 900;
-}
 
-.features-text li {
-    padding: 8px;
-    font-family: Oswald;
-    font-size: 20px;
-    font-weight: 200;
-    display: flex;
-    flex-direction: column;
-    text-wrap: pretty;
-    line-height: 1em;
-    color: rgb(233, 233, 233);
-}
 
 @font-face {
     font-family: Ana;

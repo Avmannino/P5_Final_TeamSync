@@ -292,7 +292,7 @@
         align-items: center;
         height: 200vh;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.842);
+        background-color: rgba(0, 0, 0, 0);
     }
 
 
@@ -367,8 +367,8 @@
     }
 
     .home-container h1 {
-        top: 92vh;
-        right: 43vw;
+        top: 90vh;
+        right: 37vw;
     }
 
     .our-core {
@@ -401,12 +401,12 @@
     }
 
     .home-container h3 {
-        top: 107.5vh;
+        top: 100.5vh;
         right: 25vw;
     }
 
     .scheduling {
-        top: 102vh;
+        top: 95vh;
         right: 20.1vw;
     }
 
@@ -418,13 +418,13 @@
     }
 
     .home-container h4 {
-        top: 140vh;
-        left: 14vw;
+        top: 130vh;
+        left: 10vw;
     }
 
     .hockey {
-        top: 135vh;
-        left: 22.5vw;
+        top: 125vh;
+        left: 19vw;
     }
 
     .scroll-container {

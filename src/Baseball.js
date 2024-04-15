@@ -5,6 +5,8 @@ import Llamas from './assets/llamas_logo.png';
 import './Baseball.css';
 import LiveGames from './LiveGames';
 import DashCal from './Calendar';
+import TeamCard from './TeamCard';
+import TeamCardIce from './TeamCardIce';
 
 
 // import BaseballField from './BaseballField';
@@ -20,6 +22,10 @@ export default function Baseball() {
             <div className='panel-text'>
               <LiveGames />
             
+            </div>
+
+            <div className='team-card'>
+              <TeamCard />
             </div>
 
 

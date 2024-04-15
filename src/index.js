@@ -22,6 +22,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import BaseballTacticsPage from "./BaseballTacticsPage";
 import "rsuite/dist/rsuite.min.css";
 import { CustomProvider } from "rsuite";
+import IceRink from "./IceRink";
 
 
 
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "/sports/icehockey/calendar",
         element: <DashCalendar />
+      },
+      {
+        path: "/sports/icehockey/tactics",
+        element: <IceRink />
       },
       {
         path: "/sports/basketball",
