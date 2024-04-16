@@ -1,8 +1,8 @@
 .line-graph {
     position: relative;
-    top: 52vh;
-    left: 38vw;
-    width: 650px;
+    top:54vh;
+    left: 8vw;
+    width: 700px;
     height: 100px;
     z-index: 9999;
     font-family: Dashboard;
@@ -11,8 +11,8 @@
 
 .radar-chart {
     position: relative;
-    top: 14vh;
-    right: -42.5vw;
+    top: 11vh;
+    right: -12.5vw;
     width: 520px;
     /* height: 150px; */
     color: white;

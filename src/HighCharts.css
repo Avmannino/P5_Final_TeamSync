@@ -36,7 +36,7 @@ body, html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     position: absolute;
     z-index: -1;
-    right: 64vw;
+    right: 65vw;
     top: 17.5vh;
 
     
@@ -60,8 +60,8 @@ body, html {
 
   .chart-with-background {
     position: relative;
-    left: 26vw;
-    top: -26vh;
+    left: 22vw;
+    top: -25vh;
   }
   
   .chart-background-image {
@@ -76,10 +76,10 @@ body, html {
   .graph-container {
     position: absolute;
     z-index: 1000;
-    top:-25vh;
+    top:-28vh;
     left: -7vw;
     height: 300px;
-    width:800px;
+    width: 700px;
     
   }
   
@@ -91,7 +91,7 @@ body, html {
     margin-bottom: 10rem;
     position: relative;
     left: 39vw;
-    top:4vh;
+    top: 4vh;
   }
 
   .ice-card-container {
@@ -162,7 +162,7 @@ body, html {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position:relative;
-    right: 85vw;
+    right: 85.5vw;
     height: 225px;
   }
   
@@ -211,36 +211,38 @@ body, html {
   }
   
   .table-container {
-    overflow-x: auto;
-  }
-  
-  table {
-    width: 750px;
-    height: 550px;
-    border-collapse: collapse;
+    width: 800px;
+    height: 600px; /* Adjusted height to show 7 rows initially */
+    overflow-y: scroll;
+    position: absolute;
+    top: -12vh;
+    left: -17vw;
+    z-index: 50;
+}
+
+table {
+    width: 100%; /* Ensure the table fills its container */
+    border-collapse:separate;
     background: #1e1e1e; /* Match the card background */
     color: #e0e0e0; /* Ensure text is readable on dark background */
-    position:absolute;
-    bottom: 59vh;
-    left: -43vw;
-    z-index: 50;
-  }
-  
-  table th, 
-  table td {
-    text-align: left;
+}
+
+table th,
+table td {
+    text-align: center;
     padding: 1rem;
     border-bottom: 1px solid #333; /* Slightly lighter border for subtle separation */
-  }
-  
-  table th {
+}
+
+table th {
     background-color: #002b30; /* Maintain the pop of color in headers */
-    border-bottom: 3px solid #ffffff; 
-  }
-  
-  table tr:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+table tr:hover {
     background-color: #2a2a2a; /* A hover state that's not too jarring */
-  }
+}
+
   
   /* Responsive styles */
   @media (max-width: 600px) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useSt } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import './HighCharts.css'; // Ensure this CSS file contains the necessary styling for dark mode
@@ -76,16 +76,6 @@ const barChartData = {
         color: '#2ecc71' // Example color, change as needed
     }]
 };
-
-const tableData = [
-    { team: 'Dimmsdale Dragons', record: "37-24", gb: "-", last: "6-4", streak: "W2" },
-    { team: 'Vienna Vipers', record: "33-30", gb: "5.0", last: "3-7", streak: "W2" },
-    { team: 'Las Vegas Llamas', record: "33-31", gb: "7.0", last: "6-4", streak: "W3" },
-    { team: 'Binghamton Bears', record: "30-33", gb: "9.0", last: "5-5", streak: "L2" },
-    { team: 'Simmsbury Sharks', record: "30-33", gb: "9.0", last: "4-6", streak: "L1" },
-    { team: 'Warren Wolves', record: "28-37", gb: "11.0", last: "5-5", streak: "L3" },
-    { team: 'Bradentown Buffalo', record: "27-39", gb: "13.0", last: "2-8", streak: "L5" }
-];
 
 const lineChartOptions = {
     chart: {
@@ -273,20 +263,43 @@ const baseballChartOptions = {
     }]
 };
 
+const baseballTableData = [];
 
 
-
-// The Dashboard Component
 const Dash = () => {
-    const lineChartRef = useRef(null); // A ref to store the interval id
+    const lineChartRef = useRef(null); 
+    const [pitchers, setPitchers] = useState([]);
+    const [selectedYear, setSelectedYear] = useState(null); // State to hold the selected year
+    const [filteredPitchers, setFilteredPitchers] = useState([]); // State to hold filtered pitchers
 
     useEffect(() => {
-        // Generate the data once when the component mounts
-        const mockPitches = generateMockPitches(10);
-        // Update the baseballChartOptions with the new data
-        baseballChartOptions.series[0].data = mockPitches;
-
+        // Fetch 
+        fetch('http://127.0.0.1:5555/pitchers')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data)
+                setPitchers(data);
+                setFilteredPitchers(data); // Initialize filtered pitchers with all data
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
     }, []);
+
+    // Filter pitchers based on selected year
+    useEffect(() => {
+        if (selectedYear) {
+            const filtered = pitchers.filter(pitcher => pitcher.year === selectedYear);
+            setFilteredPitchers(filtered);
+        } else {
+            setFilteredPitchers(pitchers);
+        }
+    }, [selectedYear, pitchers]);
 
 
     return (
@@ -322,21 +335,29 @@ const Dash = () => {
                     <table>
                         <thead>
                             <tr>
-                                <th>Team</th>
-                                <th>Record</th>
-                                <th>GB</th>
-                                <th>Last 10</th>
-                                <th>Streak</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>ERA</th>
+                                <th>Games Started</th>
+                                <th>Innings</th>
+                                <th>Strikeouts</th>
+                                <th>Year</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {tableData.map((item, index) => (
+                            {pitchers.map((pitcher, index) => (
                                 <tr key={index}>
-                                    <td>{item.team}</td>
-                                    <td>{item.record}</td>
-                                    <td>{item.gb}</td>
-                                    <td>{item.last}</td>
-                                    <td>{item.streak}</td>
+                                    <td>{pitcher.name}</td>
+                                    <td>{pitcher.age}</td>
+                                    <td>{pitcher.wins}</td>
+                                    <td>{pitcher.losses}</td>
+                                    <td>{pitcher.era}</td>
+                                    <td>{pitcher.games_started}</td>
+                                    <td>{pitcher.innings_pitched}</td>
+                                    <td>{pitcher.strikeouts}</td>
+                                    <td>{pitcher.year}</td>
                                 </tr>
                             ))}
                         </tbody>

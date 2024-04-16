@@ -91,7 +91,7 @@ const BaseballCharts = () => {
 
     const [options] = useState({
       chart: {
-        height: 350,
+        height: 550,
         type: 'radar',
         dropShadow: {
           enabled: true,
@@ -122,7 +122,7 @@ const BaseballCharts = () => {
         options={options}
         series={series}
         type="radar"
-        height={400}
+        height={500}
       />
     );
   };

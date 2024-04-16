@@ -1,20 +1,28 @@
-from flask import Flask, jsonify
+from flask import Flask, make_response, jsonify, request, session, g
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_cors import CORS
+from dotenv import dotenv_values
+from flask_bcrypt import Bcrypt
 from models import db, Pitcher
-from config import Config  # Assuming your config file is in the backend package
+import json
+
+# load the .env file where our secrets are stored
+config = dotenv_values(".env")
 
 app = Flask(__name__)
-app.config.from_object(Config)
+app.debug = True
+# get the flask secret key from the .env
+# (this is how you'll store and retrieve api keys as well)
+app.secret_key = config['FLASK_SECRET_KEY']
 CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.json_compact = False
-
-db.init_app(app)
+app.json.compact = False
+bcrypt = Bcrypt(app)
 migrate = Migrate(app, db)
 
+db.init_app(app)
 @app.route('/pitchers')
 def get_pitchers():
     pitchers = Pitcher.query.all()
