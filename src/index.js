@@ -23,7 +23,7 @@ import "rsuite/dist/rsuite.min.css";
 import { CustomProvider } from "rsuite";
 import IceRink from "./IceRink";
 import HockeyLines from "./HockeyLines";
-import VideoPage from "./pages/VideoPage";
+// import VideoPage from "./pages/VideoPage";
 import Chat from "./components/Chat";
 
 
@@ -87,8 +87,8 @@ const router = createBrowserRouter([
         element: <IceRink />
       },
       {
-        path: "/sports/icehockey/reels",
-        element: <VideoPage />
+        // path: "/sports/icehockey/reels",
+        // element: <VideoPage />
       },
       {
         path: "/sports/basketball",

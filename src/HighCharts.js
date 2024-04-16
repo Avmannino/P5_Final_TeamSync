@@ -1,12 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useSt } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import './HighCharts.css'; // Ensure this CSS file contains the necessary styling for dark mode
 import backgroundImage from './assets/strikezone.png';
 // import PatternFill from 'highcharts/modules/pattern-fill';
-
-
-
 
 // Mock Data for the components
 const cardData = [
