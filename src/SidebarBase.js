@@ -64,7 +64,7 @@ const bodyStyles = {
 }
 
 
-const Sidebar = () => (
+const SidebarBaseball = () => (
   <div style={{ width: 240, position: 'relative', top: '14.9vh', background: '#040f12' }}>
     <Sidenav defaultOpenKeys={['1', '2']}>
       <Sidenav.Header icon={<DashboardIcon />}>
@@ -115,4 +115,4 @@ const Sidebar = () => (
     </Sidenav>
   </div>
 );
-export default Sidebar;
+export default SidebarBaseball;

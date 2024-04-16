@@ -23,6 +23,7 @@ import BaseballTacticsPage from "./BaseballTacticsPage";
 import "rsuite/dist/rsuite.min.css";
 import { CustomProvider } from "rsuite";
 import IceRink from "./IceRink";
+import HockeyLines from "./HockeyLines";
 
 
 
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "/sports/icehockey",
         element: <IceHockey />
+      },
+      {
+        path: "/sports/icehockey/lines",
+        element: <HockeyLines />
       },
       {
         path: "/sports/icehockey/calendar",

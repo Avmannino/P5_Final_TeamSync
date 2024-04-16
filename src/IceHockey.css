@@ -7,15 +7,6 @@
 }
 
 
-.ice-card {
-    position: absolute;
-    left: 5vw;
-    top: -2vh;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
 
 
 .panel-header {
@@ -37,7 +28,7 @@
     font-size: 27px;
     bottom: 4vh;
     font-weight: bold;
-    color: white;
+    color: #0400ff;
 }
 
 .panel-text p {
@@ -65,3 +56,12 @@
     /* Adjust border radius as needed */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.side-bar-hockey {
+    position: absolute;
+    left: 0vw;
+    top: -2vh;
+    z-index: 9999;
+  
+  }
+  

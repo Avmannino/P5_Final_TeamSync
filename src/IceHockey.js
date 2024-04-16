@@ -4,6 +4,7 @@ import './IceHockey.css';
 import LiveGames from './LiveGames';
 import DashCal from './Calendar';
 import TeamCardIce from './TeamCardIce';
+import SidebarHockey from './SidebarHockey';
 
 
 // import BaseballField from './BaseballField';
@@ -13,8 +14,11 @@ export default function IceHockey() {
     <>
     
         <div className='hockey-page'>
-          {/* <Panel><BaseballField /></Panel> */}
           <div className='team-card'>
+
+        <div className='side-bar-hockey'>
+            <SidebarHockey />
+        </div>
 
             <div className='panel-text'>
               <LiveGames />

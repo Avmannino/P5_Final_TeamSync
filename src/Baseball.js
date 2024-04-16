@@ -6,7 +6,9 @@ import './Baseball.css';
 import LiveGames from './LiveGames';
 import DashCal from './Calendar';
 import TeamCard from './TeamCard';
-import TeamCardIce from './TeamCardIce';
+import TimeDrawer from './Drawer';
+import SidebarBaseball from './SidebarBase';
+import BaseballCharts from './BaseballCharts';
 
 
 // import BaseballField from './BaseballField';
@@ -14,26 +16,33 @@ import TeamCardIce from './TeamCardIce';
 export default function Baseball() {
   return (
     <>
-    
-        <div className='baseball-page'>
-          {/* <Panel><BaseballField /></Panel> */}
-          <div className='team-card'>
+      <div className='baseball-page'>
+        {/* <Panel><BaseballField /></Panel> */}
 
-            <div className='panel-text'>
-              <LiveGames />
-            
-            </div>
-
-            <div className='team-card'>
-              <TeamCard />
-            </div>
-
-
-          </div>
-          <Dashboard />
-          <DashCal />
+        <div className='side-bar-baseball'>
+          <SidebarBaseball />
         </div>
-    
+
+        <div className='baseball-charts'>
+          <BaseballCharts />
+        </div>
+      
+
+          <div className='panel-text'>
+            <LiveGames />
+          </div>
+
+          <div className='team-card'>
+            <TeamCard />
+          </div>
+          <div className='baseball-drawer'>
+            <TimeDrawer />
+          </div>
+
+        </div>
+        <Dashboard />
+        <DashCal />
+
     </>
   );
 }

@@ -4,9 +4,9 @@ import gullsLogo from './assets/gulls.png'; // Import the image
 
 function TeamCardIce() {
   return (
-    <Panel shaded bordered bodyFill style={{ display: 'inline-block', width: 335, height: 450, border:'1px solid #ffffff08', borderRadius: '20px', backgroundColor: '#35353530', fontSize:'25px', position:'absolute', left: '26vw', top:'17vh', display: 'flex', flexDirection: 'column', gap: '15vh' }}>
+    <Panel shaded bordered bodyFill style={{ display: 'inline-block', width: 335, height: 450, border:'1px solid #ffffff08', borderRadius: '20px', backgroundColor: '#35353530', fontSize:'25px', position:'absolute', left: '26vw', top:'20vh', display: 'flex', flexDirection: 'column', gap: '15vh' }}>
       <img src={gullsLogo} width="260" height="245" style={{position:'absolute', left: '35px', top:'15px'}} alt="Gulls Logo" />
-      <hr style={{width:'250px', position:'relative', top:'5px', left:'40px'}}></hr>
+      {/* <hr style={{width:'250px', position:'relative', top:'5px', left:'40px'}}></hr> */}
       <Panel style={{color: 'white', textAlign:'center', fontSize:'22px'}}>
         <p>
           <small style={{fontWeight:'bold', fontSize:'22px', position:'absolute', top:'260px', left: '3vw'}}>

@@ -7,7 +7,6 @@ import AngleUpIcon from '@rsuite/icons/legacy/AngleUp';
 import DashTimeline from './Timeline';
 import Dash from './HighCharts';
 import { HighchartsReact } from 'highcharts-react-official';
-import HighchartsComponent from '@highcharts/dashboards/es-modules/Dashboards/Components/HighchartsComponent/HighchartsComponent';
 
 const TimeDrawer = () => {
     const [openRight, setOpenRight] = React.useState(false);

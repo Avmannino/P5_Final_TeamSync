@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { Panel } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
+import './BaseballCharts.css';
 
-
-import './DashCharts.css';
-
-const DashboardCharts = () => {
+const BaseballCharts = () => {
   const [sparklineData] = useState([
     47, 45, 54, 38, 56, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46
   ]);
@@ -124,7 +122,7 @@ const DashboardCharts = () => {
         options={options}
         series={series}
         type="radar"
-        height={450}
+        height={400}
       />
     );
   };
@@ -153,7 +151,7 @@ const DashboardCharts = () => {
         </Panel>
       </div>
       <div className="radar-chart">
-        <Panel bordered header="Profits">
+        <Panel header="Profits">
           <ApexRadarChart />
         </Panel>
       </div>
@@ -196,4 +194,4 @@ const DashboardCharts = () => {
   );
 };
 
-export default DashboardCharts;
+export default BaseballCharts;

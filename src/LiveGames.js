@@ -9,19 +9,19 @@ const LiveGames = () => (
     <>
         <div className='live-games'>
             <Badge content="🟢 LIVE">
-                <Button>Sharks @ Dragons</Button>
+                <Button>Team A @ Team B</Button>
             </Badge>
 
             <Badge content="🟢 LIVE">
-                <Button>Vipers @ Wolves</Button>
+                <Button>Team 1 @ Team 2</Button>
             </Badge>
 
             <Badge content="🟢 LIVE">
-                <Button>Hawks vs. Bears</Button>
+                <Button>Team A vs. Team B</Button>
             </Badge>
 
             <Badge content="04/19 @ 7pm">
-                <Button>Llamas vs. Hawks</Button>
+                <Button>Team 1  vs. Team 2</Button>
             </Badge>
         </div>
     </>

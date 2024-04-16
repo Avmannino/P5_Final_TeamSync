@@ -64,7 +64,15 @@
   .team-card {
     position: absolute;
     left: 0vw;
-    top: -2vh;
+    top: -4vh;
     z-index: 9999;
+  }
+
+  .side-bar-baseball {
+    position: absolute;
+    left: 0vw;
+    top: -6.5vh;
+    z-index: 9999;
+  
   }
   
