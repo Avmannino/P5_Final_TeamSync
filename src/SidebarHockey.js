@@ -13,7 +13,7 @@ import GearIcon from '@rsuite/icons/legacy/Gear';
 const lineOneStyles = {
   padding: '15px 20px',
   color: '#fff',
-  background: '#0e1b1f',
+  background: '#5a3600',
   borderRight: "2px solid #123e3e"
 };
 
@@ -21,7 +21,7 @@ const lineOneStyles = {
 const headerTeamStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#0000001a',
+  background: '#331300',
   color: ' #fff',
 
 };
@@ -37,7 +37,7 @@ const headerAdvancedStyles = {
 const headerSettingsStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#040f12',
+  background: '#002c50',
   color: ' #fff',
   borderTop: "1px solid #0000001a"
 
@@ -54,18 +54,18 @@ const brandStyles = {
   borderBottom: "0.5px solid #333333",
   fontSize: 20,
   textAlign: 'center',
-  background: '#0000001a',
+  background: '#002c50',
 }
 
 const bodyStyles = {
-  background: '#040f12',
+  background: '#001836',
   borderRight:"5px solid white",
   borderBottom:"3px solid white"
 }
 
 
 const SidebarHockey = () => (
-  <div style={{ width: 240, position: 'relative', top: '14.9vh', background: '#040f12' }}>
+  <div style={{ width: 240, position: 'relative', top: '11.2vh', background: '#00106b' }}>
     <Sidenav defaultOpenKeys={['1', '2']}>
       <Sidenav.Header icon={<DashboardIcon />}>
         <div style={brandStyles}></div>
@@ -86,7 +86,7 @@ const SidebarHockey = () => (
             </Nav.Item>
           </Nav.Menu>
 
-          <Nav.Menu eventKey="2" title="League" icon={<MagicIcon />} panel style={headerAdvancedStyles}>
+          {/* <Nav.Menu eventKey="2" title="League" icon={<MagicIcon />} panel style={headerAdvancedStyles}>
             <Nav.Item divider line style={dividerStyles} />
             <Nav.Item eventKey="2-1" panel style={lineOneStyles}>Announcements</Nav.Item>
             <Nav.Item eventKey="2-2" panel style={lineOneStyles}>
@@ -96,21 +96,21 @@ const SidebarHockey = () => (
             <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Season Standings</Nav.Item>
             <Nav.Item eventKey="2-5" panel style={lineOneStyles}>Tournaments</Nav.Item>
 
+          </Nav.Menu> */}
+
+          <Nav.Menu eventKey="2" title="Finances" icon={<MagicIcon />} panel style={headerAdvancedStyles}>
+            <Nav.Item divider line style={dividerStyles} />
+            <Nav.Item eventKey="2-1" panel style={lineOneStyles}>Revenue</Nav.Item>
+            <Nav.Item eventKey="2-2" panel style={lineOneStyles}>Profit</Nav.Item>
+            <Nav.Item eventKey="2-3" panel style={lineOneStyles}>Expenses</Nav.Item>
+            <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Growth</Nav.Item>
           </Nav.Menu>
 
-          <Nav.Menu eventKey="3" title="Finances" icon={<MagicIcon />} panel style={headerAdvancedStyles}>
+          <Nav.Menu eventKey="3" title="Settings" icon={<GearIcon />} panel style={headerAdvancedStyles}>
             <Nav.Item divider line style={dividerStyles} />
-            <Nav.Item eventKey="3-1" panel style={lineOneStyles}>Revenue</Nav.Item>
-            <Nav.Item eventKey="3-2" panel style={lineOneStyles}>Profit</Nav.Item>
-            <Nav.Item eventKey="3-3" panel style={lineOneStyles}>Expenses</Nav.Item>
-            <Nav.Item eventKey="3-4" panel style={lineOneStyles}>Growth</Nav.Item>
-          </Nav.Menu>
-
-          <Nav.Menu eventKey="4" title="Settings" icon={<GearIcon />} panel style={headerAdvancedStyles}>
-            <Nav.Item divider line style={dividerStyles} />
-            <Nav.Item eventKey="4-1" panel style={lineOneStyles}>Applications</Nav.Item>
-            <Nav.Item eventKey="4-2" panel style={lineOneStyles}>Add New Team</Nav.Item>
-            <Nav.Item eventKey="4-3" panel style={lineOneStyles}>Add New Player</Nav.Item>
+            <Nav.Item eventKey="3-1" panel style={lineOneStyles}>Applications</Nav.Item>
+            <Nav.Item eventKey="3-2" panel style={lineOneStyles}>Add New Team</Nav.Item>
+            <Nav.Item eventKey="3-3" panel style={lineOneStyles}>Add New Player</Nav.Item>
           </Nav.Menu>
         </Nav>
       </Sidenav.Body>

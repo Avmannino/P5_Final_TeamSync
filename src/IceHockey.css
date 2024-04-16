@@ -6,6 +6,45 @@
     align-items: center;
 }
 
+.ice-navbar-frame {
+    width: 105vw;
+    height: 150px;
+    /* Adjust the height as needed */
+    background-color: #001836;
+    /* Or any color you prefer */
+    position: relative;
+    top: -46.28vh;
+    left: 19vw;
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* Adjust padding as needed */
+    box-shadow: 0 2px 4px #0000001a;
+    /* Optional: adds a subtle shadow */
+    border-bottom: 5px solid white;
+  }
+  
+  .ice-navbar-frame::after {
+    content: '';
+    /* Required for pseudo-elements */
+    position: relative;
+    /* Position the pseudo-element relative to its parent */
+    top: 6.0vh;
+    /* Position it at the bottom */
+    left: -2.5%;
+    /* Adjust this value to control where the border ends */
+    width: 12%;
+    /* Adjust this value to control the width of the border */
+    height: 10.5px;
+    /* Set the height of the border */
+    background-color: #001836;
+    /* Set the color of the border */
+    z-index: 9999;
+  }
+
 
 
 

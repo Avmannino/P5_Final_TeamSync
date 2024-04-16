@@ -309,7 +309,7 @@ const Dash = () => {
             </div>
             <div className="card-container">
                 {cardData.map((card, index) => (
-                    <div key={index} className="card">
+                    <div key={index} className="base-card">
                         <h2>{card.title}</h2>
                         <div className="value">{card.value}</div>
                         <div className="unit">{card.unit}</div>
