@@ -7,6 +7,7 @@ import TeamCardIce from './TeamCardIce';
 import SidebarHockey from './SidebarHockey';
 import IceDash from './IceHighCharts';
 import Navbar from './Navbar';
+import BarRaceChart from './BarRace';
 
 
 // import BaseballField from './BaseballField';
@@ -23,8 +24,9 @@ export default function IceHockey() {
           <SidebarHockey />
         </div>
 
-        <div className='panel-text'>
+        <div className='race-chart'>
           {/* <LiveGames /> */}
+          <BarRaceChart />
 
         </div>
 

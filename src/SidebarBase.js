@@ -90,10 +90,6 @@ const SidebarBaseball = () => (
             <Nav.Item eventKey="2-2" panel style={lineOneStyles}>
               <Link to="/sports/baseball/calendar" style={{ color: 'inherit', textDecoration: 'inherit' }}>Calendar</Link>
             </Nav.Item>
-            <Nav.Item eventKey="2-3" panel style={lineOneStyles}>Results</Nav.Item>
-     
-            <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Tournaments</Nav.Item>
-
           </Nav.Menu>
 
           <Nav.Menu eventKey="3" title="Finances" icon={<MagicIcon />} panel style={headerAdvancedStyles}>

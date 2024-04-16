@@ -45,6 +45,11 @@
     z-index: 9999;
   }
 
+  .race-chart {
+    position: absolute;
+    
+  }
+
 
 
 

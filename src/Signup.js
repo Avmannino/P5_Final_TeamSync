@@ -1,31 +1,26 @@
 import React, { useState } from 'react';
 import { useOutletContext } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-import { Link, useLocation } from 'react-router-dom';
 import './Login.css'
 
-export default function Login(){
-    const { attemptLogin,user} = useOutletContext();
-    
+export default function Signup(){
+    const { attemptSignup } = useOutletContext();
     const [name,setName]=useState("")
     const [password,setPassword]=useState("")
-    const handleChangeUsername = (e) => setName(e.target.value);
+    const handleChangeName = (e) => setName(e.target.value);
     const handleChangePassword = (e) => setPassword(e.target.value);
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(name+" "+password)
-        attemptLogin({ name: name, password_hash: password });
+        attemptSignup({ name: name, password: password });
     }
     return(
         <div
         className="form-div"
         style={{ paddingTop: "100px" }}
     >
-        <div className='logged-not'>
-        {user?<p><strong>Logged In As: {user.name}</strong></p>:<p><strong>Log In:</strong></p>}
-        </div>
+        <p className='sign-text'>Sign Up Here:</p>
         <form
-            className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+            className=""
             onSubmit={handleSubmit}
         >
             <div className="mb-4">
@@ -36,7 +31,7 @@ export default function Login(){
                 <input
                     className="login-input"
                     type="text"
-                    onChange={handleChangeUsername}
+                    onChange={handleChangeName}
                     value={name}
                     placeholder=""
                 />
@@ -62,9 +57,8 @@ export default function Login(){
                     type="button"
                     onClick={handleSubmit}
                 >
-                    Log In
+                    Sign Up
                 </button>
-                <Link to="/signup"><button className="sign-btn">Sign Up</button></Link>
             </div>
         </form>
     </div>
