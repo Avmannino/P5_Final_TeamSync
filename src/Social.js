@@ -5,18 +5,24 @@ import './Social.css';
 import postBtn from './assets/post_btn.png';
 import sakib from './assets/sakib.png';
 import Loader from './Loader';
-
+import Chat from './components/Chat'; // Import your Chat component
 
 function Social() {
-  const [isLoading, setIsLoading] = useState(true); // Initially set to true to show loader
-  useEffect(() => {
-    // Simulate loading delay (remove this in your actual code)
-    const timeout = setTimeout(() => {
-      setIsLoading(false); // Set loading to false when loading is done
-    }, 1000); // 2000 milliseconds (2 seconds) delay for demonstration
+  const [isLoading, setIsLoading] = useState(true);
+  const [showChat, setShowChat] = useState(false); // State for controlling chat display
 
-    return () => clearTimeout(timeout); // Cleanup function to clear timeout
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // 
+
+    return () => clearTimeout(timeout);
   }, []);
+
+  // Toggle chat display
+  const toggleChatDisplay = () => {
+    setShowChat(!showChat);
+  };
 
   return (
     <>
@@ -35,15 +41,20 @@ function Social() {
             <div className='main-feed-container'>
               <div className='post-container'>
                 <img src={sakib} alt="UserImg" className="user-image" />
-                <input type="text" placeholder="What's on your mind, Sakib??" className="post-input-box" />
+                <input type="text" placeholder="What's on your mind, Coach?" className="post-input-box" />
                 <img src={postBtn} alt="Post" className="post-button" />
+              </div>
+              <div className='chat-render'>
+              {showChat && <Chat />}
               </div>
             </div>
           </div>
         </div>
-      )};
+      )}
+      {/* Render chat display toggle button */}
+      <button className="left-link" onClick={toggleChatDisplay}>💬 Team Chat</button>
     </>
   )
 }
 
-      export default Social;
+export default Social;

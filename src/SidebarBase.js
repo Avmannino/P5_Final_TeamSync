@@ -91,8 +91,8 @@ const SidebarBaseball = () => (
               <Link to="/sports/baseball/calendar" style={{ color: 'inherit', textDecoration: 'inherit' }}>Calendar</Link>
             </Nav.Item>
             <Nav.Item eventKey="2-3" panel style={lineOneStyles}>Results</Nav.Item>
-            <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Season Standings</Nav.Item>
-            <Nav.Item eventKey="2-5" panel style={lineOneStyles}>Tournaments</Nav.Item>
+     
+            <Nav.Item eventKey="2-4" panel style={lineOneStyles}>Tournaments</Nav.Item>
 
           </Nav.Menu>
 

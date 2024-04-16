@@ -11,16 +11,18 @@ import notificationLogo from './assets/notification_logo.png';
 import sakib from './assets/sakib.png';
 import logout from './assets/logout.png';
 // import addFriends from './assets/add_friends.png';
-
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 function TopNavbar() {
   return (
     <div className="top-navbar">
       <input type="text" placeholder="Search..." className="search-bar" />
-      <p className='sync-text'>social</p>
+      <p className='sync-text'>chat</p>
       <img src={socialSync} alt="socialSync" className="social-sync" />
       <div className='right-nav-link'>
-        <img src={homeLogo} alt="Logo" className="home-logo" />
+        <Link to="/home"> {/* Use Link instead of <a> for routing */}
+          <img src={homeLogo} alt="Logo" className="home-logo" /> {/* Wrap the logo in Link */}
+        </Link>
         <img src={reelsLogo} alt="reelLogo" className="reels-logo" />
         <img src={teamLogo} alt="teamLogo" className="team-logo" />
         <img src={bracketLogo} alt="Bracket" className="bracket-logo" />
@@ -37,5 +39,6 @@ function TopNavbar() {
     </div>
   );
 }
+
 
 export default TopNavbar;

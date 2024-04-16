@@ -19,11 +19,12 @@ import SportsTable from "./SportsTable";
 import BaseballField from "./BaseballField";
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import BaseballTacticsPage from "./BaseballTacticsPage";
 import "rsuite/dist/rsuite.min.css";
 import { CustomProvider } from "rsuite";
 import IceRink from "./IceRink";
 import HockeyLines from "./HockeyLines";
+import VideoPage from "./pages/VideoPage";
+import Chat from "./components/Chat";
 
 
 
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/sports/baseball/tactics",
-        element: <BaseballTacticsPage />
+        element: <BaseballField />
       },
       {
         path: "/sports/football",
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
         element: <IceRink />
       },
       {
+        path: "/sports/icehockey/reels",
+        element: <VideoPage />
+      },
+      {
         path: "/sports/basketball",
         element: <Basketball />
       },
@@ -101,6 +106,11 @@ const router = createBrowserRouter([
         path: "/social",
         element: <Social />
       },
+      {
+        path: "/social/chat",
+        element: <Chat />
+      },
+      
     ]
   }
 ])

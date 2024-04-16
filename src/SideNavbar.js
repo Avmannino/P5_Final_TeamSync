@@ -11,13 +11,10 @@ export const LeftSideNavbar = () => {
   return (
     <div className="sidenav left">
       <div className='left-link-container'>
-        <a className="left-link" href="#">📰 News Feed</a>
+        {/* <a className="left-link" href="#">💬 Team Chat</a>
         <a className="left-link" href="#">🏟️ Upcoming Games</a>
         <a className="left-link" href="#">📅 Events</a>
-        <a className="left-link" href="#">♾️ Teams</a>
-        <a className="left-link" href="#">📋 My Rosters</a>
-        <a className="left-link" href="#">💬 Team Chat</a>
-        <a className="left-link" href="#">▶️ Highlights</a>
+        <a className="left-link" href="#">▶️ Highlights</a> */}
       </div>
     </div>
   );
@@ -28,7 +25,7 @@ export const RightSideNavbar = () => {
     <div className="sidenav right">
       <div className='right-link-container'>
       <img src={friendLogo} alt="friends" className="friends-icon" />  
-        <h1 className='online'>🟢 Online</h1>
+        <h1 className='online'>My Team</h1>
         <div className='friends-list'>
           <div class="friend-container">
             <img src={momo} alt="UserImg" className="friend-image" />

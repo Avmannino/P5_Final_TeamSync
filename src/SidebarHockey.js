@@ -81,7 +81,9 @@ const SidebarHockey = () => (
               <Link to="/sports/icehockey/tactics" style={{ color: 'inherit', textDecoration: 'inherit' }}>Tactics</Link>
               </Nav.Item>
             <Nav.Item eventKey="1-4" panel style={lineOneStyles}>Injuries</Nav.Item>
-            <Nav.Item eventKey="1-5" panel style={lineOneStyles}>Game Reels</Nav.Item>
+            <Nav.Item eventKey="1-5" panel style={lineOneStyles}>
+                <Link to="/sports/icehockey/reels" style={{ color: 'inherit', textDecoration: 'inherit' }}>GameReels</Link>
+            </Nav.Item>
           </Nav.Menu>
 
           <Nav.Menu eventKey="2" title="League" icon={<MagicIcon />} panel style={headerAdvancedStyles}>
