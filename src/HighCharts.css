@@ -44,7 +44,7 @@ body, html {
 
   .ice-vertical-card {
     width: 400px; /* Fixed width for the vertical card */
-    height: 1050px;
+    height: 1000px;
     background-color:#000144; /* Dark background for the card */
     color: #e0e0e0; /* Light text for readability */
     padding: 20px; /* Padding inside the card */
@@ -53,7 +53,7 @@ body, html {
     position: absolute;
     z-index: 999;
     right: 64vw;
-    top: 14vh;
+    top: 12vh;
 
     
   }
@@ -96,25 +96,28 @@ body, html {
 
   .ice-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(470px, 2fr));
-    grid-gap: 2rem;
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    grid-gap: 1rem; /* Adjust the gap between cards */
     margin-bottom: 0rem;
     position: relative;
-    right: 35vw;
-    bottom: 26vh;
+    right: 45vw;
+    bottom: 20vh;
     z-index: 9999;
   }
-
+  
   .ice-card {
     background: #1e1e1e; /* Slightly lighter than the body background for depth */
-    padding: 1.5rem;
+    padding: 1rem; /* Adjust the padding of the cards */
     border-radius: 8px;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.1); 
     box-shadow: 5px 5px 8px 5px rgba(255,255,255,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position:relative;
-    height: 225px;
+    height: auto; /* Change to auto to allow variable height */
+    width: 45%;
   }
+  
+  
   .ice-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);

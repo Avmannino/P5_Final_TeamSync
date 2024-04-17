@@ -10,6 +10,7 @@ import Navbar from './Navbar';
 import BarRaceChart from './BarRace';
 
 
+
 // import BaseballField from './BaseballField';
 
 export default function IceHockey() {
@@ -27,6 +28,7 @@ export default function IceHockey() {
         <div className='race-chart'>
           {/* <LiveGames /> */}
           <BarRaceChart />
+         
 
         </div>
 

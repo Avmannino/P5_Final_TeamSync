@@ -5,7 +5,7 @@ import './styles.css';
 
 function TeamCardIce() {
   return (
-    <Panel shaded bordered bodyFill className='ice-panel-card' style={{ display: 'inline-block', width: 335, height: 450, border:'1px solid #ffffff08', borderRadius: '20px', backgroundColor: '#35353550', fontSize:'25px', position:'absolute', left: '21vw', top:'24vh', display: 'flex', flexDirection: 'column', gap: '15vh' }}>
+    <Panel shaded bordered bodyFill className='ice-panel-card' style={{ display: 'inline-block', width: 335, height: 450, border:'1px solid #ffffff08', borderRadius: '20px', backgroundColor: '#35353550', fontSize:'25px', position:'absolute', left: '21vw', top:'22vh', display: 'flex', flexDirection: 'column', gap: '15vh' }}>
       <img src={gullsLogo} width="260" height="245" style={{position:'absolute', left: '35px', top:'15px'}} alt="Gulls Logo" />
       {/* <hr style={{width:'250px', position:'relative', top:'5px', left:'40px'}}></hr> */}
       <Panel style={{color: 'white', textAlign:'center', fontSize:'22px'}}>

@@ -44,8 +44,8 @@ const IceDash = () => {
                 </div>
             </div>
             <div className="ice-chart-container">
-                <div className="ice-table-container" style={{ position: 'absolute', top: '45vh', left:'-18vw'}}>
-                    <table style={{height: 450, width: 1000, boxShadow: '0px 8px 16px 0px #d1d1d133'}}>
+                <div className="ice-table-container" style={{ position: 'absolute', bottom: '15vh', right:'58vw'}}>
+                    {/* <table style={{height: 450, width: 800, boxShadow: '0px 8px 16px 0px #d1d1d133'}}>
                         <thead>
                             <tr>
                                 <th style={{backgroundColor:'#00115e'}}>Player</th>
@@ -66,7 +66,7 @@ const IceDash = () => {
                                 </tr>
                             ))}
                         </tbody>
-                    </table>
+                    </table> */}
                 </div>
             </div>
             <div className="ice-vertical-card">
