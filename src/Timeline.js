@@ -18,7 +18,7 @@ import Buffalo from './assets/buffalo.png';
 const DashTimeline = () => (
     <div>
         <Timeline className="custom-timeline">
-            <h3 style={{fontSize:'35px'}}>Upcoming Games</h3>
+            <h3 style={{fontSize:'30px'}}>Upcoming Games</h3>
             <Timeline.Item dot={<img src={Mavs} alt="Mavs" style={{ width: '110%', borderRadius: 50, position: 'relative', right: '3vw'}} />}>
                 <li>vs. Mavericks</li>
                 <li>04/19</li>

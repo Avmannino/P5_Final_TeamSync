@@ -40,7 +40,7 @@ const IceCal = () => {
     return null;
   }
   return (
-    <div style={{ width: 350, height: 750, position: 'absolute', top: '56vh', left:'21vw', zIndex: '999' }}>
+    <div style={{ width: 350, height: 750, position: 'absolute', top: '55vh', left:'12.5vw', zIndex: '999' }}>
       <Calendar compact bordered renderCell={renderCell} />{' '}
     </div>
   );

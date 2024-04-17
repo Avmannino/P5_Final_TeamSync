@@ -40,7 +40,7 @@ const DashCal = () => {
     return null;
   }
   return (
-    <div style={{ width: 350, height: 750, position: 'absolute', top: '56vh', left:'24.5vw', zIndex: '9999' }}>
+    <div style={{ width: 350, height: 750, position: 'absolute', top: '56vh', left:'21.5vw', zIndex: '9999' }}>
       <Calendar compact bordered renderCell={renderCell} />{' '}
     </div>
   );

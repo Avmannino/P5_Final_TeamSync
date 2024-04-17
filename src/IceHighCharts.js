@@ -3,7 +3,6 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import './HighCharts.css'; // Ensure this CSS file contains the necessary styling for dark mode
 import gullPlayer from './assets/gulls_p1.png';
-import gullPlayer2 from './assets/gulls_p2.png';
 
 // import PatternFill from 'highcharts/modules/pattern-fill';
 
@@ -34,13 +33,6 @@ const IceDash = () => {
                     <div className="value">{iceCardData[0].value}</div>
                     <div className="unit">{iceCardData[0].unit}</div>
                     <div className="description">{iceCardData[0].description}</div>
-                </div>
-                <div className="ice-card">
-                    <img src={gullPlayer2} alt="Image 2" />
-                    <h2>{iceCardData[1].title}</h2>
-                    <div className="value">{iceCardData[1].value}</div>
-                    <div className="unit">{iceCardData[1].unit}</div>
-                    <div className="description">{iceCardData[1].description}</div>
                 </div>
             </div>
             <div className="ice-chart-container">

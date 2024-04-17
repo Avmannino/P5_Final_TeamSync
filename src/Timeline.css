@@ -1,16 +1,16 @@
 .custom-timeline {
-    padding-top: 60px;
+    padding-top: 25px;
     padding-left: 85px;
-    width: 17%;
-    height: 70%;
+    width: 15%;
+    height: 66%;
     position: absolute;
-    right: 6vw;
-    top: 18vh;
+    right: 3vw;
+    top: 31vh;
     font-size: 18px;
-    background-color:#000144; /* Dark background for the card */
+    background-color:#50505073; /* Dark background for the card */
     color: #e0e0e0; /* Light text for readability */
     border-radius:28px; /* Rounded corners for the card */
-    box-shadow: 0px 8px 16px 0px rgba(209, 209, 209, 0.2); /* Subtle shadow for depth */
+    box-shadow: 15px 12px 16px 0px rgba(209, 209, 209, 0.2); /* Subtle shadow for depth */
     z-index: 9998;
     
 
@@ -34,7 +34,7 @@
 
     .rs-timeline-item-content li {
         margin-left: 24px;
-        font-size: 23px;
+        font-size: 20px;
         line-height: 45px;
     }
 }
@@ -48,7 +48,7 @@ h1 {
     bottom: 45vh;
     right:-10vw;
     font-family: Dashboard;
-    font-size: 40px;
+    font-size: 20px;
     padding-right: 13vw;
 }
 

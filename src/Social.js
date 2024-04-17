@@ -5,7 +5,9 @@ import './Social.css';
 import Loader from './Loader';
 import VideoPlayer from './VideoPlayer';
 import VideoThumbnail from './VideoThumbnail';
-import thumbnail1 from './assets/gulls.png';
+import thumbnail1 from './assets/vipers_vid.png';
+import thumbnail2 from './assets/mystic_owls.png';
+import thumbnail3 from './assets/guardians_thumb.png';
 import Modal from './Modal';
 
 function Social() {
@@ -38,7 +40,9 @@ function Social() {
         <div className="social-page">
           <TopNavbar />
           <div className="video-gallery">
-            <VideoThumbnail src="./assets/game_footage1.mp4" thumbnail={thumbnail1} onClick={handleThumbnailClick} title="@ Hawks" />
+            <VideoThumbnail src="./assets/game_footage1.mp4" thumbnail={thumbnail1} onClick={handleThumbnailClick} title="WIN 2-1 @ Vipers" />
+            <VideoThumbnail src="./assets/game_footage1.mp4" thumbnail={thumbnail2} onClick={handleThumbnailClick} title="WIN 3-1 vs. Owls" />
+            <VideoThumbnail src="./assets/game_footage1.mp4" thumbnail={thumbnail3} onClick={handleThumbnailClick} title="LOSS 4-2 @ Guardians" />
             {/* Add other thumbnails as needed */}
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
               {currentVideo && <VideoPlayer src={currentVideo} />}

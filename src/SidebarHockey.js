@@ -21,7 +21,7 @@ const lineOneStyles = {
 const headerTeamStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#331300',
+  background: '#041e42',
   color: ' #fff',
 
 };
@@ -29,7 +29,7 @@ const headerTeamStyles = {
 const headerAdvancedStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#0000001a',
+  background: '#000b42',
   color: ' #fff',
   borderTop: "1px solid #123e3e"
 };
@@ -37,7 +37,7 @@ const headerAdvancedStyles = {
 const headerSettingsStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#002c50',
+  background: '#000b42',
   color: ' #fff',
   borderTop: "1px solid #0000001a"
 
@@ -54,11 +54,11 @@ const brandStyles = {
   borderBottom: "0.5px solid #333333",
   fontSize: 20,
   textAlign: 'center',
-  background: '#002c50',
+  background: '#000b42',
 }
 
 const bodyStyles = {
-  background: '#001836',
+  background: '#000b42',
   borderRight:"5px solid white",
   borderBottom:"3px solid white"
 }

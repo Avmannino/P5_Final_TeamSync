@@ -9,6 +9,7 @@ import IceDash from './IceHighCharts';
 import Navbar from './Navbar';
 import BarRaceChart from './BarRace';
 import DashTimeline from './Timeline';
+import TableauViz from './TableauViz';
 
 
 
@@ -30,8 +31,9 @@ export default function IceHockey() {
         <div className='race-chart'>
           {/* <LiveGames /> */}
           <BarRaceChart />
-         
-
+        </div>
+        <div className='tableau-viz'>
+          <TableauViz />
         </div>
 
         <div className='team-card'>
@@ -41,7 +43,7 @@ export default function IceHockey() {
         {/* <Dashboard /> */}
         <IceCal />
         <DashTimeline />
-       
+
       </div>
 
     </>

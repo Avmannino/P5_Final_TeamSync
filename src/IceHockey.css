@@ -10,7 +10,7 @@
     width: 105vw;
     height: 150px;
     /* Adjust the height as needed */
-    background-color: #001836;
+    background-color: #000b42;
     /* Or any color you prefer */
     position: relative;
     top: -46.28vh;
@@ -40,19 +40,38 @@
     /* Adjust this value to control the width of the border */
     height: 10.5px;
     /* Set the height of the border */
-    background-color: #001836;
+    background-color: #000b42;
     /* Set the color of the border */
     z-index: 9999;
   }
 
   .race-chart {
     position: absolute;
-    top:52vh;
-    right:32vw;
-
+    top:72vh;
+    right:28vw;
+    z-index: 9999;
+    background-color: rgba(58, 58, 58, 0.445);
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.1); 
+    box-shadow: 5px 5px 8px 5px rgba(255,255,255,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
+  .race-chart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
 
+.tableau-viz {
+    position:absolute;
+    top: -4vh;
+    left: 29vw;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+
+}
 
 
 .panel-header {

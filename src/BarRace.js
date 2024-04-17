@@ -57,7 +57,7 @@ const BarRaceChart = () => {
     { game: '47', player1: 1, player2: 1, player3: 1, player4: 1, player5: 0, player6: 0 },
     { game: '48', player1: 0, player2: 1, player3: 0, player4: 2, player5: 1, player6: 0 },
     { game: '49', player1: 0, player2: 0, player3: 1, player4: 0, player5: 0, player6: 0 },
-    { game: '50', player1: 3, player2: 3, player3: 1, player4: 2, player5: 2, player6: 3 },
+    { game: '50', player1: 3, player2: 1, player3: 1, player4: 2, player5: 2, player6: 3 },
     { game: '51', player1: 0, player2: 3, player3: 0, player4: 1, player5: 0, player6: 0 },
     { game: '52', player1: 1, player2: 1, player3: 0, player4: 0, player5: 1, player6: 0 },
     { game: '53', player1: 0, player2: 2, player3: 3, player4: 0, player5: 0, player6: 1 },
@@ -79,7 +79,7 @@ const BarRaceChart = () => {
     { game: '69', player1: 0, player2: 1, player3: 0, player4: 0, player5: 2, player6: 0 },
     { game: '70', player1: 2, player2: 0, player3: 0, player4: 2, player5: 0, player6: 2 },
     { game: '71', player1: 0, player2: 1, player3: 1, player4: 0, player5: 0, player6: 0 },
-    { game: '72', player1: 0, player2: 2, player3: 0, player4: 0, player5: 1, player6: 0 },
+    { game: '72', player1: 0, player2: 1, player3: 0, player4: 0, player5: 1, player6: 0 },
     { game: '73', player1: 1, player2: 1, player3: 0, player4: 3, player5: 1, player6: 1 },
     { game: '74', player1: 1, player2: 1, player3: 1, player4: 0, player5: 1, player6: 0 },
     { game: '75', player1: 0, player2: 1, player3: 0, player4: 0, player5: 0, player6: 0 },
@@ -87,8 +87,8 @@ const BarRaceChart = () => {
     { game: '77', player1: 0, player2: 1, player3: 1, player4: 0, player5: 0, player6: 0 },
     { game: '78', player1: 0, player2: 0, player3: 1, player4: 0, player5: 2, player6: 0 },
     { game: '79', player1: 1, player2: 0, player3: 2, player4: 1, player5: 0, player6: 2 },
-    { game: '80', player1: 0, player2: 0, player3: 0, player4: 0, player5: 0, player6: 0 },
-    { game: '81', player1: 1, player2: 0, player3: 1, player4: 0, player5: 0, player6: 0 },
+    { game: '80', player1: 0, player2: 1, player3: 0, player4: 0, player5: 0, player6: 0 },
+    { game: '81', player1: 1, player2: 2, player3: 1, player4: 0, player5: 0, player6: 0 },
     { game: '82', player1: 1, player2: 0, player3: 1, player4: 1, player5: 0, player6: 1 }
   ];
     
@@ -99,7 +99,7 @@ const BarRaceChart = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleChange();
-    }, 650);
+    }, 500);
 
     return () => clearInterval(interval);
   }, [currentMonthIndex]);
@@ -147,13 +147,13 @@ const BarRaceChart = () => {
 
   return (
     <div className='bar-race'>
-      <h2 style={{fontSize:'25px'}}>'23-'24 NHL Scoring Leaders (goals - all-games) | Game: {currentGame}</h2>
+      <h2 style={{fontSize:'20px'}}>'23-'24 NHL Scoring Leaders (goals - all-games) | Game: {currentGame}</h2>
       <ChartRace
         data={data}
         backgroundColor='#ff000000'
-        width={800}
+        width={900}
         padding={12}
-        itemHeight={58}
+        itemHeight={30}
         gap={12}
         position='absolute'
         titleStyle={{ font: 'normal 400 16px Arial', color: '#fff' }}
