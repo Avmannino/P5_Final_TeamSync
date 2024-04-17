@@ -1,1 +1,14 @@
+@import "rsuite/dist/rsuite.css";
+#root{ padding: 10px; }
 
+
+.Navside {
+    background-color: rgb(0, 0, 0);
+    height: 2900px;
+    position: relative;
+    padding-top: 3vh;
+    top: 90vh;
+    left: 57vw;
+    font-size: 12px;
+    font-family: Dashboard;
+}
