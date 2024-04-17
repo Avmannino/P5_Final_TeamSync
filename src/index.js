@@ -25,6 +25,8 @@ import IceRink from "./IceRink";
 import HockeyLines from "./HockeyLines";
 // import VideoPage from "./pages/VideoPage";
 import Login from "./Login";
+import IceInjuries from "./IceInjuries";
+import BaseInjuries from "./BaseInjuries";
 
 
 
@@ -63,6 +65,10 @@ const router = createBrowserRouter([
         element: <BaseballField />
       },
       {
+        path: "/sports/baseball/injuries",
+        element: <BaseInjuries />
+      },
+      {
         path: "/sports/football",
         element: <Football />
       },
@@ -87,8 +93,12 @@ const router = createBrowserRouter([
         element: <IceRink />
       },
       {
-        // path: "/sports/icehockey/reels",
-        // element: <VideoPage />
+        path: "/sports/icehockey/injuries",
+        element: <IceInjuries />
+      },
+      {
+        path: "/sports/icehockey/reels",
+        element: <Social />
       },
       {
         path: "/sports/basketball",
@@ -103,7 +113,7 @@ const router = createBrowserRouter([
         element: <Pricing />
       },
       {
-        path: "/social",
+        path: "/motion",
         element: <Social />
       },
       {

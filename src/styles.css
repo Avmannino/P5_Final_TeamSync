@@ -51,7 +51,7 @@
   background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 11vh;
-  left: 27vw;
+  left: 17vw;
   padding: 20px;
   border-radius: 8px;
   height: 50%;
@@ -71,6 +71,23 @@
 .video-thumbnail:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 24px rgb(255, 255, 255);
+}
+
+.ice-injuries {
+  height:87vh;
+  /* min-width: 100%; */
+  top:-10vh;
+  left:0vw;
+  z-index: 9999;
+}
+
+.base-injuries {
+  height:100vh;
+  width: 2660px;
+  /* min-width: 100%; */
+  top:0vh;
+  left:0vw;
+  z-index: 9999;
 }
 
 

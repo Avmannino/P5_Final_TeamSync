@@ -80,7 +80,9 @@ const SidebarBaseball = () => (
             <Nav.Item eventKey="1-3" panel style={lineOneStyles}>
               <Link to="/sports/baseball/tactics" style={{ color: 'inherit', textDecoration: 'inherit' }}>Tactics</Link>
               </Nav.Item>
-            <Nav.Item eventKey="1-4" panel style={lineOneStyles}>Injuries</Nav.Item>
+            <Nav.Item eventKey="1-4" panel style={lineOneStyles}>
+            <Link to="/sports/baseball/injuries" style={{ color: 'inherit', textDecoration: 'inherit' }}>Injuries</Link>
+            </Nav.Item>
             <Nav.Item eventKey="1-5" panel style={lineOneStyles}>Game Reels</Nav.Item>
           </Nav.Menu>
 
