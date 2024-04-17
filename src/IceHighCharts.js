@@ -9,8 +9,8 @@ import gullPlayer2 from './assets/gulls_p2.png';
 
 // Mock Data for the components
 const iceCardData = [
-    { title: 'Player to Watch', value: "Brett Byrd", unit: '#91 | Left Wing', description: '5 Goals  7 Assists' },
-    { title: 'Opponent to Watch', value: 8, unit: 'micrograms', description: 'dose' },
+    { title: '🚨Player to Watch🚨', value: "Brett Byrd", unit: '#91 | Left Wing', description: '5 Goals  7 Assists' },
+    { title: '🚨Opponent to Watch🚨', value: "Devin Douglas", unit: '#66 | Center', description: '2 Goals  1 Assist   42 Hits' },
     { title: 'Iron', value: 10, unit: 'micrograms', description: 'dose' },
     { title: 'Iron', value: 10, unit: 'micrograms', description: 'dose' },
 ];

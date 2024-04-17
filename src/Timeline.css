@@ -1,9 +1,16 @@
 .custom-timeline {
-    margin-left: 20px;
+    padding-top: 60px;
+    padding-left: 85px;
+    width: 17%;
+    height: 70%;
     position: absolute;
-    right: 7vw;
-    top: 7vh;
-    font-size: 15px;
+    right: 6vw;
+    top: 18vh;
+    font-size: 18px;
+    background-color:#000144; /* Dark background for the card */
+    color: #e0e0e0; /* Light text for readability */
+    border-radius:28px; /* Rounded corners for the card */
+    box-shadow: 0px 8px 16px 0px rgba(209, 209, 209, 0.2); /* Subtle shadow for depth */
     z-index: 9998;
     
 
@@ -14,7 +21,7 @@
             top: 0;
             left: -2px;
             border: 2px solid #ddd;
-            width: 40px;
+            width: 60px;
             height: 40px;
             border-radius: 50%;
             font-size: 12px;
@@ -27,8 +34,8 @@
 
     .rs-timeline-item-content li {
         margin-left: 24px;
-        font-size: 17px;
-        line-height: 35px;
+        font-size: 23px;
+        line-height: 45px;
     }
 }
 

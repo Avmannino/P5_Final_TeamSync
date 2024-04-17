@@ -99,7 +99,7 @@ const BarRaceChart = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleChange();
-    }, 500);
+    }, 650);
 
     return () => clearInterval(interval);
   }, [currentMonthIndex]);
@@ -147,11 +147,11 @@ const BarRaceChart = () => {
 
   return (
     <div className='bar-race'>
-      <h2>Current Game: {currentGame}</h2>
+      <h2 style={{fontSize:'25px'}}>'23-'24 NHL Scoring Leaders (goals - all-games) | Game: {currentGame}</h2>
       <ChartRace
         data={data}
         backgroundColor='#ff000000'
-        width={960}
+        width={800}
         padding={12}
         itemHeight={58}
         gap={12}

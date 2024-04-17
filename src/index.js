@@ -24,7 +24,6 @@ import { CustomProvider } from "rsuite";
 import IceRink from "./IceRink";
 import HockeyLines from "./HockeyLines";
 // import VideoPage from "./pages/VideoPage";
-import Chat from "./components/Chat";
 import Login from "./Login";
 
 
@@ -106,10 +105,6 @@ const router = createBrowserRouter([
       {
         path: "/social",
         element: <Social />
-      },
-      {
-        path: "/social/chat",
-        element: <Chat />
       },
       {
         path: "/log-in",

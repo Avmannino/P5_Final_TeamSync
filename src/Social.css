@@ -20,15 +20,15 @@
     }
 
     .post-container {
-        background-color: rgba(255, 255, 255, 0.1);
-        width: 65%;
-        height: 15%;
+        background-color: rgba(255, 255, 255, 0);
+        width: 85%;
+        height: 65%;
         position: relative;
-        left: 17.5%;
-        top: 25vh;
-        border: 0.01px solid rgba(0, 0, 0, 0.292);
+        left: 8.5%;
+        top: 5vh;
+        border: 0.01px solid rgba(0, 0, 0, 0);
         border-radius: 15px;
-        z-index: 9997;
+        z-index: 999;
     }
 
     .post-input-box {
@@ -58,6 +58,19 @@
         top: 4.5vh;
         left: 1.5vw;
     }
+
+    .video-gallery {
+        position: absolute;
+        top: 25vh;  
+        left: 10vw; 
+        width: auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+        gap: 10px; 
+        z-index: 9999;
+      }
+      
 
     .chat-render {
         position: absolute;

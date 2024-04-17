@@ -8,6 +8,8 @@ import SidebarHockey from './SidebarHockey';
 import IceDash from './IceHighCharts';
 import Navbar from './Navbar';
 import BarRaceChart from './BarRace';
+import DashTimeline from './Timeline';
+
 
 
 
@@ -38,6 +40,8 @@ export default function IceHockey() {
         <IceDash />
         {/* <Dashboard /> */}
         <IceCal />
+        <DashTimeline />
+       
       </div>
 
     </>
