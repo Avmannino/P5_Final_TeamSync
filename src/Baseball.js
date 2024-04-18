@@ -4,20 +4,20 @@ import Dashboard from './Dashboard';
 import Llamas from './assets/llamas_logo.png';
 import './Baseball.css';
 import LiveGames from './LiveGames';
-import DashCal from './Calendar';
 import TeamCard from './TeamCard';
 import TimeDrawer from './Drawer';
 import SidebarBaseball from './SidebarBase';
 import BaseballCharts from './BaseballCharts';
+import BaseballField from './BaseballField';
+import redCalendar from './assets/red_calendar.png';
+import UpNext from './UpNext';
 
 
-// import BaseballField from './BaseballField';
 
 export default function Baseball() {
   return (
     <>
       <div className='baseball-page'>
-        {/* <Panel><BaseballField /></Panel> */}
 
         <div className='side-bar-baseball'>
           <SidebarBaseball />
@@ -25,6 +25,7 @@ export default function Baseball() {
 
         <div className='baseball-charts'>
           <BaseballCharts />
+         
         </div>
       
 
@@ -35,13 +36,19 @@ export default function Baseball() {
           <div className='team-card'>
             <TeamCard />
           </div>
+          <div className='up-next'>
+            <UpNext />
+          </div>
           <div className='baseball-drawer'>
             <TimeDrawer />
+          </div>
+          <div className='calendar-container'>
+          <img src={redCalendar} alt="Background" className="red-calendar" />
           </div>
 
         </div>
         <Dashboard />
-        <DashCal />
+  
 
     </>
   );

@@ -27,7 +27,7 @@
   background-image: url('./assets/dash_bg.png');
   background-size: cover;
   background-repeat:repeat-y;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 170vh;
   width: 105%;
   z-index: 9;
@@ -73,9 +73,9 @@ strong {
 
 .navbar-frame {
   width: 105vw;
-  height: 150px;
+  height: 160px;
   /* Adjust the height as needed */
-  background-color: #020a0d;
+  background-color: #000000;
   /* Or any color you prefer */
   position: relative;
   top: 2vh;
@@ -105,7 +105,7 @@ strong {
   /* Adjust this value to control the width of the border */
   height: 10.5px;
   /* Set the height of the border */
-  background-color: #020a0d;
+  background-color: #000000;
   /* Set the color of the border */
 }
 

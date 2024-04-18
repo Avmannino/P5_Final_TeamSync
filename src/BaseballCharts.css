@@ -1,24 +1,36 @@
 .line-graph {
     position: relative;
-    top:54vh;
-    left: 8vw;
-    width: 700px;
+    top:45vh;
+    left: 7.3vw;
+    width: 630px;
     height: 100px;
     z-index: 9999;
+    border-radius: 35px;
     font-family: Dashboard;
-    color: #123e3e
+    color: #ff000038
 }
 
 .radar-chart {
     position: relative;
-    top: 11vh;
-    right: -12.5vw;
+    top: 5.5vh;
+    right: -10vw;
     width: 520px;
     /* height: 150px; */
     color: white;
     z-index: 9999;
     font-family: Dashboard;
+    font-size: 18px;
 }
+
+/* Target the panel header using the class name of the Panel component */
+.custom-panel .rs-panel-heading {
+    font-size: 20px; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    color: #333; /* Example font color */
+    /* Add any other styles you want to apply */
+  }
+  
+  
 
 /* .progress-bar {
     position: relative;

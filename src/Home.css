@@ -1,15 +1,10 @@
-.content {
-    width: 100%;
-    text-align: center;
-    margin: 5vh auto;
-}
 
 
 
 .home-container h1 {
     font-family: Oswald;
     font-weight: bold;
-    color: #005170;
+    color: #0071b2b9;
     position: relative;
     margin-top: -20px;
 }
@@ -17,7 +12,7 @@
 .home-container h2 {
     font-family: Oswald;
     font-weight: bold;
-    color: #005170;
+    color: #0071b2b9;
     position: relative;
     margin-top: -20px;
 }
@@ -25,7 +20,7 @@
 .home-container h3 {
     font-family: Oswald;
     font-weight: bold;
-    color: #005170;
+    color: #0071b2b9;
     position: relative;
     margin-top: -20px;
 }
@@ -33,7 +28,7 @@
 .home-container h4 {
     font-family: Oswald;
     font-weight: bold;
-    color: #005170;
+    color: #0071b2b9;
     position: relative;
     margin-top: -20px;
 
@@ -45,7 +40,7 @@
     font-weight: normal;
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color: rgba(255, 255, 255, 0.685);
+    color: rgba(255, 255, 255, 0.678);
     margin: 5vh auto;
 
 }
@@ -57,7 +52,7 @@
     line-height: 1.4em;
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.678);
     margin: 5vh auto;
 }
 
@@ -68,7 +63,7 @@
     line-height: 1.4em;
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.678);
     margin: 5vh auto;
 }
 
@@ -79,7 +74,7 @@
     line-height: 1.4em;
     padding: 5px;
     background-color: rgba(0, 0, 255, 0);
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.678);
     margin: 5vh auto;
 }
 
@@ -269,56 +264,52 @@
 @media screen and (min-width: 2530px) {
 
     .home-page {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: -1vh;
-        height: 100vh;
-        width: 100vw;
-        align-items: center;
-        overflow: auto;
-        background-color: rgba(218, 218, 218, 0.829);
+        background-color: rgba(1, 48, 56, 0.150);
+        height: 400vh;
+        width: 100%;
+        position: absolute;
+        top: 0vh;
+        left: 0vw;
         background-image: url('./assets/home_bg.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        font-family: Dashboard;
-
     }
 
     .home-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 200vh;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0);
+        height: 210%;
+        background-color: rgba(1, 48, 56, 0.913);
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 0vh;
+        left: 0vw;
+        z-index: 1;
     }
-
 
 
     .home-tiles {
         position: relative;
-        bottom: 181vh;
-        left: 16vw;
+        bottom: 239vh;
+        left: 47vw;
     }
 
     .one {
         position: relative;
-        bottom: 190.5vh;
-        left: 27.3vw;
+        bottom: 230.5vh;
+        left: 58.4vw;
     }
 
     .two {
         position: relative;
-        bottom: 190.5vh;
-        left: 34vw;
+        bottom: 230.5vh;
+        left: 65.2vw;
     }
 
     .three {
         position: relative;
-        bottom: 190.7vh;
-        left: 40vw;
+        bottom: 230.5vh;
+        left: 71vw;
     }
 
     .one,
@@ -337,14 +328,14 @@
     .laptop-static,
     .schedules-static,
     .hockey-static {
-        font-size: 1vw;
+        font-size: 1.15vw;
     }
 
     .home-container h1,
     .home-container h2,
     .home-container h3,
     .home-container h4 {
-        font-size: 1.3vw;
+        font-size: 1.8vw;
     }
 
     .our-core,
@@ -358,78 +349,93 @@
         text-align: left;
     }
 
+    .ts-home {
+        position: relative;
+        top: 33.5vh;
+        left: 20.5vw;
+    }
+
+    .black-logo {
+        position: relative;
+        top: 33vh;
+        left: 4.5vw;
+        max-width: 75px;
+    }
+
     /*------------SOCCER--------------*/
     .laptop-static {
-        top: 80vh;
-        left: 35vw;
+        top: 25vh;
+        left: 68.5vw;
         max-width: 775px;
         position: relative;
     }
 
     .home-container h1 {
-        top: 90vh;
-        right: 37vw;
+        top: 36.5vh;
+        right: 35.7vw;
     }
 
     .our-core {
-        top: 43vh;
+        top: -10vh;
         right: 23.5vw;
     }
 
+
     /*------------BASEBALL--------------*/
     .baseball-static {
-        top: 105vh;
-        left: 25vw;
-        max-width: 750px;
+        top: 103.5vh;
+        left: 27vw;
+        max-width: 770px;
     }
 
     .home-container h2 {
-        top: 60vh;
-        left: 14.7vw;
+        top: 1.5vh;
+        left: 56.5vw;
     }
 
     .proven-metrics {
-        top: 54vh;
-        left: 22.5vw;
+        top: -3vh;
+        left: 19vw;
     }
+
 
     /*------------BASKETBALL--------------*/
     .schedules-static {
-        top: 155vh;
-        left: 68vw;
-        max-width: 650px;
+        top: 165vh;
+        left: 70vw;
+        max-width: 600px;
     }
 
     .home-container h3 {
-        top: 100.5vh;
-        right: 25vw;
+        top: 34vh;
+        left: 16.5vw;
     }
 
     .scheduling {
-        top: 95vh;
-        right: 20.1vw;
+        top: 30vh;
+        right: 21vw;
     }
 
     /*------------HOCKEY--------------*/
     .hockey-static {
-        top: 220vh;
-        left: 28vw;
-        max-width: 805px;
+        top: 236vh;
+        left: 27vw;
+        max-width: 855px;
     }
 
     .home-container h4 {
-        top: 130vh;
-        left: 10vw;
+        top: 71vh;
+        left: 57.5vw;
     }
 
     .hockey {
-        top: 125vh;
-        left: 19vw;
+        top: 67vh;
+        left: 20vw;
     }
 
     .scroll-container {
         position: relative;
-        top: 230vh;
+        top: 275vh;
         width: 100%;
     }
 

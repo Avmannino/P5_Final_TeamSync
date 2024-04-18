@@ -1,27 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles.css';
 import { Link } from 'react-router-dom';
-
-
 import { Sidenav, Nav } from 'rsuite';
 import DashboardIcon from '@rsuite/icons/legacy/Dashboard';
 import GroupIcon from '@rsuite/icons/legacy/Group';
 import MagicIcon from '@rsuite/icons/legacy/Magic';
 import GearIcon from '@rsuite/icons/legacy/Gear';
+import './styles.css'; // Import your CSS file
 
 const lineOneStyles = {
   padding: '15px 20px',
   color: '#fff',
-  background: '#0e1b1f',
+  background: '#530302',
   borderRight: "2px solid #123e3e"
 };
 
+// Add hover style
+const lineOneHoverStyles = {
+  ...lineOneStyles,
+  backgroundColor: '#731f1f',
+};
 
 const headerTeamStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#0000001a',
+  background: '#000000',
   color: ' #fff',
 
 };
@@ -29,7 +31,7 @@ const headerTeamStyles = {
 const headerAdvancedStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#0000001a',
+  background: '#000000',
   color: ' #fff',
   borderTop: "1px solid #123e3e"
 };
@@ -37,7 +39,7 @@ const headerAdvancedStyles = {
 const headerSettingsStyles = {
   padding: 20,
   fontSize: 26,
-  background: '#040f12',
+  background: '#000000',
   color: ' #fff',
   borderTop: "1px solid #0000001a"
 
@@ -49,9 +51,7 @@ const dividerStyles = {
 };
 
 const brandStyles = {
-  // borderRight: "2px solid #008b8b",
   borderRight: "2px solid white",
-  borderBottom: "0.5px solid #333333",
   fontSize: 20,
   textAlign: 'center',
   background: '#0000001a',
@@ -63,10 +63,9 @@ const bodyStyles = {
   borderBottom:"3px solid white"
 }
 
-
 const SidebarBaseball = () => (
-  <div style={{ width: 240, position: 'relative', top: '14.9vh', background: '#040f12' }}>
-    <Sidenav defaultOpenKeys={['1', '2']}>
+  <div style={{ width: 240, position: 'relative', top: '15.7vh', background: '#040f12' }}>
+    <Sidenav defaultOpenKeys={['1', '2', '4']}>
       <Sidenav.Header icon={<DashboardIcon />}>
         <div style={brandStyles}></div>
       </Sidenav.Header>
@@ -79,9 +78,9 @@ const SidebarBaseball = () => (
             </Nav.Item>
             <Nav.Item eventKey="1-3" panel style={lineOneStyles}>
               <Link to="/sports/baseball/tactics" style={{ color: 'inherit', textDecoration: 'inherit' }}>Tactics</Link>
-              </Nav.Item>
+            </Nav.Item>
             <Nav.Item eventKey="1-4" panel style={lineOneStyles}>
-            <Link to="/sports/baseball/injuries" style={{ color: 'inherit', textDecoration: 'inherit' }}>Injuries</Link>
+              <Link to="/sports/baseball/injuries" style={{ color: 'inherit', textDecoration: 'inherit' }}>Injuries</Link>
             </Nav.Item>
             <Nav.Item eventKey="1-5" panel style={lineOneStyles}>Game Reels</Nav.Item>
           </Nav.Menu>
@@ -113,4 +112,5 @@ const SidebarBaseball = () => (
     </Sidenav>
   </div>
 );
+
 export default SidebarBaseball;

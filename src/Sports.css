@@ -16,7 +16,6 @@
 .sports-container-parent {
     height: 100%;
     width: 100%;
-    /* Adjust the width as a percentage of the viewport width */
     padding: 5%;
     background-color: #000000c9;
     color: white;
@@ -27,10 +26,9 @@
 .sports-header {
     position: absolute;
     top: -10vh;
-    right: 25vw;
-    font-size: 55px;
-    color: white;
-    font-family: Dashboard;
-    text-decoration: underline;
+    right: 27vw;
+    font-size: 65px;
+    color: rgba(255, 255, 255, 0.716);
+    font-family: Oswald;
     font-weight: normal;
 }

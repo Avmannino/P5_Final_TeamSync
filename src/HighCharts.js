@@ -3,14 +3,16 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import './HighCharts.css'; // Ensure this CSS file contains the necessary styling for dark mode
 import backgroundImage from './assets/strikezone.png';
+import Coach from'./assets/coach.png';
+import { AgPickerField } from 'ag-grid-community';
 // import PatternFill from 'highcharts/modules/pattern-fill';
 
 // Mock Data for the components
 const cardData = [
-    { title: 'Vitamin A', value: 900, unit: 'micrograms', description: 'daily recommended dose' },
-    { title: 'Iron', value: 8, unit: 'micrograms', description: 'daily recommended dose' },
-    { title: 'Iron', value: 10, unit: 'micrograms', description: 'daily recommended dose' },
-    { title: 'Iron', value: 10, unit: 'micrograms', description: 'daily recommended dose' },
+    { title: 'Welcome back, Coach', value: 'April 18th, 2024', unit: '', description: '2 New Messages! 📥' },
+    { title: "'24-'25 Record:", value: "W:35-L:12", unit: '', description: 'Llamas have won 8 of the last 10!' },
+    { title: 'Standings:', value: "1st - West Division", unit: '2nd - Bears: 3.5 GB', description: 'as of: 04/18/24 3:00PM EST' },
+    { title: 'Today:', value: "-Practice @ 4pm PST", unit: '', description: 'daily recommended dose' },
 ];
 
 const barChartData = {
@@ -62,7 +64,7 @@ const barChartData = {
         }
     },
     series: [{
-        name: 'Vitamin A',
+        name: 'Next Up:',
         data: [6421, 2122, 1350, 388, 214],
         color: '#2ecc71' // Example color, change as needed
     }, {
@@ -331,6 +333,7 @@ const Dash = () => {
                 ))}
             </div>
             <div className="chart-container">
+            <img src={Coach} alt="coach" className="coach-icon" />
                 <div className="table-container">
                     <table>
                         <thead>

@@ -97,7 +97,7 @@
   margin-top: 23vh;
   font-size: 29px;
   font-weight: normal;
-  font-family: nowayback;
+  font-family: Oswald;
   color: white;
   text-decoration: none;
 }
@@ -175,13 +175,17 @@
 }
 
 .football-name {
+  display: flex;
+  flex-direction: column;
   margin-top: 23vh;
-  font-size: 29px;
+  font-size: 22px;
   font-weight: normal;
-  font-family: nowayback;
+  font-family: Oswald;
   color: white;
   text-decoration: none;
 }
+
+
 
 /* SOCCER */
 
@@ -256,10 +260,12 @@
 }
 
 .soccer-name {
+  display: flex;
+  flex-direction: column;
   margin-top: 23vh;
-  font-size: 29px;
+  font-size: 22px;
   font-weight: normal;
-  font-family: nowayback;
+  font-family: Oswald;
   color: white;
   text-decoration: none;
 }
@@ -340,7 +346,7 @@
   margin-top: 23vh;
   font-size: 29px;
   font-weight: normal;
-  font-family: nowayback;
+  font-family: Oswald;
   color: white;
   text-decoration: none;
 }
@@ -418,10 +424,12 @@
 }
 
 .basketball-name {
+  display: flex;
+  flex-direction: column;
   margin-top: 23vh;
-  font-size: 29px;
+  font-size: 22px;
   font-weight: normal;
-  font-family: nowayback;
+  font-family: Oswald;
   color: white;
   text-decoration: none;
 }
@@ -499,10 +507,12 @@
 }
 
 .tennis-name {
+  display: flex;
+  flex-direction: column;
   margin-top: 23vh;
-  font-size: 29px;
+  font-size: 22px;
   font-weight: normal;
-  font-family: nowayback;
+  font-family: Oswald;
   color: white;
   text-decoration: none;
 }

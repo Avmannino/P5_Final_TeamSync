@@ -8,6 +8,24 @@
   align-items: center;
 }
 
+.baseball-charts {
+  z-index: 999;
+}
+
+.red-calendar {
+  position: absolute;
+  top: 10.5vh;
+  right: 4vw;
+  z-index: 9999;
+  max-width:28%
+}
+
+.up-next {
+  position: absolute;
+  top:35vh;
+  left:0vw;
+  z-index: 9999;
+}
   
   .panel-header {
     display: flex;
@@ -35,6 +53,8 @@
     font-size: 17px;
     color: rgb(32, 32, 32);
 }
+
+
   
   .llama-img {
     width: 150px; /* Adjust size as needed */

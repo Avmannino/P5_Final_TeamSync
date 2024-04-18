@@ -8,9 +8,6 @@ const BaseballCharts = () => {
   const [sparklineData] = useState([
     47, 45, 54, 38, 56, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46
   ]);
-  const [colorPalette] = useState([
-    '#00D8B6', '#008FFB', '#FEB019', '#FF4560', '#775DD0'
-  ]);
 
   const randomizeArray = (arg) => {
     let array = arg.slice();
@@ -54,7 +51,7 @@ const BaseballCharts = () => {
     xaxis: {
       type: 'datetime',
     },
-    colors: [color],
+    colors: [color], // Change the color here
     title: {
       text: '$424,652',
       offsetX: 30,
@@ -76,22 +73,26 @@ const BaseballCharts = () => {
   const ApexRadarChart = () => {
     const [series] = useState([
       {
-        name: 'Series 1',
+        name: 'Gerrit Cole',
         data: [80, 50, 30, 40, 100, 20],
+        color: '#a22820'
       },
       {
-        name: 'Series 2',
+        name: 'Marcus Stroman',
         data: [20, 30, 40, 80, 20, 80],
+        color: '#13eaff'
       },
       {
-        name: 'Series 3',
+        name: 'Nestor Cortes',
         data: [44, 76, 78, 13, 43, 10],
+        color: '#7d3688'
       }
     ]);
 
     const [options] = useState({
       chart: {
         height: 550,
+        color: 'white',
         type: 'radar',
         dropShadow: {
           enabled: true,
@@ -101,19 +102,25 @@ const BaseballCharts = () => {
         }
       },
       title: {
-        text: 'Radar Chart - Multi Series'
+        text: 'Pitch-Type Variability (1 Start-Each)'
       },
       stroke: {
-        width: 2
+        width: 2.5
       },
       fill: {
-        opacity: 0.1
+        opacity: 0.5
       },
       markers: {
         size: 0
       },
       xaxis: {
         categories: ['4-Seam FB', 'Curve', 'Slider', 'Splitter', '2- Seam FB', 'Changeup']
+      },
+      legend: {
+        fontSize: '16px', // Set the font size for legend labels
+        labels: {
+          colors: '#FFFFFF' // Set the color for legend labels
+        }
       }
     });
 
@@ -122,28 +129,17 @@ const BaseballCharts = () => {
         options={options}
         series={series}
         type="radar"
-        height={500}
+        height={400}
       />
     );
   };
 
-  const generateData = (count, yrange) => {
-    var series = [];
-    for (var i = 0; i < count; i++) {
-      const x = 'w' + (i + 1).toString();
-      const y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-      series.push({ x, y });
-    }
-    return series;
-  };
-
-
   return (
     <div className='dashboard-charts'>
       <div className="line-graph">
-        <Panel header="Sales">
+        <Panel header="Net Income Revenue" className="custom-panel">
           <ReactApexChart
-            options={generateChartOptions("Sales", sparklineData, colorPalette[0])}
+            options={generateChartOptions("Sales", sparklineData, '#FF000080')}
             series={[{ data: sparklineData }]}
             type="area"
             height={250}
@@ -151,43 +147,8 @@ const BaseballCharts = () => {
         </Panel>
       </div>
       <div className="radar-chart">
-        <Panel header="Profits">
+        <Panel header="">
           <ApexRadarChart />
-        </Panel>
-      </div>
-      <div className="progress-bar">
-        <Panel bordered header="Daily Steps">
-          <ReactApexChart
-            options={{
-              chart: {
-                type: 'bar',
-                height: 19,
-                sparkline: { enabled: true },
-             
-                background: '',
-              },
-              plotOptions: {
-                bar: {
-                  horizontal: true,
-                },
-              },
-              colors: ['#008b8b'],
-              dataLabels: {
-                enabled: false,
-              },
-              series: [
-                {
-                  data: [80],
-                },
-              ],
-              xaxis: {
-                categories: ['Progress'],
-              },
-            }}
-            series={[{ data: [80] }]}
-            type="bar"
-            height={25}
-          />
         </Panel>
       </div>
     </div>

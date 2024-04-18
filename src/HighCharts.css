@@ -1,9 +1,10 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #121212; /* Dark background */
+    font-family: 'Dashboard';
     color: #e0e0e0; /* Light text */
+    /* height:100vh;
+    width:100%; */
   }
   
 
@@ -11,7 +12,7 @@ body, html {
     display: flex; /* Use flex to lay out children side by side */
     justify-content: space-between; /* Space between the main dashboard and the vertical card */
     align-items: stretch; /* Stretch children to fill the container height */
-    height: 100vh; /* Full viewport height */
+    height: 97vh; /* Full viewport height */
     margin: 0 auto; /* Center the container if it's not as wide as the viewport */
     padding: 20px; /* Padding around the edges */
     background: #12121200; /* Background color for the whole dashboard */
@@ -22,22 +23,26 @@ body, html {
     flex-grow: 1; /* Allows the dashboard to take up all available space except what the vertical card needs */
     margin-right: 20px; /* Space between the dashboard and the vertical card */
     position: relative;
-    top: 30vh;
-    left: 15vw;
+    top: 4vh;
+    left: 9vw;
+    width: 900%;
+    border-radius: 35px;
+    background-color: rgba(28, 28, 28, 0.911);
+    box-shadow: 5px 0px 16px 0 rgba(255, 255, 255, 0.233); /* Subtle shadow for depth */
   }
   
   .vertical-card {
     width: 400px; /* Fixed width for the vertical card */
-    height: 1050px;
-    background-color:#002b30; /* Dark background for the card */
+    height: 900px;
+    background-color:#760000a2; /* Dark background for the card */
     color: #e0e0e0; /* Light text for readability */
     padding: 20px; /* Padding inside the card */
     border-radius:28px; /* Rounded corners for the card */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.233); /* Subtle shadow for depth */
     position: absolute;
     z-index: -1;
-    right: 65vw;
-    top: 17.5vh;
+    right: 64.2vw;
+    top: 22vh;
 
     
   }
@@ -60,13 +65,13 @@ body, html {
 
   .chart-with-background {
     position: relative;
-    left: 22vw;
-    top: -25vh;
+    left: 30vw;
+    top: 35vh;
   }
   
   .chart-background-image {
     position: absolute;
-    top: -3vh;
+    top: 6vh;
     left: 2vw;
     width: 100%;
     height: 105%;
@@ -75,29 +80,36 @@ body, html {
   
   .graph-container {
     position: absolute;
-    z-index: 1000;
-    top:-28vh;
-    left: -7vw;
+    z-index: 9999;
+    top:-0vh;
+    left: -0.2vw;
     height: 300px;
-    width: 700px;
-    
+    width: 600px;
+    border-radius: 25px;
+  }
+
+  .coach-icon {
+    position: absolute;
+    top:-48vh;
+    right: 64.3vw;
+    z-index: 9999;
   }
   
   
   .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 0.5rem;
+    grid-gap: -1rem;
     margin-bottom: 10rem;
     position: relative;
-    left: 39vw;
+    left: 39.2vw;
     top: 4vh;
   }
 
   .ice-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); /* Allow for multiple columns */
-    grid-gap: 1rem; /* Adjust the gap between cards */
+    grid-gap: 1.2rem; /* Adjust the gap between cards */
     margin-bottom: 0rem;
     position: relative;
     right: 4vw;
@@ -154,17 +166,17 @@ body, html {
   
   .ice-card .description {
     font-size: 1.35rem;
-    color: #d8d8d8; /* Light text for readability */
+    color: #a8a8a8; /* Light text for readability */
     margin-top: 0.15rem;
     margin-left: 6.2vw;
   }
   
   .base-card {
-    background: #1e1e1e; /* Slightly lighter than the body background for depth */
+    background: #760000a2; /* Slightly lighter than the body background for depth */
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for floating effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(177, 177, 177, 0.314); /* Subtle shadow for floating effect */
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
     position:relative;
     right: 85.5vw;
     height: 225px;
@@ -176,26 +188,36 @@ body, html {
   }
   
   .base-card h2 {
-    font-size: 1.2rem;
-    color: #c0c0c0; /* Subtle contrast for the header */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Subtle contrast for the header */
+    position:relative;
+    top:-1vh;
+    left:-0.3vw;
+    border-bottom: 1px solid rgb(111, 111, 111);
   }
   
   .base-card .value {
     display: block;
-    font-size: 3rem;
-    color: #21c87a; /* A pop of color for the value, adjust if needed */
+    font-size: 1.45rem;
+    color: #ffbfb3; /* A pop of color for the value, adjust if needed */
     margin: 0.5rem 0;
+    position:relative;
+    top:0vh;
   }
   
   .base-card .unit {
-    font-size: 0.85rem;
-    color: #a8a8a8; /* Muted text for less important data */
+    font-size: 1.05rem;
+    color: #ffbfb3; /* Muted text for less important data */
   }
   
   .base-card .description {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: #d8d8d8; /* Light text for readability */
-    margin-top: 0.25rem;
+    margin-top: 0.45rem;
+    position:relative;
+    top:1vh;
+    font-style: italic;
   }
   
   .chart-container {
@@ -215,20 +237,24 @@ body, html {
   }
   
   .table-container {
-    width: 800px;
-    height: 600px; /* Adjusted height to show 7 rows initially */
+    width: 780px;
+    height: 610px; /* Adjusted height to show 7 rows initially */
     overflow-y: scroll;
     position: absolute;
-    top: -12vh;
-    left: -17vw;
-    z-index: 50;
+    top: -14vh;
+    left: -17.5vw;
+    z-index: 9999;
+    box-shadow: 5px 5px 20px 0 rgba(137, 137, 137, 0.478); /* Subtle shadow for depth */
 }
 
 table {
     width: 100%; /* Ensure the table fills its container */
     border-collapse:separate;
-    background: #1e1e1e; /* Match the card background */
-    color: #e0e0e0; /* Ensure text is readable on dark background */
+    background: #454545; /* Match the card background */
+    box-shadow: 15px 38px 26px 0 rgb(217, 217, 217); /* Subtle shadow for depth */
+    color: #ffffffb6; /* Ensure text is readable on dark background */
+    border-radius: 5px;
+    border: 1px inset rgb(230, 230, 230);
 }
 
 table th,
@@ -239,7 +265,7 @@ table td {
 }
 
 table th {
-    background-color: #002b30; /* Maintain the pop of color in headers */
+    background-color:#800000; /* Maintain the pop of color in headers */
     border-bottom: 3px solid #ffffff;
 }
 
