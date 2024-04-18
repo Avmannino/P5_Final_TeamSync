@@ -64,7 +64,7 @@ const barChartData = {
         }
     },
     series: [{
-        name: 'Next Up:',
+        name: ':',
         data: [6421, 2122, 1350, 388, 214],
         color: '#2ecc71' // Example color, change as needed
     }, {

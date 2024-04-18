@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import blackLogo from './assets/black_logo.png';
-import tsLogo from './assets/ts_logo.png';
+import tsLogo from './assets/ts_home.png';
 import googleScore from './assets/google_review.png';
 import yelpScore from './assets/yelp_review.png';
 import userLogo from './assets/user_logo.png';

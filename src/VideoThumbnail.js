@@ -7,9 +7,9 @@ function VideoThumbnail({ src, thumbnail, onClick, title }) {
       <img
         src={thumbnail}
         alt={`Thumbnail for ${src}`}
-        style={{ width: '100%', height: 'auto', borderRadius:'20px' }}
+        style={{ width: '300px', height: '180px', borderRadius:'20px' }}
       />
-      <div style={{fontSize:'19px'}}>{title}</div> {/* Display the title below the thumbnail */}
+      <div style={{fontSize:'19px', position:'relative', top: '1vh'}}>{title}</div> {/* Display the title below the thumbnail */}
     </div>
   );
 }

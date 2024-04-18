@@ -5,7 +5,7 @@ const BaseInjuries = () => {
   useEffect(() => {
     const divElement = document.getElementById('viz1713379472308');
     const vizElement = divElement.getElementsByTagName('object')[0];
-    
+
     const adjustVizSize = () => {
       if (divElement.offsetWidth > 800) {
         vizElement.style.minWidth = '2660px';
@@ -41,25 +41,27 @@ const BaseInjuries = () => {
   }, []);
 
   return (
-    <div className='base-injuries' id='viz1713379472308' style={{ position: 'relative', width:'2560px' }}>
-      <noscript>
-        <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/ba/baseballinjuries/HitterDashboard/1_rss.png' style={{ border: 'none' }} /></a>
-      </noscript>
-      <object className='tableauViz' style={{ display: 'none', width:'2560px' }}>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='baseballinjuries&#47;HitterDashboard' />
-        <param name='tabs' value='yes' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/ba/baseballinjuries/HitterDashboard/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-      </object>
+    <div className='base-injuries-overlay'>
+      <div className='base-injuries' id='viz1713379472308' style={{ position: 'absolute', width: '2560px', zIndex:'9999' }}>
+        <noscript>
+          <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/ba/baseballinjuries/HitterDashboard/1_rss.png' style={{ border: 'none' }} /></a>
+        </noscript>
+        <object className='tableauViz' style={{position: 'absolute', width: '2560px', zIndex:'9999' }}>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='baseballinjuries&#47;HitterDashboard' />
+          <param name='tabs' value='yes' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/ba/baseballinjuries/HitterDashboard/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
     </div>
   );
 };

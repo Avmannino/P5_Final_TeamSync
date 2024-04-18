@@ -66,7 +66,7 @@ const bodyStyles = {
 
 const SidebarHockey = () => (
   <div style={{ width: 240, position: 'relative', top: '11.2vh', background: '#00106b' }}>
-    <Sidenav defaultOpenKeys={['1', '2']}>
+    <Sidenav defaultOpenKeys={['1', '2', '3']}>
       <Sidenav.Header icon={<DashboardIcon />}>
         <div style={brandStyles}></div>
       </Sidenav.Header>

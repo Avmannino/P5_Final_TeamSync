@@ -116,7 +116,7 @@
   .nav-logo {
     position: fixed;
     top: 12.9vh;
-    right: 15.2vw;
+    right: 17.2vw;
     text-decoration: none;
     color: inherit;
   }
@@ -125,7 +125,7 @@
     width: 90px; /* Adjust the width of the logo */
     position: fixed;
     top: 1.6vh;
-    right: 5.5vw;
+    right: 14vw;
   }
   
   .nav-items {
@@ -137,13 +137,13 @@
     color: white; /* Example link color */
     margin-right: 75px; /* Adjust spacing between links */
     display: inline-block; /* Ensure the links are displayed inline */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.1s ease; /* Smooth transition for color change */
   }
 
   .nav-link:hover {
-    background-color: #ff9900; /* Change the color on hover */
+    background-color: #007991; /* Change the color on hover */
     text-decoration: none; 
-    border-radius: 8px;
+    border-radius: 6px;
   }
   
   .nav-link:last-child {

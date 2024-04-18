@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import videoSrc from './assets/game_footage1.mp4';  // Ensure the path is correct relative to this file
 
-function VideoPlayer() {
+// In VideoPlayer.js
+function VideoPlayer({ src }) { // Changed from videoSources to src
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(1); // Volume range from 0 to 1
@@ -25,9 +25,8 @@ function VideoPlayer() {
 
   return (
     <div className='video-player' style={{ zIndex: '9999', position: 'absolute' }}>
-      <video ref={videoRef} src={videoSrc} style={{ width: '100%' }} controls>
-        {/* Including a source tag for clarity, though it should work without it */}
-        <source src={videoSrc} type="video/mp4" />
+      <video ref={videoRef} style={{ width: '100%' }} controls>
+        <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div>
@@ -46,5 +45,6 @@ function VideoPlayer() {
     </div>
   );
 }
+
 
 export default VideoPlayer;

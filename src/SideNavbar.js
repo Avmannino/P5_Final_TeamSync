@@ -20,7 +20,7 @@ export const RightSideNavbar = () => {
   return (
     <div className="sidenav right">
       <div className='right-link-container'>
-        <h1 className='online'>My Library</h1>
+        <h1 className='online'></h1>
         <div className='friends-list'>
         </div>
 

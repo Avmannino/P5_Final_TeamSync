@@ -28,7 +28,7 @@ const IceDash = () => {
         <div className="ice-dashboard-container">
             <div className="ice-card-container">
                 <div className='next-up-card'>
-                    <h2 style={{zIndex:'9999',position:'absolute', color:'yellow'}}>Next Up</h2>
+                    <h2 style={{zIndex:'9999',position:'absolute', color:'yellow'}}></h2>
                 </div>
                 <div className="ice-card">
                     <img src={gullPlayer} alt="Image 1" />
