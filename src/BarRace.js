@@ -99,7 +99,7 @@ const BarRaceChart = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleChange();
-    }, 500);
+    }, 650);
 
     return () => clearInterval(interval);
   }, [currentMonthIndex]);

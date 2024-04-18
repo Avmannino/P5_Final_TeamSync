@@ -53,7 +53,7 @@ function Social() {
       ) : (
         <div className="social-page">
           <TopNavbar />
-          <h1 className='my-library' style={{ display: 'flex', flexDirection: 'row', color: 'white', fontSize: '50px', zIndex: '9999', position: 'absolute', left: '-20vw', top: '-12vh' }}>My Library</h1>
+          <h1 className='my-library' style={{ display: 'flex', flexDirection: 'row', color: 'white', fontSize: '50px', zIndex: '9999', position: 'absolute', left: '-20vw', top: '-8vh' }}>My Library</h1>
           <div className="video-gallery">
             {/* Replace the videoSrc props with the appropriate video URLs */}
             <VideoThumbnail src={hockey_vid1} thumbnail={thumbnail1} onClick={handleThumbnailClick} title="WIN 2-1 @ Vipers" style={{ height: '50%', width: '85%' }} />

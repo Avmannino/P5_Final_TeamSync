@@ -4,7 +4,7 @@ import HockeyDiag from './assets/hockey_rink.png';
 const IceRink = () => {
   const [isDrawing, setIsDrawing] = useState(false);
   const [color, setColor] = useState('#000000'); // Default color
-  const [thickness, setThickness] = useState(); // Default thickness
+  const [thickness, setThickness] = useState(6); // Default thickness
 
   useEffect(() => {
     const canvas = document.getElementById('canvas');
@@ -56,6 +56,7 @@ const IceRink = () => {
   return (
     <div className='ice-rink' >
       <img src={HockeyDiag} alt="Rink" style={{ maxWidth: '100%', position: 'absolute', top: '30vh', left: '25vw' }} />
+      <h2 className='drawing-board' style={{zIndex:'9999', marginBottom:'55vh', marginRight:'55px', fontSize:'45px'}}>"The Drawing Board"</h2>
       <canvas
         id="canvas"
         width="950"

@@ -11,8 +11,8 @@ import { AgPickerField } from 'ag-grid-community';
 const cardData = [
     { title: 'Welcome back, Coach', value: 'April 18th, 2024', unit: '', description: '2 New Messages! 📥' },
     { title: "'24-'25 Record:", value: "W:35-L:12", unit: '', description: 'Llamas have won 8 of the last 10!' },
-    { title: 'Standings:', value: "1st - West Division", unit: '2nd - Bears: 3.5 GB', description: 'as of: 04/18/24 3:00PM EST' },
-    { title: 'Today:', value: "-Practice @ 4pm PST", unit: '', description: 'daily recommended dose' },
+    { title: 'Standings:', value: "1st - West Division", unit: '2nd - Bears: 3.5 GB', description: 'as of 04/18/24 3:00PM EST' },
+    { title: 'Today:', value: "Practice @ 4pm PST Team Dinner @ 7pm PST", unit: '', description: '' },
 ];
 
 const barChartData = {

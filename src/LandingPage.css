@@ -176,6 +176,7 @@
     top: 27.5vh; /* Adjust using vh */
     left: 16vw; /* Adjust using vw */
     width: 15%; /* Adjust width as a percentage of the viewport width */
+    
 }
 
 
@@ -318,16 +319,16 @@ h1 {
 .slider__word {
     font-family: cabin;
     font-size: auto;
-    font-weight: normal;
+    font-weight: bold;
     position: absolute;
     margin-left: 53%;
     margin-bottom: 1vh;
     width: 100%;
-    height: 10vh;
-    line-height: -400px;
+    height: 12vh;
+    line-height: -600px;
     transform: translateY(100%);
     animation: slide 9.5s linear infinite;
-    color: #007dc5;
+    color: #005270;
 }
 
 .slider__word:nth-child(0) {

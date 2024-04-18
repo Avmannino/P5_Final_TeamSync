@@ -91,6 +91,7 @@ const SidebarBaseball = () => (
             <Nav.Item eventKey="2-2" panel style={lineOneStyles}>
               <Link to="/sports/baseball/calendar" style={{ color: 'inherit', textDecoration: 'inherit' }}>Calendar</Link>
             </Nav.Item>
+            <Nav.Item eventKey="2-3" panel style={lineOneStyles}>Applications</Nav.Item>
           </Nav.Menu>
 
           <Nav.Menu eventKey="3" title="Finances" icon={<MagicIcon />} panel style={headerAdvancedStyles}>
@@ -103,9 +104,8 @@ const SidebarBaseball = () => (
 
           <Nav.Menu eventKey="4" title="Settings" icon={<GearIcon />} panel style={headerAdvancedStyles}>
             <Nav.Item divider line style={dividerStyles} />
-            <Nav.Item eventKey="4-1" panel style={lineOneStyles}>Applications</Nav.Item>
-            <Nav.Item eventKey="4-2" panel style={lineOneStyles}>Add New Team</Nav.Item>
-            <Nav.Item eventKey="4-3" panel style={lineOneStyles}>Add New Player</Nav.Item>
+            <Nav.Item eventKey="4-1" panel style={lineOneStyles}>Add New Team</Nav.Item>
+            <Nav.Item eventKey="4-2" panel style={lineOneStyles}>Add New Player</Nav.Item>
           </Nav.Menu>
         </Nav>
       </Sidenav.Body>

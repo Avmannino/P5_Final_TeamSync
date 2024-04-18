@@ -12,7 +12,7 @@
 .main-feed-container {
     height: 150%;
     width: 100%;
-    background-color: #16282e;
+    background-color: #5a5a5a5b;
     position: relative;
     top:15%;
     left: 5%;
@@ -256,7 +256,7 @@
     border-radius: 45px;
     position: relative;
     top: 33vh;
-    left: 2vw;
+    left: 2.5vw;
     font-family: cabin;
     font-size: 19px;
 }
@@ -395,6 +395,17 @@
     /* Adjust left position for responsiveness */
 }
 
+.team-takes {
+    font-family: cabin;
+    font-weight: bolder;
+    color: rgb(0, 117, 171);
+    font-size: 3rem;
+    /* Adjust font size for responsiveness */
+    position: absolute;
+    top: 2.5vh;
+    left: 12vw;
+}
+
 .content {
     display: flex;
 }
@@ -402,4 +413,9 @@
 @font-face {
     font-family: Klavika;
     src: url(./fonts/klavika.otf);
+}
+
+@font-face {
+    font-family: nowayout;
+    src: url(./fonts/nowayback.ttf);
 }

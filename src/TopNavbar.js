@@ -9,8 +9,8 @@ function TopNavbar() {
   return (
     <div className="top-navbar">
       <input type="text" placeholder="Search..." className="search-bar" />
-      <p className='sync-text'>motion</p>
-      <img src={socialSync} alt="socialSync" className="social-sync" />
+      <p className='team-takes'>TeamTakes</p>
+      {/* <img src={socialSync} alt="socialSync" className="social-sync" /> */}
       <div className='right-nav-link'>
         <Link to="/home"> {/* Use Link instead of <a> for routing */}
 
