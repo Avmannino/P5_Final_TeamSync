@@ -213,7 +213,7 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 50.7vh;
+    top: 45vh;
     left: 12vw;
 }
 
@@ -239,7 +239,7 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 50.8vh;
+    top: 45.1vh;
     left: 20vw;
     border: 2.5px solid rgb(255, 255, 255);
 }
@@ -274,23 +274,23 @@ h1 {
 
 .motto {
     font-family: cabin;
-    font-size: 3.5vh;
+    font-size: 2.85vh;
     font-weight: normal;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 33vh;
-    left: 5vw;
+    top: 28.5vh;
+    left: 6.3vw;
     margin-left: 6.5vw;
 }
 
 .motto-two {
     font-family: cabin;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     font-weight: normal;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 38.5vh;
-    left: 7vw;
+    top: 35vh;
+    left: 8.7vw;
     margin-left: 6.5vw;
 }
 
@@ -309,7 +309,7 @@ h1 {
 
 .slider {
     position: relative;
-    top: -16vh;
+    top: -20.5vh;
     height: 1.25em;
     width: 1400px;
     overflow: hidden;
@@ -318,17 +318,17 @@ h1 {
 
 .slider__word {
     font-family: cabin;
-    font-size: auto;
-    font-weight: bold;
+    font-size: 38px;
+    font-weight: bolder;
     position: absolute;
-    margin-left: 53%;
-    margin-bottom: 1vh;
+    margin-left: 54%;
+    margin-bottom: -10vh;
     width: 100%;
     height: 12vh;
     line-height: -600px;
     transform: translateY(100%);
     animation: slide 9.5s linear infinite;
-    color: #005270;
+    color: #00a2ddb9;
 }
 
 .slider__word:nth-child(0) {
